@@ -1,0 +1,38 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# repurrrsive
+
+The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()`.
+
+Will eventually be used in this tutorial:
+
+<https://jennybc.github.io/purrr-tutorial/>
+
+## Installation
+
+You can install repurrrsive from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("jennybc/repurrrsive")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+## basic example code
+```
