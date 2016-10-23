@@ -1,104 +1,104 @@
 <?xml version="1.0"?>
 <package name="wesanderson">
   <palette name="GrandBudapest">
-    <color hex="#F1BB7B"/>
-    <color hex="#FD6467"/>
-    <color hex="#5B1A18"/>
-    <color hex="#D67236"/>
+    <hex>#F1BB7B</hex>
+    <hex>#FD6467</hex>
+    <hex>#5B1A18</hex>
+    <hex>#D67236</hex>
   </palette>
   <palette name="Moonrise1">
-    <color hex="#F3DF6C"/>
-    <color hex="#CEAB07"/>
-    <color hex="#D5D5D3"/>
-    <color hex="#24281A"/>
+    <hex>#F3DF6C</hex>
+    <hex>#CEAB07</hex>
+    <hex>#D5D5D3</hex>
+    <hex>#24281A</hex>
   </palette>
   <palette name="Royal1">
-    <color hex="#899DA4"/>
-    <color hex="#C93312"/>
-    <color hex="#FAEFD1"/>
-    <color hex="#DC863B"/>
+    <hex>#899DA4</hex>
+    <hex>#C93312</hex>
+    <hex>#FAEFD1</hex>
+    <hex>#DC863B</hex>
   </palette>
   <palette name="Moonrise2">
-    <color hex="#798E87"/>
-    <color hex="#C27D38"/>
-    <color hex="#CCC591"/>
-    <color hex="#29211F"/>
+    <hex>#798E87</hex>
+    <hex>#C27D38</hex>
+    <hex>#CCC591</hex>
+    <hex>#29211F</hex>
   </palette>
   <palette name="Cavalcanti">
-    <color hex="#D8B70A"/>
-    <color hex="#02401B"/>
-    <color hex="#A2A475"/>
-    <color hex="#81A88D"/>
-    <color hex="#972D15"/>
+    <hex>#D8B70A</hex>
+    <hex>#02401B</hex>
+    <hex>#A2A475</hex>
+    <hex>#81A88D</hex>
+    <hex>#972D15</hex>
   </palette>
   <palette name="Royal2">
-    <color hex="#9A8822"/>
-    <color hex="#F5CDB4"/>
-    <color hex="#F8AFA8"/>
-    <color hex="#FDDDA0"/>
-    <color hex="#74A089"/>
+    <hex>#9A8822</hex>
+    <hex>#F5CDB4</hex>
+    <hex>#F8AFA8</hex>
+    <hex>#FDDDA0</hex>
+    <hex>#74A089</hex>
   </palette>
   <palette name="GrandBudapest2">
-    <color hex="#E6A0C4"/>
-    <color hex="#C6CDF7"/>
-    <color hex="#D8A499"/>
-    <color hex="#7294D4"/>
+    <hex>#E6A0C4</hex>
+    <hex>#C6CDF7</hex>
+    <hex>#D8A499</hex>
+    <hex>#7294D4</hex>
   </palette>
   <palette name="Moonrise3">
-    <color hex="#85D4E3"/>
-    <color hex="#F4B5BD"/>
-    <color hex="#9C964A"/>
-    <color hex="#CDC08C"/>
-    <color hex="#FAD77B"/>
+    <hex>#85D4E3</hex>
+    <hex>#F4B5BD</hex>
+    <hex>#9C964A</hex>
+    <hex>#CDC08C</hex>
+    <hex>#FAD77B</hex>
   </palette>
   <palette name="Chevalier">
-    <color hex="#446455"/>
-    <color hex="#FDD262"/>
-    <color hex="#D3DDDC"/>
-    <color hex="#C7B19C"/>
+    <hex>#446455</hex>
+    <hex>#FDD262</hex>
+    <hex>#D3DDDC</hex>
+    <hex>#C7B19C</hex>
   </palette>
   <palette name="Zissou">
-    <color hex="#3B9AB2"/>
-    <color hex="#78B7C5"/>
-    <color hex="#EBCC2A"/>
-    <color hex="#E1AF00"/>
-    <color hex="#F21A00"/>
+    <hex>#3B9AB2</hex>
+    <hex>#78B7C5</hex>
+    <hex>#EBCC2A</hex>
+    <hex>#E1AF00</hex>
+    <hex>#F21A00</hex>
   </palette>
   <palette name="FantasticFox">
-    <color hex="#DD8D29"/>
-    <color hex="#E2D200"/>
-    <color hex="#46ACC8"/>
-    <color hex="#E58601"/>
-    <color hex="#B40F20"/>
+    <hex>#DD8D29</hex>
+    <hex>#E2D200</hex>
+    <hex>#46ACC8</hex>
+    <hex>#E58601</hex>
+    <hex>#B40F20</hex>
   </palette>
   <palette name="Darjeeling">
-    <color hex="#FF0000"/>
-    <color hex="#00A08A"/>
-    <color hex="#F2AD00"/>
-    <color hex="#F98400"/>
-    <color hex="#5BBCD6"/>
+    <hex>#FF0000</hex>
+    <hex>#00A08A</hex>
+    <hex>#F2AD00</hex>
+    <hex>#F98400</hex>
+    <hex>#5BBCD6</hex>
   </palette>
   <palette name="Rushmore">
-    <color hex="#E1BD6D"/>
-    <color hex="#EABE94"/>
-    <color hex="#0B775E"/>
-    <color hex="#35274A"/>
-    <color hex="#F2300F"/>
+    <hex>#E1BD6D</hex>
+    <hex>#EABE94</hex>
+    <hex>#0B775E</hex>
+    <hex>#35274A</hex>
+    <hex>#F2300F</hex>
   </palette>
   <palette name="BottleRocket">
-    <color hex="#A42820"/>
-    <color hex="#5F5647"/>
-    <color hex="#9B110E"/>
-    <color hex="#3F5151"/>
-    <color hex="#4E2A1E"/>
-    <color hex="#550307"/>
-    <color hex="#0C1707"/>
+    <hex>#A42820</hex>
+    <hex>#5F5647</hex>
+    <hex>#9B110E</hex>
+    <hex>#3F5151</hex>
+    <hex>#4E2A1E</hex>
+    <hex>#550307</hex>
+    <hex>#0C1707</hex>
   </palette>
   <palette name="Darjeeling2">
-    <color hex="#ECCBAE"/>
-    <color hex="#046C9A"/>
-    <color hex="#D69C4E"/>
-    <color hex="#ABDDDE"/>
-    <color hex="#000000"/>
+    <hex>#ECCBAE</hex>
+    <hex>#046C9A</hex>
+    <hex>#D69C4E</hex>
+    <hex>#ABDDDE</hex>
+    <hex>#000000</hex>
   </palette>
 </package>

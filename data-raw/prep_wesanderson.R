@@ -24,10 +24,9 @@ wes_df$name %>%
   walk(~ xml_add_child(wes_xml, "palette", name = .x))
 #xml_view(wes_xml)
 f <- function(parent, kids) {
-  map(kids, ~ xml_add_child(parent, "color", hex = .x))
+  map(kids, ~ xml_add_child(parent, "hex", .x))
 }
 map2(xml_children(wes_xml), wes_df$value, ~ f(.x, .y))
 #xml_view(wes_xml)
 write_xml(wes_xml,
           here("inst", "extdata", "wesanderson.xml"))
-
