@@ -31,6 +31,8 @@ devtools::install_github("jennybc/repurrrsive")
 
 ## Usage
 
+*currently only has wesanderson but other examples on the way*
+
 `wesanderson` is a recursive list of color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors.
 
 ![](img/wesanderson-listviewer-jsonedit.png)
@@ -39,13 +41,26 @@ devtools::install_github("jennybc/repurrrsive")
 devtools::load_all()
 library(purrr)
 wesanderson[1:3]
+```
+
+Use `wesanderson` to demonstrate mapping functions over a list.
+
+```{r}
 map_chr(wesanderson, 1)
+map_int(wesanderson, length)
 map_chr(wesanderson[7:9], paste, collapse = ", ")
+```
+
+The same `wesanderson` data is also present as JSON and XML files. Accessor functions provide the local file path.
+
+```{r}
+wesanderson_json()
+wesanderson_xml()
 ```
 
 Practice bringing data from JSON into an R list.
 
-```{r json}
+```{r json, message = FALSE}
 library(jsonlite)
 json <- fromJSON(wesanderson_json())
 json$wesanderson[1:3]

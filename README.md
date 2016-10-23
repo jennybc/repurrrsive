@@ -22,6 +22,8 @@ devtools::install_github("jennybc/repurrrsive")
 Usage
 -----
 
+*currently only has wesanderson but other examples on the way*
+
 `wesanderson` is a recursive list of color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors.
 
 ![](img/wesanderson-listviewer-jsonedit.png)
@@ -39,6 +41,11 @@ wesanderson[1:3]
 #> 
 #> $Royal1
 #> [1] "#899DA4" "#C93312" "#FAEFD1" "#DC863B"
+```
+
+Use `wesanderson` to demonstrate mapping functions over a list.
+
+``` r
 map_chr(wesanderson, 1)
 #>  GrandBudapest      Moonrise1         Royal1      Moonrise2     Cavalcanti 
 #>      "#F1BB7B"      "#F3DF6C"      "#899DA4"      "#798E87"      "#D8B70A" 
@@ -46,6 +53,13 @@ map_chr(wesanderson, 1)
 #>      "#9A8822"      "#E6A0C4"      "#85D4E3"      "#446455"      "#3B9AB2" 
 #>   FantasticFox     Darjeeling       Rushmore   BottleRocket    Darjeeling2 
 #>      "#DD8D29"      "#FF0000"      "#E1BD6D"      "#A42820"      "#ECCBAE"
+map_int(wesanderson, length)
+#>  GrandBudapest      Moonrise1         Royal1      Moonrise2     Cavalcanti 
+#>              4              4              4              4              5 
+#>         Royal2 GrandBudapest2      Moonrise3      Chevalier         Zissou 
+#>              5              4              5              4              5 
+#>   FantasticFox     Darjeeling       Rushmore   BottleRocket    Darjeeling2 
+#>              5              5              5              7              5
 map_chr(wesanderson[7:9], paste, collapse = ", ")
 #>                                GrandBudapest2 
 #>          "#E6A0C4, #C6CDF7, #D8A499, #7294D4" 
@@ -55,15 +69,19 @@ map_chr(wesanderson[7:9], paste, collapse = ", ")
 #>          "#446455, #FDD262, #D3DDDC, #C7B19C"
 ```
 
+The same `wesanderson` data is also present as JSON and XML files. Accessor functions provide the local file path.
+
+``` r
+wesanderson_json()
+#> [1] "/Users/jenny/rrr/repurrrsive/inst/extdata/wesanderson.json"
+wesanderson_xml()
+#> [1] "/Users/jenny/rrr/repurrrsive/inst/extdata/wesanderson.xml"
+```
+
 Practice bringing data from JSON into an R list.
 
 ``` r
 library(jsonlite)
-#> 
-#> Attaching package: 'jsonlite'
-#> The following object is masked from 'package:purrr':
-#> 
-#>     flatten
 json <- fromJSON(wesanderson_json())
 json$wesanderson[1:3]
 #> $GrandBudapest
