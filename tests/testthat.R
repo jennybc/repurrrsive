@@ -1,4 +1,7 @@
 library(testthat)
 library(repurrrsive)
 
-test_check("repurrrsive")
+if (requireNamespace("rprojroot")) {
+  test_check("repurrrsive")
+}
+
