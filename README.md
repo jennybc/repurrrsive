@@ -1,4 +1,10 @@
 
+-   [repurrrsive](#repurrrsive)
+    -   [Installation](#installation)
+    -   [Usage](#usage)
+        -   [wesanderson color palettes](#wesanderson-color-palettes)
+        -   [GitHub user and repo data](#github-user-and-repo-data)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 repurrrsive
 ===========
@@ -22,7 +28,9 @@ devtools::install_github("jennybc/repurrrsive")
 Usage
 -----
 
-*currently only has wesanderson but other examples on the way*
+*at least one more example on the way ... have an idea?*
+
+#### wesanderson color palettes
 
 `wesanderson` is a recursive list of color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors.
 
@@ -131,4 +139,72 @@ as_list(xml_child(xml))
 #> 
 #> attr(,"name")
 #> [1] "GrandBudapest"
+```
+
+#### GitHub user and repo data
+
+`gh_users` and `gh_repos` are lists with information for 6 GitHub users and 30 of each user's repositories.
+
+GitHub users.
+
+``` r
+library(purrr)
+map_chr(gh_users, "login")
+#> [1] "gaborcsardi" "jennybc"     "jtleek"      "juliasilge"  "leeper"     
+#> [6] "masalmon"
+map_chr(gh_users, 18)
+#> [1] "Gábor Csárdi"           "Jennifer (Jenny) Bryan"
+#> [3] "Jeff L."                "Julia Silge"           
+#> [5] "Thomas J. Leeper"       "Maëlle Salmon"
+map_df(gh_users, `[`, c("login", "name", "id", "location"))
+#> # A tibble: 6 × 4
+#>         login                   name       id               location
+#>         <chr>                  <chr>    <int>                  <chr>
+#> 1 gaborcsardi           Gábor Csárdi   660288         Chippenham, UK
+#> 2     jennybc Jennifer (Jenny) Bryan   599454  Vancouver, BC, Canada
+#> 3      jtleek                Jeff L.  1571674           Baltimore,MD
+#> 4  juliasilge            Julia Silge 12505835     Salt Lake City, UT
+#> 5      leeper       Thomas J. Leeper  3505428 London, United Kingdom
+#> 6    masalmon          Maëlle Salmon  8360597       Barcelona, Spain
+```
+
+First ~30 repos of these users.
+
+``` r
+str(gh_repos, max.level = 1)
+#> List of 6
+#>  $ :List of 30
+#>  $ :List of 30
+#>  $ :List of 30
+#>  $ :List of 26
+#>  $ :List of 30
+#>  $ :List of 30
+map(gh_repos, ~ map_chr(.x, "name")[1:3])
+#> [[1]]
+#> [1] "after"  "argufy" "ask"   
+#> 
+#> [[2]]
+#> [1] "2013-11_sfu"      "2014-01-27-miami" "2014-05-12-ubc"  
+#> 
+#> [[3]]
+#> [1] "advdatasci"       "advdatasci-swirl" "advdatasci16"    
+#> 
+#> [[4]]
+#> [1] "2016-14"                  "choroplethrCaCensusTract"
+#> [3] "choroplethrUTCensusTract"
+#> 
+#> [[5]]
+#> [1] "ampolcourse"     "apsa-leeper.bst" "arco"           
+#> 
+#> [[6]]
+#> [1] "aqi_pdf"               "catan_card_game"       "colourlovers_patterns"
+```
+
+Path to JSON files.
+
+``` r
+gh_users_json()
+#> [1] "/Users/jenny/rrr/repurrrsive/inst/extdata/gh_users.json"
+gh_repos_json()
+#> [1] "/Users/jenny/rrr/repurrrsive/inst/extdata/gh_repos.json"
 ```

@@ -7,8 +7,8 @@
 \title{repurrrsive: Recursive List Examples}
 \description{
 Recursive lists in the form of R objects, JSON, and XML, for use in
-teaching and examples. Includes color palettes, something, and something
-else.
+teaching and examples. Includes color palettes, GitHub user and repo data,
+and SOMETHING ELSE.
 }
 \details{
 Details

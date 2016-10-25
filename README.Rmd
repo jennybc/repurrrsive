@@ -1,15 +1,15 @@
 ---
-output: github_document
+output:
+  github_document:
+    toc: true
+    toc_depth: 4
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
+                      fig.path = "README-")
 ```
 
 # repurrrsive
@@ -31,7 +31,9 @@ devtools::install_github("jennybc/repurrrsive")
 
 ## Usage
 
-*currently only has wesanderson but other examples on the way*
+*at least one more example on the way ... have an idea?*
+
+#### wesanderson color palettes
 
 `wesanderson` is a recursive list of color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors.
 
@@ -74,5 +76,32 @@ library(xml2)
 xml <- xml2::read_xml(wesanderson_xml())
 xml_child(xml)
 as_list(xml_child(xml))
+```
+
+#### GitHub user and repo data
+
+`gh_users` and `gh_repos` are lists with information for 6 GitHub users and 30 of each user's repositories.
+
+GitHub users.
+
+```{r}
+library(purrr)
+map_chr(gh_users, "login")
+map_chr(gh_users, 18)
+map_df(gh_users, `[`, c("login", "name", "id", "location"))
+```
+
+First ~30 repos of these users.
+
+```{r}
+str(gh_repos, max.level = 1)
+map(gh_repos, ~ map_chr(.x, "name")[1:3])
+```
+
+Path to JSON files.
+
+```{r}
+gh_users_json()
+gh_repos_json()
 ```
 
