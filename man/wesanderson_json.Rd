@@ -2,20 +2,30 @@
 % Please edit documentation in R/wesanderson.R
 \name{wesanderson_json}
 \alias{wesanderson_json}
-\title{Path to wesanderson JSON}
+\alias{wesanderson_xml}
+\title{Path to wesanderson JSON and XML}
 \usage{
 wesanderson_json()
+
+wesanderson_xml()
 }
 \value{
-Local path to JSON file containing Wes Anderson color palettes
+Local path to JSON or XML file containing Wes Anderson color palettes
 }
 \description{
-Path to wesanderson JSON
+Path to wesanderson JSON and XML
 }
 \examples{
 wesanderson_json()
 if (require("jsonlite")) {
-jsonlite::fromJSON(wesanderson_json())
+  jsonlite::fromJSON(wesanderson_json())
 }
+wesanderson_xml()
+if (require("xml2")) {
+  xml2::read_xml(wesanderson_xml())
+}
+}
+\seealso{
+Other wesanderson data and functions: \code{\link{wesanderson}}
 }
 
