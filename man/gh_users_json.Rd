@@ -2,24 +2,47 @@
 % Please edit documentation in R/gh_users_repos.R
 \name{gh_users_json}
 \alias{gh_users_json}
-\title{Path to GitHub user JSON}
+\alias{gh_repos_json}
+\alias{gh_users_xml}
+\alias{gh_repos_xml}
+\title{Paths to GitHub data as JSON and XML}
 \usage{
 gh_users_json()
+
+gh_repos_json()
+
+gh_users_xml()
+
+gh_repos_xml()
 }
 \value{
-Local path to JSON file containing GitHub user info
+Local path to JSON or XML file containing GitHub data
 }
 \description{
-Path to GitHub user JSON
+Paths to GitHub data as JSON and XML
 }
 \examples{
 gh_users_json()
 if (require("jsonlite")) {
   fromJSON(gh_users_json(), simplifyDataFrame = FALSE)
 }
+gh_repos_json()
+if (require("jsonlite")) {
+  fromJSON(gh_repos_json(), simplifyDataFrame = FALSE)
+}
+gh_users_xml()
+if (require("xml2")) {
+  xml <- read_xml(gh_users_xml())
+  xml
+}
+gh_repos_xml()
+if (require("xml2")) {
+  xml <- read_xml(gh_repos_xml())
+  xml
+}
 }
 \seealso{
-Other GitHub data and functions: \code{\link{gh_repos_json}},
-  \code{\link{gh_repos}}, \code{\link{gh_users}}
+Other GitHub data and functions: \code{\link{gh_repos}},
+  \code{\link{gh_users}}
 }
 

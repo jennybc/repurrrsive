@@ -3,6 +3,8 @@ library(here)
 library(jsonlite)
 library(purrr)
 library(stringr)
+## from jennybc/xml2@as-xml-first-try
+library(xml2)
 
 fls <- list.files(here("data-raw", "github-json"), full.names = TRUE)
 is_repo_json <- str_detect(fls, "repos")
@@ -26,3 +28,11 @@ gh_repos %>%
   toJSON() %>%
   prettify() %>%
   writeLines(here("inst", "extdata", "gh_repos.json"))
+
+gh_users %>%
+  xml2:::as_xml() %>%
+  write_xml(here("inst", "extdata", "gh_users.xml"))
+
+gh_repos %>%
+  xml2:::as_xml() %>%
+  write_xml(here("inst", "extdata", "gh_repos.xml"))

@@ -21,8 +21,8 @@ gh_users
 str(lapply(gh_users, `[`, c("login", "name")))
 }
 \seealso{
-Other GitHub data and functions: \code{\link{gh_repos_json}},
-  \code{\link{gh_repos}}, \code{\link{gh_users_json}}
+Other GitHub data and functions: \code{\link{gh_repos}},
+  \code{\link{gh_users_json}}
 }
 \keyword{datasets}
 
