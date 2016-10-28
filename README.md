@@ -32,7 +32,7 @@ Usage
 
 #### wesanderson color palettes
 
-`wesanderson` is a recursive list of color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors.
+`wesanderson` is a recursive list of color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors. *Screenshot is of the [listviewer](https://CRAN.R-project.org/package=listviewer) htmlwidget.*
 
 ![](img/wesanderson-listviewer-jsonedit.png)
 
