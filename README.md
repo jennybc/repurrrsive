@@ -9,9 +9,9 @@
 repurrrsive
 ===========
 
-The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()`.
+The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()`. Datasets are stored as R list, JSON, and XML to provide the full non-rectangular data experience. Enjoy!
 
-Will eventually be used in this tutorial:
+For example, repurrrsive is used in this purrr tutorial:
 
 <https://jennybc.github.io/purrr-tutorial/>
 
@@ -28,7 +28,7 @@ devtools::install_github("jennybc/repurrrsive")
 Usage
 -----
 
-*at least one more example on the way ... have an idea?*
+*At least one more example on the way ... have a great idea? [Tell me in an issue](https://github.com/jennybc/repurrrsive/issues)!*
 
 #### wesanderson color palettes
 
@@ -37,8 +37,7 @@ Usage
 ![](img/wesanderson-listviewer-jsonedit.png)
 
 ``` r
-devtools::load_all()
-#> Loading repurrrsive
+library(repurrrsive)
 library(purrr)
 wesanderson[1:3]
 #> $GrandBudapest
@@ -81,9 +80,9 @@ The same `wesanderson` data is also present as JSON and XML files. Accessor func
 
 ``` r
 wesanderson_json()
-#> [1] "/Users/jenny/rrr/repurrrsive/inst/extdata/wesanderson.json"
+#> [1] "/Users/jenny/resources/R/library/repurrrsive/extdata/wesanderson.json"
 wesanderson_xml()
-#> [1] "/Users/jenny/rrr/repurrrsive/inst/extdata/wesanderson.xml"
+#> [1] "/Users/jenny/resources/R/library/repurrrsive/extdata/wesanderson.xml"
 ```
 
 Practice bringing data from JSON into an R list.
@@ -108,7 +107,7 @@ Practice bringing data into R from XML. You can get it into an R list with `xml2
 
 ``` r
 library(xml2)
-xml <- xml2::read_xml(wesanderson_xml())
+xml <- read_xml(wesanderson_xml())
 xml_child(xml)
 #> {xml_node}
 #> <palette name="GrandBudapest">
@@ -117,23 +116,23 @@ xml_child(xml)
 #> [3] <hex>#5B1A18</hex>
 #> [4] <hex>#D67236</hex>
 as_list(xml_child(xml))
-#> [[1]]
-#> [[1]][[1]]
+#> $hex
+#> $hex[[1]]
 #> [1] "#F1BB7B"
 #> 
 #> 
-#> [[2]]
-#> [[2]][[1]]
+#> $hex
+#> $hex[[1]]
 #> [1] "#FD6467"
 #> 
 #> 
-#> [[3]]
-#> [[3]][[1]]
+#> $hex
+#> $hex[[1]]
 #> [1] "#5B1A18"
 #> 
 #> 
-#> [[4]]
-#> [[4]][[1]]
+#> $hex
+#> $hex[[1]]
 #> [1] "#D67236"
 #> 
 #> 
@@ -168,43 +167,46 @@ map_df(gh_users, `[`, c("login", "name", "id", "location"))
 #> 6    masalmon          Maëlle Salmon  8360597       Barcelona, Spain
 ```
 
-First ~30 repos of these users.
+First ~30 repos of these users. Peek at some info from first repo for the first user. Get full name of each user's 11th repo.
 
 ``` r
-str(gh_repos, max.level = 1)
-#> List of 6
-#>  $ :List of 30
-#>  $ :List of 30
-#>  $ :List of 30
-#>  $ :List of 26
-#>  $ :List of 30
-#>  $ :List of 30
-map(gh_repos, ~ map_chr(.x, "name")[1:3])
-#> [[1]]
-#> [1] "after"  "argufy" "ask"   
-#> 
-#> [[2]]
-#> [1] "2013-11_sfu"      "2014-01-27-miami" "2014-05-12-ubc"  
-#> 
-#> [[3]]
-#> [1] "advdatasci"       "advdatasci-swirl" "advdatasci16"    
-#> 
-#> [[4]]
-#> [1] "2016-14"                  "choroplethrCaCensusTract"
-#> [3] "choroplethrUTCensusTract"
-#> 
-#> [[5]]
-#> [1] "ampolcourse"     "apsa-leeper.bst" "arco"           
-#> 
-#> [[6]]
-#> [1] "aqi_pdf"               "catan_card_game"       "colourlovers_patterns"
+str(gh_repos[[1]][[1]][c("full_name", "html_url", "description")])
+#> List of 3
+#>  $ full_name  : chr "gaborcsardi/after"
+#>  $ html_url   : chr "https://github.com/gaborcsardi/after"
+#>  $ description: chr "Run Code in the Background"
+map_chr(gh_repos, list(11, "full_name"))
+#> [1] "gaborcsardi/debugme"                     
+#> [2] "jennybc/access-r-source"                 
+#> [3] "jtleek/datawomenontwitter"               
+#> [4] "juliasilge/juliasilge.github.io"         
+#> [5] "leeper/congressional-district-boundaries"
+#> [6] "masalmon/geoparsing_tweets"
 ```
 
-Path to JSON files.
+Want to parse it yourself? Paths to local JSON and XML files.
 
 ``` r
-gh_users_json()
-#> [1] "/Users/jenny/rrr/repurrrsive/inst/extdata/gh_users.json"
-gh_repos_json()
-#> [1] "/Users/jenny/rrr/repurrrsive/inst/extdata/gh_repos.json"
+c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
+#> [1] "/Users/jenny/resources/R/library/repurrrsive/extdata/gh_users.json"
+#> [2] "/Users/jenny/resources/R/library/repurrrsive/extdata/gh_repos.json"
+#> [3] "/Users/jenny/resources/R/library/repurrrsive/extdata/gh_users.xml" 
+#> [4] "/Users/jenny/resources/R/library/repurrrsive/extdata/gh_repos.xml"
+```
+
+Redo this: Get full name of each user's 11th repo. But using only the XML.
+
+``` r
+library(xml2)
+repo_xml <- read_xml(gh_repos_xml())
+repo_names <- map_chr(xml_find_all(repo_xml, "//full_name"), xml_text)
+elevenses <- 
+  11 + cumsum(c(0, head(table(gsub("(.*)/.*", "\\1", repo_names)), -1)))
+repo_names[elevenses]
+#> [1] "gaborcsardi/debugme"                     
+#> [2] "jennybc/access-r-source"                 
+#> [3] "jtleek/datawomenontwitter"               
+#> [4] "juliasilge/juliasilge.github.io"         
+#> [5] "leeper/congressional-district-boundaries"
+#> [6] "masalmon/geoparsing_tweets"
 ```

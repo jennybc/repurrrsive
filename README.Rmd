@@ -14,9 +14,9 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
 
 # repurrrsive
 
-The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()`.
+The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()`. Datasets are stored as R list, JSON, and XML to provide the full non-rectangular data experience. Enjoy!
 
-Will eventually be used in this tutorial:
+For example, repurrrsive is used in this purrr tutorial:
 
 <https://jennybc.github.io/purrr-tutorial/>
 
@@ -31,7 +31,7 @@ devtools::install_github("jennybc/repurrrsive")
 
 ## Usage
 
-*at least one more example on the way ... have an idea?*
+*At least one more example on the way ... have a great idea? [Tell me in an issue](https://github.com/jennybc/repurrrsive/issues)!*
 
 #### wesanderson color palettes
 
@@ -40,7 +40,7 @@ devtools::install_github("jennybc/repurrrsive")
 ![](img/wesanderson-listviewer-jsonedit.png)
 
 ```{r lists}
-devtools::load_all()
+library(repurrrsive)
 library(purrr)
 wesanderson[1:3]
 ```
@@ -73,7 +73,7 @@ Practice bringing data into R from XML. You can get it into an R list with `xml2
 
 ```{r xml}
 library(xml2)
-xml <- xml2::read_xml(wesanderson_xml())
+xml <- read_xml(wesanderson_xml())
 xml_child(xml)
 as_list(xml_child(xml))
 ```
@@ -91,17 +91,27 @@ map_chr(gh_users, 18)
 map_df(gh_users, `[`, c("login", "name", "id", "location"))
 ```
 
-First ~30 repos of these users.
+First ~30 repos of these users. Peek at some info from first repo for the first user. Get full name of each user's 11th repo.
 
 ```{r}
-str(gh_repos, max.level = 1)
-map(gh_repos, ~ map_chr(.x, "name")[1:3])
+str(gh_repos[[1]][[1]][c("full_name", "html_url", "description")])
+map_chr(gh_repos, list(11, "full_name"))
 ```
 
-Path to JSON files.
+Want to parse it yourself? Paths to local JSON and XML files.
 
 ```{r}
-gh_users_json()
-gh_repos_json()
+c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
+```
+
+Redo this: Get full name of each user's 11th repo. But using only the XML.
+
+```{r}
+library(xml2)
+repo_xml <- read_xml(gh_repos_xml())
+repo_names <- map_chr(xml_find_all(repo_xml, "//full_name"), xml_text)
+elevenses <- 
+  11 + cumsum(c(0, head(table(gsub("(.*)/.*", "\\1", repo_names)), -1)))
+repo_names[elevenses]
 ```
 
