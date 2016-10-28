@@ -21,12 +21,12 @@ use_data(gh_users, overwrite = TRUE)
 use_data(gh_repos, overwrite = TRUE)
 
 gh_users %>%
-  toJSON(null = "null") %>%
+  toJSON(null = "null", auto_unbox = TRUE) %>%
   prettify() %>%
   writeLines(here("inst", "extdata", "gh_users.json"))
 
 gh_repos %>%
-  toJSON(null = "null") %>%
+  toJSON(null = "null", auto_unbox = TRUE) %>%
   prettify() %>%
   writeLines(here("inst", "extdata", "gh_repos.json"))
 
