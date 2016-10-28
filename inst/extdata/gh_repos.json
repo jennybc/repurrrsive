@@ -207,9 +207,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/after"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 15
             ],
@@ -237,9 +235,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -463,9 +459,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/argufy"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 115
             ],
@@ -493,9 +487,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 6
             ],
@@ -719,9 +711,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/ask"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 199
             ],
@@ -749,9 +739,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 4
             ],
@@ -975,9 +963,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/baseimports"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 112
             ],
@@ -1005,9 +991,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -1231,9 +1215,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/citest"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 2
             ],
@@ -1261,9 +1243,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -1517,9 +1497,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -1743,9 +1721,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/cmaker"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 6244
             ],
@@ -1773,9 +1749,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -1999,9 +1973,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/cmark"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 3704
             ],
@@ -2029,9 +2001,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -2117,9 +2087,7 @@
             "html_url": [
                 "https://github.com/gaborcsardi/conditions"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 true
             ],
@@ -2255,9 +2223,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/conditions"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 24
             ],
@@ -2285,9 +2251,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -2511,9 +2475,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/crayon"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 752
             ],
@@ -2541,9 +2503,7 @@
             "forks_count": [
                 9
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 7
             ],
@@ -2767,9 +2727,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/debugme"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 998
             ],
@@ -2797,9 +2755,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 4
             ],
@@ -3053,9 +3009,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -3279,9 +3233,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/disposables"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 216
             ],
@@ -3309,9 +3261,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 2
             ],
@@ -3565,9 +3515,7 @@
             "forks_count": [
                 2
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -3653,9 +3601,7 @@
             "html_url": [
                 "https://github.com/gaborcsardi/elasticsearch-jetty"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 true
             ],
@@ -3821,9 +3767,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -4047,9 +3991,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/falsy"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 30
             ],
@@ -4077,9 +4019,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -4303,9 +4243,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/fswatch"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 8
             ],
@@ -4333,9 +4271,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -4589,9 +4525,7 @@
             "forks_count": [
                 6
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 8
             ],
@@ -4815,9 +4749,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/gitty"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 26
             ],
@@ -4845,9 +4777,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -5071,9 +5001,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/ISA"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 39461
             ],
@@ -5101,9 +5029,7 @@
             "forks_count": [
                 2
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 2
             ],
@@ -5327,9 +5253,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/keypress"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 34
             ],
@@ -5357,9 +5281,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -5613,9 +5535,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -5869,9 +5789,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -6125,9 +6043,7 @@
             "forks_count": [
                 2
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 2
             ],
@@ -6381,9 +6297,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 6
             ],
@@ -6637,9 +6551,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 14
             ],
@@ -6863,9 +6775,7 @@
             "svn_url": [
                 "https://github.com/gaborcsardi/parsedate"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 58
             ],
@@ -6893,9 +6803,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 3
             ],
@@ -7149,9 +7057,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 2
             ],
@@ -7405,9 +7311,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -7661,9 +7565,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -7901,9 +7803,7 @@
             "watchers_count": [
                 1
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -7919,9 +7819,7 @@
             "forks_count": [
                 10
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -8145,9 +8043,7 @@
             "svn_url": [
                 "https://github.com/jennybc/2014-01-27-miami"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 16662
             ],
@@ -8175,9 +8071,7 @@
             "forks_count": [
                 6
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 4
             ],
@@ -8263,9 +8157,7 @@
             "html_url": [
                 "https://github.com/jennybc/2014-05-12-ubc"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -8401,9 +8293,7 @@
             "svn_url": [
                 "https://github.com/jennybc/2014-05-12-ubc"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 33968
             ],
@@ -8431,9 +8321,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -8657,9 +8545,7 @@
             "svn_url": [
                 "https://github.com/jennybc/2015-02-23_bryan-fields-talk"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 9470
             ],
@@ -8669,9 +8555,7 @@
             "watchers_count": [
                 31
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -8687,9 +8571,7 @@
             "forks_count": [
                 8
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -8913,9 +8795,7 @@
             "svn_url": [
                 "https://github.com/jennybc/2015-06-28_r-summit-talk"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 3979
             ],
@@ -8925,9 +8805,7 @@
             "watchers_count": [
                 37
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -8943,9 +8821,7 @@
             "forks_count": [
                 9
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -9169,9 +9045,7 @@
             "svn_url": [
                 "https://github.com/jennybc/2015-08_bryan-jsm-stat-data-sci-talk"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 3163
             ],
@@ -9199,9 +9073,7 @@
             "forks_count": [
                 4
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -9455,9 +9327,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -9693,9 +9563,7 @@
             "watchers_count": [
                 32
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -9711,9 +9579,7 @@
             "forks_count": [
                 9
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -9949,9 +9815,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -9967,9 +9831,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -10055,9 +9917,7 @@
             "html_url": [
                 "https://github.com/jennybc/545A_hw06"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 true
             ],
@@ -10193,9 +10053,7 @@
             "svn_url": [
                 "https://github.com/jennybc/545A_hw06"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 121
             ],
@@ -10223,9 +10081,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -10461,9 +10317,7 @@
             "watchers_count": [
                 29
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -10479,9 +10333,7 @@
             "forks_count": [
                 2
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -10705,9 +10557,7 @@
             "svn_url": [
                 "https://github.com/jennybc/adv-r"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 7584
             ],
@@ -10735,9 +10585,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -10961,9 +10809,7 @@
             "svn_url": [
                 "https://github.com/jennybc/analyze-github-stuff-with-r"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 377
             ],
@@ -10991,9 +10837,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -11217,9 +11061,7 @@
             "svn_url": [
                 "https://github.com/jennybc/arms-length-render"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 456
             ],
@@ -11247,9 +11089,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -11503,9 +11343,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -11729,9 +11567,7 @@
             "svn_url": [
                 "https://github.com/jennybc/bellybutton"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 1039
             ],
@@ -11741,9 +11577,7 @@
             "watchers_count": [
                 1
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -11759,9 +11593,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -12015,9 +11847,7 @@
             "forks_count": [
                 19
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 3
             ],
@@ -12241,9 +12071,7 @@
             "svn_url": [
                 "https://github.com/jennybc/bioinformatics.ca-swc-r"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 204
             ],
@@ -12271,9 +12099,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -12359,9 +12185,7 @@
             "html_url": [
                 "https://github.com/jennybc/BIRS_13w5083"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -12497,9 +12321,7 @@
             "svn_url": [
                 "https://github.com/jennybc/BIRS_13w5083"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 204
             ],
@@ -12509,9 +12331,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -12527,9 +12347,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -12753,9 +12571,7 @@
             "svn_url": [
                 "https://github.com/jennybc/blarg"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 0
             ],
@@ -12765,9 +12581,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -12783,9 +12597,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -13039,9 +12851,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -13265,9 +13075,7 @@
             "svn_url": [
                 "https://github.com/jennybc/boot-camps"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 96325
             ],
@@ -13295,9 +13103,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -13521,9 +13327,7 @@
             "svn_url": [
                 "https://github.com/jennybc/candy"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 3529
             ],
@@ -13551,9 +13355,7 @@
             "forks_count": [
                 3
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 2
             ],
@@ -13777,9 +13579,7 @@
             "svn_url": [
                 "https://github.com/jennybc/CoffeeCoop"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 4617
             ],
@@ -13807,9 +13607,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -14033,9 +13831,7 @@
             "svn_url": [
                 "https://github.com/jennybc/datacarpentry"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 12282
             ],
@@ -14063,9 +13859,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -14319,9 +14113,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -14575,9 +14367,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -14801,9 +14591,7 @@
             "svn_url": [
                 "https://github.com/jennybc/diffr"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 90
             ],
@@ -14831,9 +14619,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -15057,9 +14843,7 @@
             "svn_url": [
                 "https://github.com/jennybc/dplyr"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 10606
             ],
@@ -15087,9 +14871,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -15343,9 +15125,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -15571,9 +15351,7 @@
             "svn_url": [
                 "https://github.com/jtleek/advdatasci"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 200992
             ],
@@ -15601,9 +15379,7 @@
             "forks_count": [
                 4
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -15689,9 +15465,7 @@
             "html_url": [
                 "https://github.com/jtleek/advdatasci-swirl"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -15827,9 +15601,7 @@
             "svn_url": [
                 "https://github.com/jtleek/advdatasci-swirl"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 188
             ],
@@ -15857,9 +15629,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -15945,9 +15715,7 @@
             "html_url": [
                 "https://github.com/jtleek/advdatasci16"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -16083,9 +15851,7 @@
             "svn_url": [
                 "https://github.com/jtleek/advdatasci16"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 1789
             ],
@@ -16113,9 +15879,7 @@
             "forks_count": [
                 4
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -16201,9 +15965,7 @@
             "html_url": [
                 "https://github.com/jtleek/advdatasci_swirl"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -16339,9 +16101,7 @@
             "svn_url": [
                 "https://github.com/jtleek/advdatasci_swirl"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 4682
             ],
@@ -16369,9 +16129,7 @@
             "forks_count": [
                 2
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -16595,9 +16353,7 @@
             "svn_url": [
                 "https://github.com/jtleek/ballgown"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 10421
             ],
@@ -16625,9 +16381,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -16851,9 +16605,7 @@
             "svn_url": [
                 "https://github.com/jtleek/capitalIn21stCenturyinR"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 374812
             ],
@@ -16881,9 +16633,7 @@
             "forks_count": [
                 118
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -17107,9 +16857,7 @@
             "svn_url": [
                 "https://github.com/jtleek/careerplanning"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 128
             ],
@@ -17119,9 +16867,7 @@
             "watchers_count": [
                 59
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -17137,9 +16883,7 @@
             "forks_count": [
                 18
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -17363,9 +17107,7 @@
             "svn_url": [
                 "https://github.com/jtleek/dataanalysis"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 156389
             ],
@@ -17393,9 +17135,7 @@
             "forks_count": [
                 605
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 5
             ],
@@ -17619,9 +17359,7 @@
             "svn_url": [
                 "https://github.com/jtleek/datascientist"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 98
             ],
@@ -17649,9 +17387,7 @@
             "forks_count": [
                 40
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -17875,9 +17611,7 @@
             "svn_url": [
                 "https://github.com/jtleek/datasharing"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 547
             ],
@@ -17887,9 +17621,7 @@
             "watchers_count": [
                 3558
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -17905,9 +17637,7 @@
             "forks_count": [
                 161881
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 399
             ],
@@ -18131,9 +17861,7 @@
             "svn_url": [
                 "https://github.com/jtleek/datawomenontwitter"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 112
             ],
@@ -18143,9 +17871,7 @@
             "watchers_count": [
                 4
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -18161,9 +17887,7 @@
             "forks_count": [
                 4
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -18249,9 +17973,7 @@
             "html_url": [
                 "https://github.com/jtleek/derfinder"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 true
             ],
@@ -18387,9 +18109,7 @@
             "svn_url": [
                 "https://github.com/jtleek/derfinder"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 388
             ],
@@ -18417,9 +18137,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -18673,9 +18391,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -18899,9 +18615,7 @@
             "svn_url": [
                 "https://github.com/jtleek/DSM"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 50000
             ],
@@ -18929,9 +18643,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -19017,9 +18729,7 @@
             "html_url": [
                 "https://github.com/jtleek/EDA-Project"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 true
             ],
@@ -19155,9 +18865,7 @@
             "svn_url": [
                 "https://github.com/jtleek/EDA-Project"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 91008
             ],
@@ -19185,9 +18893,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -19273,9 +18979,7 @@
             "html_url": [
                 "https://github.com/jtleek/firstpaper"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -19411,9 +19115,7 @@
             "svn_url": [
                 "https://github.com/jtleek/firstpaper"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 45
             ],
@@ -19423,9 +19125,7 @@
             "watchers_count": [
                 133
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -19441,9 +19141,7 @@
             "forks_count": [
                 37
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -19667,9 +19365,7 @@
             "svn_url": [
                 "https://github.com/jtleek/futureofstats"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 147
             ],
@@ -19679,9 +19375,7 @@
             "watchers_count": [
                 31
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -19697,9 +19391,7 @@
             "forks_count": [
                 22
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -19923,9 +19615,7 @@
             "svn_url": [
                 "https://github.com/jtleek/genomicspapers"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 197
             ],
@@ -19935,9 +19625,7 @@
             "watchers_count": [
                 211
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -19953,9 +19641,7 @@
             "forks_count": [
                 93
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -20179,9 +19865,7 @@
             "svn_url": [
                 "https://github.com/jtleek/genstats"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 15870
             ],
@@ -20209,9 +19893,7 @@
             "forks_count": [
                 105
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 3
             ],
@@ -20435,9 +20117,7 @@
             "svn_url": [
                 "https://github.com/jtleek/genstats_site"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 41702
             ],
@@ -20465,9 +20145,7 @@
             "forks_count": [
                 8
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -20691,9 +20369,7 @@
             "svn_url": [
                 "https://github.com/jtleek/googleCite"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 116
             ],
@@ -20703,9 +20379,7 @@
             "watchers_count": [
                 2
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -20721,9 +20395,7 @@
             "forks_count": [
                 6
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -20809,9 +20481,7 @@
             "html_url": [
                 "https://github.com/jtleek/graduate"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -20947,9 +20617,7 @@
             "svn_url": [
                 "https://github.com/jtleek/graduate"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 1199
             ],
@@ -20959,9 +20627,7 @@
             "watchers_count": [
                 1
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 false
             ],
@@ -20977,9 +20643,7 @@
             "forks_count": [
                 3
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -21203,9 +20867,7 @@
             "svn_url": [
                 "https://github.com/jtleek/healthvis"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 1067
             ],
@@ -21233,9 +20895,7 @@
             "forks_count": [
                 6
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -21489,9 +21149,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -21715,9 +21373,7 @@
             "svn_url": [
                 "https://github.com/jtleek/inclassfeb62014"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 6248
             ],
@@ -21745,9 +21401,7 @@
             "forks_count": [
                 5
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -21971,9 +21625,7 @@
             "svn_url": [
                 "https://github.com/jtleek/jhsph753"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 27878
             ],
@@ -22001,9 +21653,7 @@
             "forks_count": [
                 2
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -22227,9 +21877,7 @@
             "svn_url": [
                 "https://github.com/jtleek/jhsph753and4"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 185443
             ],
@@ -22257,9 +21905,7 @@
             "forks_count": [
                 24
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -22483,9 +22129,7 @@
             "svn_url": [
                 "https://github.com/jtleek/jhudash"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 381
             ],
@@ -22495,9 +22139,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 false
             ],
@@ -22513,9 +22155,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -22739,9 +22379,7 @@
             "svn_url": [
                 "https://github.com/jtleek/jhudash-refugee"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 23206
             ],
@@ -22769,9 +22407,7 @@
             "forks_count": [
                 2
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -22995,9 +22631,7 @@
             "svn_url": [
                 "https://github.com/jtleek/jtleek.github.io"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 6045
             ],
@@ -23025,9 +22659,7 @@
             "forks_count": [
                 50
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -23253,9 +22885,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/2016-14"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 1127
             ],
@@ -23283,9 +22913,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -23509,9 +23137,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/choroplethrCaCensusTract"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 8254
             ],
@@ -23539,9 +23165,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -23795,9 +23419,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -24021,9 +23643,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/CountyHealthApp"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 4
             ],
@@ -24051,9 +23671,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -24289,9 +23907,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 false
             ],
@@ -24307,9 +23923,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -24533,9 +24147,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/ExData_Plotting1"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 332
             ],
@@ -24563,9 +24175,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -24789,9 +24399,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/fall2016competition"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 24070
             ],
@@ -24819,9 +24427,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -25045,9 +24651,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/ggthemes"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 6878
             ],
@@ -25075,9 +24679,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -25163,9 +24765,7 @@
             "html_url": [
                 "https://github.com/juliasilge/human_activity_smartphones"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -25301,9 +24901,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/human_activity_smartphones"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 156
             ],
@@ -25331,9 +24929,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -25587,9 +25183,7 @@
             "forks_count": [
                 5
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -25843,9 +25437,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -26099,9 +25691,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -26325,9 +25915,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/learning-python"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 152
             ],
@@ -26355,9 +25943,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -26581,9 +26167,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/learning-sql"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 136
             ],
@@ -26593,9 +26177,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -26611,9 +26193,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -26867,9 +26447,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -27123,9 +26701,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -27349,9 +26925,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/neissapp"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 2
             ],
@@ -27361,9 +26935,7 @@
             "watchers_count": [
                 2
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -27379,9 +26951,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -27605,9 +27175,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/populationapp"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 20
             ],
@@ -27617,9 +27185,7 @@
             "watchers_count": [
                 2
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -27635,9 +27201,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -27861,9 +27425,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/PredictNamesApp"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 7
             ],
@@ -27891,9 +27453,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -28117,9 +27677,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/ProgrammingAssignment2"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 103
             ],
@@ -28147,9 +27705,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -28373,9 +27929,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/r-travis"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 260
             ],
@@ -28403,9 +27957,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -28629,9 +28181,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/RepData_PeerAssessment1"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 962
             ],
@@ -28659,9 +28209,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -28885,9 +28433,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/SLCWaterMapping"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 5
             ],
@@ -28915,9 +28461,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -29171,9 +28715,7 @@
             "forks_count": [
                 33
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 5
             ],
@@ -29427,9 +28969,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -29653,9 +29193,7 @@
             "svn_url": [
                 "https://github.com/juliasilge/WeightLiftingMachineLearning"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 508
             ],
@@ -29683,9 +29221,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -29941,9 +29477,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -30167,9 +29701,7 @@
             "svn_url": [
                 "https://github.com/leeper/apsa-leeper.bst"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 108
             ],
@@ -30179,9 +29711,7 @@
             "watchers_count": [
                 1
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -30197,9 +29727,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -30423,9 +29951,7 @@
             "svn_url": [
                 "https://github.com/leeper/arco"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 132
             ],
@@ -30453,9 +29979,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -30679,9 +30203,7 @@
             "svn_url": [
                 "https://github.com/leeper/astrojs"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 32
             ],
@@ -30709,9 +30231,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -30965,9 +30485,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -31191,9 +30709,7 @@
             "svn_url": [
                 "https://github.com/leeper/choco-r-devel"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 77
             ],
@@ -31221,9 +30737,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -31447,9 +30961,7 @@
             "svn_url": [
                 "https://github.com/leeper/choco-rtools"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 48
             ],
@@ -31477,9 +30989,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -31703,9 +31213,7 @@
             "svn_url": [
                 "https://github.com/leeper/ciplotm"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 7
             ],
@@ -31733,9 +31241,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -31989,9 +31495,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -32215,9 +31719,7 @@
             "svn_url": [
                 "https://github.com/leeper/conflictcourse"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 0
             ],
@@ -32227,9 +31729,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -32245,9 +31745,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -32483,9 +31981,7 @@
             "watchers_count": [
                 1
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 false
             ],
@@ -32501,9 +31997,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -32757,9 +32251,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -33013,9 +32505,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 12
             ],
@@ -33239,9 +32729,7 @@
             "svn_url": [
                 "https://github.com/leeper/csvy"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 14
             ],
@@ -33269,9 +32757,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 2
             ],
@@ -33507,9 +32993,7 @@
             "watchers_count": [
                 2
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -33525,9 +33009,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -33781,9 +33263,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -34007,9 +33487,7 @@
             "svn_url": [
                 "https://github.com/leeper/designcourse"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 95283
             ],
@@ -34037,9 +33515,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -34293,9 +33769,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -34381,9 +33855,7 @@
             "html_url": [
                 "https://github.com/leeper/dkstat"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 true
             ],
@@ -34519,9 +33991,7 @@
             "svn_url": [
                 "https://github.com/leeper/dkstat"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 261
             ],
@@ -34549,9 +34019,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -34775,9 +34243,7 @@
             "svn_url": [
                 "https://github.com/leeper/docthis"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 12
             ],
@@ -34805,9 +34271,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -35031,9 +34495,7 @@
             "svn_url": [
                 "https://github.com/leeper/drat"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 456
             ],
@@ -35061,9 +34523,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -35317,9 +34777,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -35405,9 +34863,7 @@
             "html_url": [
                 "https://github.com/leeper/effect-heterogeneity"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -35543,9 +34999,7 @@
             "svn_url": [
                 "https://github.com/leeper/effect-heterogeneity"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 1
             ],
@@ -35555,9 +35009,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -35573,9 +35025,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -35829,9 +35279,7 @@
             "forks_count": [
                 2
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -36055,9 +35503,7 @@
             "svn_url": [
                 "https://github.com/leeper/exppolcourse"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 0
             ],
@@ -36067,9 +35513,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -36085,9 +35529,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -36311,9 +35753,7 @@
             "svn_url": [
                 "https://github.com/leeper/expResults"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 124
             ],
@@ -36341,9 +35781,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -36567,9 +36005,7 @@
             "svn_url": [
                 "https://github.com/leeper/GK2011"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 22
             ],
@@ -36597,9 +36033,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -36853,9 +36287,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -37079,9 +36511,7 @@
             "svn_url": [
                 "https://github.com/leeper/hints"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 17
             ],
@@ -37109,9 +36539,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -37335,9 +36763,7 @@
             "svn_url": [
                 "https://github.com/leeper/Impressive"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 500
             ],
@@ -37365,9 +36791,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -37623,9 +37047,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 2
             ],
@@ -37849,9 +37271,7 @@
             "svn_url": [
                 "https://github.com/masalmon/catan_card_game"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 4435
             ],
@@ -37879,9 +37299,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -38135,9 +37553,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -38391,9 +37807,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -38647,9 +38061,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 5
             ],
@@ -38903,9 +38315,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -39159,9 +38569,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -39415,9 +38823,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -39671,9 +39077,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 2
             ],
@@ -39927,9 +39331,7 @@
             "forks_count": [
                 2
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -40015,9 +39417,7 @@
             "html_url": [
                 "https://github.com/masalmon/geoparsing_tweets"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -40153,9 +39553,7 @@
             "svn_url": [
                 "https://github.com/masalmon/geoparsing_tweets"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 89
             ],
@@ -40183,9 +39581,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -40439,9 +39835,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -40695,9 +40089,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -40951,9 +40343,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -41177,9 +40567,7 @@
             "svn_url": [
                 "https://github.com/masalmon/jss_genderizer"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 140
             ],
@@ -41207,9 +40595,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -41433,9 +40819,7 @@
             "svn_url": [
                 "https://github.com/masalmon/kervillebourg"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 8088
             ],
@@ -41445,9 +40829,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 true
             ],
@@ -41463,9 +40845,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -41719,9 +41099,7 @@
             "forks_count": [
                 1
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 4
             ],
@@ -41975,9 +41353,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -42213,9 +41589,7 @@
             "watchers_count": [
                 0
             ],
-            "language": {
-
-            },
+            "language": null,
             "has_issues": [
                 false
             ],
@@ -42231,9 +41605,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -42487,9 +41859,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 2
             ],
@@ -42743,9 +42113,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -42969,9 +42337,7 @@
             "svn_url": [
                 "https://github.com/masalmon/railways"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 19430
             ],
@@ -42999,9 +42365,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -43225,9 +42589,7 @@
             "svn_url": [
                 "https://github.com/masalmon/RealTimeVsHistoric"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 9803
             ],
@@ -43255,9 +42617,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -43511,9 +42871,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 5
             ],
@@ -43767,9 +43125,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -44023,9 +43379,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -44279,9 +43633,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 1
             ],
@@ -44535,9 +43887,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -44791,9 +44141,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],
@@ -44879,9 +44227,7 @@
             "html_url": [
                 "https://github.com/masalmon/youtubedata"
             ],
-            "description": {
-
-            },
+            "description": null,
             "fork": [
                 false
             ],
@@ -45017,9 +44363,7 @@
             "svn_url": [
                 "https://github.com/masalmon/youtubedata"
             ],
-            "homepage": {
-
-            },
+            "homepage": null,
             "size": [
                 75
             ],
@@ -45047,9 +44391,7 @@
             "forks_count": [
                 0
             ],
-            "mirror_url": {
-
-            },
+            "mirror_url": null,
             "open_issues_count": [
                 0
             ],

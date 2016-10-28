@@ -3,7 +3,8 @@ library(here)
 library(jsonlite)
 library(purrr)
 library(stringr)
-## from jennybc/xml2@as-xml-first-try
+## devtools::install_github("jennybc/xml2@as-xml-first-try")
+## experimental as_xml() in this branch of my fork, used below
 library(xml2)
 
 fls <- list.files(here("data-raw", "github-json"), full.names = TRUE)
@@ -20,12 +21,12 @@ use_data(gh_users, overwrite = TRUE)
 use_data(gh_repos, overwrite = TRUE)
 
 gh_users %>%
-  toJSON() %>%
+  toJSON(null = "null") %>%
   prettify() %>%
   writeLines(here("inst", "extdata", "gh_users.json"))
 
 gh_repos %>%
-  toJSON() %>%
+  toJSON(null = "null") %>%
   prettify() %>%
   writeLines(here("inst", "extdata", "gh_repos.json"))
 

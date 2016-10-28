@@ -66,12 +66,8 @@
         "email": [
             "csardi.gabor@gmail.com"
         ],
-        "hireable": {
-
-        },
-        "bio": {
-
-        },
+        "hireable": null,
+        "bio": null,
         "public_repos": [
             52
         ],
@@ -155,12 +151,8 @@
         "location": [
             "Vancouver, BC, Canada"
         ],
-        "email": {
-
-        },
-        "hireable": {
-
-        },
+        "email": null,
+        "hireable": null,
         "bio": [
             "prof at UBC, humane #rstats, statistics, teach @STAT545-UBC, leadership of @rOpenSci, @rsheets, academic director @ubc-mds"
         ],
@@ -238,24 +230,16 @@
         "name": [
             "Jeff L."
         ],
-        "company": {
-
-        },
+        "company": null,
         "blog": [
             "http://biostat.jhsph.edu/~jleek/"
         ],
         "location": [
             "Baltimore,MD"
         ],
-        "email": {
-
-        },
-        "hireable": {
-
-        },
-        "bio": {
-
-        },
+        "email": null,
+        "hireable": null,
+        "bio": null,
         "public_repos": [
             67
         ],
@@ -330,21 +314,15 @@
         "name": [
             "Julia Silge"
         ],
-        "company": {
-
-        },
+        "company": null,
         "blog": [
             "juliasilge.com"
         ],
         "location": [
             "Salt Lake City, UT"
         ],
-        "email": {
-
-        },
-        "hireable": {
-
-        },
+        "email": null,
+        "hireable": null,
         "bio": [
             "Data science and visualization, #rstats, parenthood, reading, food/wine/coffee, #NASADatanauts."
         ],
@@ -431,9 +409,7 @@
         "location": [
             "London, United Kingdom"
         ],
-        "email": {
-
-        },
+        "email": null,
         "hireable": [
             true
         ],
@@ -523,12 +499,8 @@
         "location": [
             "Barcelona, Spain"
         ],
-        "email": {
-
-        },
-        "hireable": {
-
-        },
+        "email": null,
+        "hireable": null,
         "bio": [
             "I use R for getting, preparing, visualizing and analyzing data mostly about air quality & public health."
         ],
