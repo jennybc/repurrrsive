@@ -24,11 +24,13 @@ Paths to GitHub data as JSON and XML
 \examples{
 gh_users_json()
 if (require("jsonlite")) {
-  fromJSON(gh_users_json(), simplifyDataFrame = FALSE)
+  ghuj <- fromJSON(gh_users_json(), simplifyDataFrame = FALSE)
+  identical(gh_users, ghuj)
 }
 gh_repos_json()
 if (require("jsonlite")) {
-  fromJSON(gh_repos_json(), simplifyDataFrame = FALSE)
+  ghrj <- fromJSON(gh_repos_json(), simplifyDataFrame = FALSE)
+  identical(gh_repos, ghrj)
 }
 gh_users_xml()
 if (require("xml2")) {

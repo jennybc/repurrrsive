@@ -40,7 +40,8 @@
 #' @examples
 #' gh_users_json()
 #' if (require("jsonlite")) {
-#'   fromJSON(gh_users_json(), simplifyDataFrame = FALSE)
+#'   ghuj <- fromJSON(gh_users_json(), simplifyDataFrame = FALSE)
+#'   identical(gh_users, ghuj)
 #' }
 gh_users_json <- function() {
   system.file("extdata", "gh_users.json", package = "repurrrsive")
@@ -51,7 +52,8 @@ gh_users_json <- function() {
 #' @examples
 #' gh_repos_json()
 #' if (require("jsonlite")) {
-#'   fromJSON(gh_repos_json(), simplifyDataFrame = FALSE)
+#'   ghrj <- fromJSON(gh_repos_json(), simplifyDataFrame = FALSE)
+#'   identical(gh_repos, ghrj)
 #' }
 gh_repos_json <- function() {
   system.file("extdata", "gh_repos.json", package = "repurrrsive")
