@@ -7,6 +7,10 @@ library(tidyverse)
 library(stringr)
 library(listviewer)
 library(jsonlite)
+## devtools::install_github("jennybc/xml2@as-xml-first-try")
+## experimental as_xml() in this branch of my fork, used below
+library(xml2)
+
 
 ## determines number of pages implied by link header in httr response
 n_pages <- . %>%
@@ -53,8 +57,8 @@ iceandfire %>%
 books <-
   fromJSON(here("data-raw", "iceandfire-json", "books.json"),
            simplifyDataFrame = FALSE)
-#str(books, max.level = 1)
-#jsonedit(books)
+str(books, max.level = 1)
+jsonedit(books)
 
 books_df <- tibble(
      book = books %>% map_chr("name"),
@@ -68,6 +72,11 @@ books_df
 ## A Feast for Crows, and A Dance with Dragons
 ## The others are prequels, graphic novels, etc. and have
 ## either 0 or 1 povCharacters
+
+## DO NOT, however, filter books_df down to these five books.
+## The POV characters are associated with some of these secondary books
+## and we use books_df later to look up titles.
+
 pov_urls <- books_df %>%
   filter(book %in% c("A Game of Thrones", "A Clash of Kings",
                      "A Storm of Swords", "A Feast for Crows",
@@ -109,6 +118,7 @@ walk2(houses_df$url, houses_df$fname,
 houses_df <- houses_df %>%
   mutate(from_api = map(fname, fromJSON),
          house = from_api %>% map_chr("name"))
+## this should be one nice regex but ... it's not ... wasted too much time here
 house_name <- str_match(houses_df$house, "House (.*)")[ , 2, drop = TRUE]
 house_name <- map_chr(str_split(house_name, " of"), 1)
 houses_df <- houses_df %>%
@@ -141,10 +151,7 @@ pov_df <- pov_df %>%
 jsonedit(pov_df)
 pov_df %>% View()
 
-
-
-## look into The World of Ice and Fire (not one of the 5 main books)
-
+## this is the basically the list that will go in the package
 got_chars <- pov_df$from_api
 
 ## Delete Cersei's alias
@@ -161,3 +168,7 @@ got_chars %>%
   toJSON(null = "null", auto_unbox = TRUE) %>%
   prettify() %>%
   writeLines(here("inst", "extdata", "got_chars.json"))
+
+got_chars %>%
+  xml2:::as_xml() %>%
+  write_xml(here("inst", "extdata", "got_chars.xml"))
