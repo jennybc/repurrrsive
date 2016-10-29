@@ -130,22 +130,30 @@ walk2(houses_df$fname, houses_df$fname2, file.rename)
 ## each character has two book components: povBooks and books
 ##   each holds a list of books as API URLs
 ##   swap out with book names
+##   simplify to atomic character vector at same time
 ## each character has an allegiance component
 ##   holds a list of houses as API URLs
 ##   swap out with house names
+##   simplify to atomic character vector at same time
 book_lookup <- function(i) books_df$book[match(i, books_df$book_id)]
 house_lookup <- function(i) houses_df$house[match(i, houses_df$house_id)]
 pov_df <- pov_df %>%
   mutate(from_api = map(from_api, function(chr_list) {
-    chr_list$povBooks <- chr_list$povBooks %>%
-      map_int(get_id) %>%
-      map(book_lookup)
-    chr_list$books <- chr_list$books %>%
-      map_int(get_id) %>%
-      map(book_lookup)
-    chr_list$allegiances <- chr_list$allegiances %>%
-      map_int(get_id) %>%
-      map(house_lookup)
+    if (length(chr_list$povBooks) > 0) {
+      chr_list$povBooks <- chr_list$povBooks %>%
+        map_int(get_id) %>%
+        map_chr(book_lookup)
+    }
+    if (length(chr_list$books) > 0) {
+      chr_list$books <- chr_list$books %>%
+        map_int(get_id) %>%
+        map_chr(book_lookup)
+    }
+    if (length(chr_list$allegiances) > 0) {
+      chr_list$allegiances <- chr_list$allegiances %>%
+        map_int(get_id) %>%
+        map_chr(house_lookup)
+    }
     chr_list
   }))
 jsonedit(pov_df)
@@ -160,8 +168,6 @@ got_chars[[cersei]][["aliases"]] <- list()
 
 use_data(got_chars, overwrite = TRUE)
 
-## auto_unbox = TRUE in order to make this JSON as close as possible to the JSON
-## from API, modulo catenating 29 characters
 ## null = "null" is necessary for roundtrips to work:
 ## list --> JSON --> original list
 got_chars %>%

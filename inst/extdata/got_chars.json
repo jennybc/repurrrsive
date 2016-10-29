@@ -28,9 +28,7 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Stark of Winterfell"
-        ],
+        "allegiances": "House Stark of Winterfell",
         "books": [
 
         ],
@@ -67,12 +65,8 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Stark of Winterfell"
-        ],
-        "books": [
-            "A Feast for Crows"
-        ],
+        "allegiances": "House Stark of Winterfell",
+        "books": "A Feast for Crows",
         "povBooks": [
             "A Game of Thrones",
             "A Clash of Kings",
@@ -148,9 +142,7 @@
         "father": "",
         "mother": "",
         "spouse": "http://www.anapioficeandfire.com/api/characters/232",
-        "allegiances": [
-            "House Stark of Winterfell"
-        ],
+        "allegiances": "House Stark of Winterfell",
         "books": [
             "A Clash of Kings",
             "A Storm of Swords",
@@ -158,9 +150,7 @@
             "A Dance with Dragons",
             "The World of Ice and Fire"
         ],
-        "povBooks": [
-            "A Game of Thrones"
-        ],
+        "povBooks": "A Game of Thrones",
         "tvSeries": [
             "Season 1",
             "Season 6"
@@ -192,12 +182,8 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Stark of Winterfell"
-        ],
-        "books": [
-            "A Feast for Crows"
-        ],
+        "allegiances": "House Stark of Winterfell",
+        "books": "A Feast for Crows",
         "povBooks": [
             "A Game of Thrones",
             "A Clash of Kings",
@@ -234,9 +220,7 @@
             "House Baelish of Harrenhal",
             "House Stark of Winterfell"
         ],
-        "books": [
-            "A Dance with Dragons"
-        ],
+        "books": "A Dance with Dragons",
         "povBooks": [
             "A Game of Thrones",
             "A Clash of Kings",
@@ -280,9 +264,7 @@
         "father": "",
         "mother": "",
         "spouse": "http://www.anapioficeandfire.com/api/characters/2044",
-        "allegiances": [
-            "House Lannister of Casterly Rock"
-        ],
+        "allegiances": "House Lannister of Casterly Rock",
         "books": [
             "A Feast for Crows",
             "The World of Ice and Fire"
@@ -322,12 +304,8 @@
         "allegiances": [
 
         ],
-        "books": [
-            "A Clash of Kings"
-        ],
-        "povBooks": [
-            "A Game of Thrones"
-        ],
+        "books": "A Clash of Kings",
+        "povBooks": "A Game of Thrones",
         "tvSeries": [
 
         ],
@@ -363,12 +341,8 @@
         "father": "",
         "mother": "",
         "spouse": "http://www.anapioficeandfire.com/api/characters/1346",
-        "allegiances": [
-            "House Targaryen of King's Landing"
-        ],
-        "books": [
-            "A Feast for Crows"
-        ],
+        "allegiances": "House Targaryen of King's Landing",
+        "books": "A Feast for Crows",
         "povBooks": [
             "A Game of Thrones",
             "A Clash of Kings",
@@ -406,9 +380,7 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Greyjoy of Pyke"
-        ],
+        "allegiances": "House Greyjoy of Pyke",
         "books": [
             "A Game of Thrones",
             "A Storm of Swords",
@@ -449,9 +421,7 @@
             "A Storm of Swords",
             "A Feast for Crows"
         ],
-        "povBooks": [
-            "A Clash of Kings"
-        ],
+        "povBooks": "A Clash of Kings",
         "tvSeries": "Season 2",
         "playedBy": "Oliver Ford"
     },
@@ -482,9 +452,7 @@
             "House Baratheon of Dragonstone",
             "House Seaworth of Cape Wrath"
         ],
-        "books": [
-            "A Feast for Crows"
-        ],
+        "books": "A Feast for Crows",
         "povBooks": [
             "A Clash of Kings",
             "A Storm of Swords",
@@ -520,9 +488,7 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Lannister of Casterly Rock"
-        ],
+        "allegiances": "House Lannister of Casterly Rock",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings"
@@ -555,18 +521,14 @@
         "father": "",
         "mother": "",
         "spouse": "http://www.anapioficeandfire.com/api/characters/712",
-        "allegiances": [
-            "House Frey of the Crossing"
-        ],
+        "allegiances": "House Frey of the Crossing",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings",
             "A Feast for Crows",
             "A Dance with Dragons"
         ],
-        "povBooks": [
-            "A Storm of Swords"
-        ],
+        "povBooks": "A Storm of Swords",
         "tvSeries": [
 
         ],
@@ -597,9 +559,7 @@
             "A Game of Thrones",
             "A Clash of Kings"
         ],
-        "povBooks": [
-            "A Storm of Swords"
-        ],
+        "povBooks": "A Storm of Swords",
         "tvSeries": [
 
         ],
@@ -625,18 +585,14 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Greyjoy of Pyke"
-        ],
+        "allegiances": "House Greyjoy of Pyke",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings",
             "A Storm of Swords",
             "A Dance with Dragons"
         ],
-        "povBooks": [
-            "A Feast for Crows"
-        ],
+        "povBooks": "A Feast for Crows",
         "tvSeries": "Season 6",
         "playedBy": "Michael Feast"
     },
@@ -654,18 +610,14 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Nymeros Martell of Sunspear"
-        ],
+        "allegiances": "House Nymeros Martell of Sunspear",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings",
             "A Storm of Swords",
             "A Dance with Dragons"
         ],
-        "povBooks": [
-            "A Feast for Crows"
-        ],
+        "povBooks": "A Feast for Crows",
         "tvSeries": [
 
         ],
@@ -687,18 +639,14 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Oakheart of Old Oak"
-        ],
+        "allegiances": "House Oakheart of Old Oak",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings",
             "A Storm of Swords",
             "A Dance with Dragons"
         ],
-        "povBooks": [
-            "A Feast for Crows"
-        ],
+        "povBooks": "A Feast for Crows",
         "tvSeries": [
 
         ],
@@ -772,9 +720,7 @@
             "A Storm of Swords",
             "A Dance with Dragons"
         ],
-        "povBooks": [
-            "A Feast for Crows"
-        ],
+        "povBooks": "A Feast for Crows",
         "tvSeries": [
             "Season 2",
             "Season 3",
@@ -804,9 +750,7 @@
         "father": "",
         "mother": "",
         "spouse": "http://www.anapioficeandfire.com/api/characters/901",
-        "allegiances": [
-            "House Lannister of Casterly Rock"
-        ],
+        "allegiances": "House Lannister of Casterly Rock",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings",
@@ -841,9 +785,7 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Greyjoy of Pyke"
-        ],
+        "allegiances": "House Greyjoy of Pyke",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings",
@@ -874,9 +816,7 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Nymeros Martell of Sunspear"
-        ],
+        "allegiances": "House Nymeros Martell of Sunspear",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings",
@@ -924,9 +864,7 @@
             "A Feast for Crows",
             "The World of Ice and Fire"
         ],
-        "povBooks": [
-            "A Dance with Dragons"
-        ],
+        "povBooks": "A Dance with Dragons",
         "tvSeries": [
             "Season 1",
             "Season 3",
@@ -960,9 +898,7 @@
             "A Feast for Crows",
             "The World of Ice and Fire"
         ],
-        "povBooks": [
-            "A Dance with Dragons"
-        ],
+        "povBooks": "A Dance with Dragons",
         "tvSeries": [
 
         ],
@@ -989,18 +925,14 @@
         "father": "",
         "mother": "",
         "spouse": "http://www.anapioficeandfire.com/api/characters/327",
-        "allegiances": [
-            "House Lannister of Casterly Rock"
-        ],
+        "allegiances": "House Lannister of Casterly Rock",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings",
             "A Storm of Swords",
             "A Feast for Crows"
         ],
-        "povBooks": [
-            "A Dance with Dragons"
-        ],
+        "povBooks": "A Dance with Dragons",
         "tvSeries": [
             "Season 1",
             "Season 2",
@@ -1037,9 +969,7 @@
             "A Storm of Swords",
             "A Feast for Crows"
         ],
-        "povBooks": [
-            "A Dance with Dragons"
-        ],
+        "povBooks": "A Dance with Dragons",
         "tvSeries": [
             "Season 2",
             "Season 3",
@@ -1066,18 +996,14 @@
         "father": "",
         "mother": "",
         "spouse": "",
-        "allegiances": [
-            "House Nymeros Martell of Sunspear"
-        ],
+        "allegiances": "House Nymeros Martell of Sunspear",
         "books": [
             "A Game of Thrones",
             "A Clash of Kings",
             "A Storm of Swords",
             "A Feast for Crows"
         ],
-        "povBooks": [
-            "A Dance with Dragons"
-        ],
+        "povBooks": "A Dance with Dragons",
         "tvSeries": [
 
         ],
@@ -1106,12 +1032,8 @@
         "allegiances": [
 
         ],
-        "books": [
-            "A Storm of Swords"
-        ],
-        "povBooks": [
-            "A Dance with Dragons"
-        ],
+        "books": "A Storm of Swords",
+        "povBooks": "A Dance with Dragons",
         "tvSeries": [
 
         ],

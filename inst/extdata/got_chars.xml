@@ -29,9 +29,7 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Stark of Winterfell</elem>
-    </allegiances>
+    <allegiances>House Stark of Winterfell</allegiances>
     <books/>
     <povBooks>
       <elem>A Game of Thrones</elem>
@@ -66,12 +64,8 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Stark of Winterfell</elem>
-    </allegiances>
-    <books>
-      <elem>A Feast for Crows</elem>
-    </books>
+    <allegiances>House Stark of Winterfell</allegiances>
+    <books>A Feast for Crows</books>
     <povBooks>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
@@ -147,9 +141,7 @@
     <father/>
     <mother/>
     <spouse>http://www.anapioficeandfire.com/api/characters/232</spouse>
-    <allegiances>
-      <elem>House Stark of Winterfell</elem>
-    </allegiances>
+    <allegiances>House Stark of Winterfell</allegiances>
     <books>
       <elem>A Clash of Kings</elem>
       <elem>A Storm of Swords</elem>
@@ -157,9 +149,7 @@
       <elem>A Dance with Dragons</elem>
       <elem>The World of Ice and Fire</elem>
     </books>
-    <povBooks>
-      <elem>A Game of Thrones</elem>
-    </povBooks>
+    <povBooks>A Game of Thrones</povBooks>
     <tvSeries>
       <elem>Season 1</elem>
       <elem>Season 6</elem>
@@ -191,12 +181,8 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Stark of Winterfell</elem>
-    </allegiances>
-    <books>
-      <elem>A Feast for Crows</elem>
-    </books>
+    <allegiances>House Stark of Winterfell</allegiances>
+    <books>A Feast for Crows</books>
     <povBooks>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
@@ -233,9 +219,7 @@
       <elem>House Baelish of Harrenhal</elem>
       <elem>House Stark of Winterfell</elem>
     </allegiances>
-    <books>
-      <elem>A Dance with Dragons</elem>
-    </books>
+    <books>A Dance with Dragons</books>
     <povBooks>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
@@ -279,9 +263,7 @@
     <father/>
     <mother/>
     <spouse>http://www.anapioficeandfire.com/api/characters/2044</spouse>
-    <allegiances>
-      <elem>House Lannister of Casterly Rock</elem>
-    </allegiances>
+    <allegiances>House Lannister of Casterly Rock</allegiances>
     <books>
       <elem>A Feast for Crows</elem>
       <elem>The World of Ice and Fire</elem>
@@ -315,12 +297,8 @@
     <mother/>
     <spouse/>
     <allegiances/>
-    <books>
-      <elem>A Clash of Kings</elem>
-    </books>
-    <povBooks>
-      <elem>A Game of Thrones</elem>
-    </povBooks>
+    <books>A Clash of Kings</books>
+    <povBooks>A Game of Thrones</povBooks>
     <tvSeries/>
     <playedBy>Bronson Webb</playedBy>
   </elem>
@@ -354,12 +332,8 @@
     <father/>
     <mother/>
     <spouse>http://www.anapioficeandfire.com/api/characters/1346</spouse>
-    <allegiances>
-      <elem>House Targaryen of King's Landing</elem>
-    </allegiances>
-    <books>
-      <elem>A Feast for Crows</elem>
-    </books>
+    <allegiances>House Targaryen of King's Landing</allegiances>
+    <books>A Feast for Crows</books>
     <povBooks>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
@@ -397,9 +371,7 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Greyjoy of Pyke</elem>
-    </allegiances>
+    <allegiances>House Greyjoy of Pyke</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Storm of Swords</elem>
@@ -436,9 +408,7 @@
       <elem>A Storm of Swords</elem>
       <elem>A Feast for Crows</elem>
     </books>
-    <povBooks>
-      <elem>A Clash of Kings</elem>
-    </povBooks>
+    <povBooks>A Clash of Kings</povBooks>
     <tvSeries>Season 2</tvSeries>
     <playedBy>Oliver Ford</playedBy>
   </elem>
@@ -469,9 +439,7 @@
       <elem>House Baratheon of Dragonstone</elem>
       <elem>House Seaworth of Cape Wrath</elem>
     </allegiances>
-    <books>
-      <elem>A Feast for Crows</elem>
-    </books>
+    <books>A Feast for Crows</books>
     <povBooks>
       <elem>A Clash of Kings</elem>
       <elem>A Storm of Swords</elem>
@@ -507,9 +475,7 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Lannister of Casterly Rock</elem>
-    </allegiances>
+    <allegiances>House Lannister of Casterly Rock</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
@@ -540,18 +506,14 @@
     <father/>
     <mother/>
     <spouse>http://www.anapioficeandfire.com/api/characters/712</spouse>
-    <allegiances>
-      <elem>House Frey of the Crossing</elem>
-    </allegiances>
+    <allegiances>House Frey of the Crossing</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
       <elem>A Feast for Crows</elem>
       <elem>A Dance with Dragons</elem>
     </books>
-    <povBooks>
-      <elem>A Storm of Swords</elem>
-    </povBooks>
+    <povBooks>A Storm of Swords</povBooks>
     <tvSeries/>
     <playedBy/>
   </elem>
@@ -572,9 +534,7 @@
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
     </books>
-    <povBooks>
-      <elem>A Storm of Swords</elem>
-    </povBooks>
+    <povBooks>A Storm of Swords</povBooks>
     <tvSeries/>
     <playedBy/>
   </elem>
@@ -596,18 +556,14 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Greyjoy of Pyke</elem>
-    </allegiances>
+    <allegiances>House Greyjoy of Pyke</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
       <elem>A Storm of Swords</elem>
       <elem>A Dance with Dragons</elem>
     </books>
-    <povBooks>
-      <elem>A Feast for Crows</elem>
-    </povBooks>
+    <povBooks>A Feast for Crows</povBooks>
     <tvSeries>Season 6</tvSeries>
     <playedBy>Michael Feast</playedBy>
   </elem>
@@ -623,18 +579,14 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Nymeros Martell of Sunspear</elem>
-    </allegiances>
+    <allegiances>House Nymeros Martell of Sunspear</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
       <elem>A Storm of Swords</elem>
       <elem>A Dance with Dragons</elem>
     </books>
-    <povBooks>
-      <elem>A Feast for Crows</elem>
-    </povBooks>
+    <povBooks>A Feast for Crows</povBooks>
     <tvSeries/>
     <playedBy/>
   </elem>
@@ -650,18 +602,14 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Oakheart of Old Oak</elem>
-    </allegiances>
+    <allegiances>House Oakheart of Old Oak</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
       <elem>A Storm of Swords</elem>
       <elem>A Dance with Dragons</elem>
     </books>
-    <povBooks>
-      <elem>A Feast for Crows</elem>
-    </povBooks>
+    <povBooks>A Feast for Crows</povBooks>
     <tvSeries/>
     <playedBy/>
   </elem>
@@ -729,9 +677,7 @@
       <elem>A Storm of Swords</elem>
       <elem>A Dance with Dragons</elem>
     </books>
-    <povBooks>
-      <elem>A Feast for Crows</elem>
-    </povBooks>
+    <povBooks>A Feast for Crows</povBooks>
     <tvSeries>
       <elem>Season 2</elem>
       <elem>Season 3</elem>
@@ -759,9 +705,7 @@
     <father/>
     <mother/>
     <spouse>http://www.anapioficeandfire.com/api/characters/901</spouse>
-    <allegiances>
-      <elem>House Lannister of Casterly Rock</elem>
-    </allegiances>
+    <allegiances>House Lannister of Casterly Rock</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
@@ -796,9 +740,7 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Greyjoy of Pyke</elem>
-    </allegiances>
+    <allegiances>House Greyjoy of Pyke</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
@@ -823,9 +765,7 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Nymeros Martell of Sunspear</elem>
-    </allegiances>
+    <allegiances>House Nymeros Martell of Sunspear</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
@@ -873,9 +813,7 @@
       <elem>A Feast for Crows</elem>
       <elem>The World of Ice and Fire</elem>
     </books>
-    <povBooks>
-      <elem>A Dance with Dragons</elem>
-    </povBooks>
+    <povBooks>A Dance with Dragons</povBooks>
     <tvSeries>
       <elem>Season 1</elem>
       <elem>Season 3</elem>
@@ -909,9 +847,7 @@
       <elem>A Feast for Crows</elem>
       <elem>The World of Ice and Fire</elem>
     </books>
-    <povBooks>
-      <elem>A Dance with Dragons</elem>
-    </povBooks>
+    <povBooks>A Dance with Dragons</povBooks>
     <tvSeries/>
     <playedBy/>
   </elem>
@@ -932,18 +868,14 @@
     <father/>
     <mother/>
     <spouse>http://www.anapioficeandfire.com/api/characters/327</spouse>
-    <allegiances>
-      <elem>House Lannister of Casterly Rock</elem>
-    </allegiances>
+    <allegiances>House Lannister of Casterly Rock</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
       <elem>A Storm of Swords</elem>
       <elem>A Feast for Crows</elem>
     </books>
-    <povBooks>
-      <elem>A Dance with Dragons</elem>
-    </povBooks>
+    <povBooks>A Dance with Dragons</povBooks>
     <tvSeries>
       <elem>Season 1</elem>
       <elem>Season 2</elem>
@@ -976,9 +908,7 @@
       <elem>A Storm of Swords</elem>
       <elem>A Feast for Crows</elem>
     </books>
-    <povBooks>
-      <elem>A Dance with Dragons</elem>
-    </povBooks>
+    <povBooks>A Dance with Dragons</povBooks>
     <tvSeries>
       <elem>Season 2</elem>
       <elem>Season 3</elem>
@@ -1005,18 +935,14 @@
     <father/>
     <mother/>
     <spouse/>
-    <allegiances>
-      <elem>House Nymeros Martell of Sunspear</elem>
-    </allegiances>
+    <allegiances>House Nymeros Martell of Sunspear</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
       <elem>A Clash of Kings</elem>
       <elem>A Storm of Swords</elem>
       <elem>A Feast for Crows</elem>
     </books>
-    <povBooks>
-      <elem>A Dance with Dragons</elem>
-    </povBooks>
+    <povBooks>A Dance with Dragons</povBooks>
     <tvSeries/>
     <playedBy/>
   </elem>
@@ -1037,12 +963,8 @@
     <mother/>
     <spouse/>
     <allegiances/>
-    <books>
-      <elem>A Storm of Swords</elem>
-    </books>
-    <povBooks>
-      <elem>A Dance with Dragons</elem>
-    </povBooks>
+    <books>A Storm of Swords</books>
+    <povBooks>A Dance with Dragons</povBooks>
     <tvSeries/>
     <playedBy/>
   </elem>
