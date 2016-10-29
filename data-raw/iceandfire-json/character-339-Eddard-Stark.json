@@ -1,0 +1,45 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/339",
+  "name": "Eddard Stark",
+  "gender": "Male",
+  "culture": "Northmen",
+  "born": "In 263 AC, at Winterfell",
+  "died": "In 299 AC, at Great Sept of Baelor in King's Landing",
+  "titles": [
+    "Lord of Winterfell",
+    "Warden of the North",
+    "Hand of the King",
+    "Protector of the Realm",
+    "Regent"
+  ],
+  "aliases": [
+    "Ned",
+    "The Ned",
+    "The Quiet Wolf"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "http://www.anapioficeandfire.com/api/characters/232",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/362"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/5",
+    "http://www.anapioficeandfire.com/api/books/8",
+    "http://www.anapioficeandfire.com/api/books/11"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/1"
+  ],
+  "tvSeries": [
+    "Season 1",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Sean Bean",
+    "Sebastian Croft",
+    "Robert Aramayo"
+  ]
+}

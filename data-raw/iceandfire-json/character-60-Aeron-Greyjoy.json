@@ -1,0 +1,37 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/60",
+  "name": "Aeron Greyjoy",
+  "gender": "Male",
+  "culture": "Ironborn",
+  "born": "In or between 269 AC and 273 AC, at Pyke",
+  "died": "",
+  "titles": [
+    "Priest of the Drowned God",
+    "Captain of the Golden Storm (formerly)"
+  ],
+  "aliases": [
+    "The Damphair",
+    "Aeron Damphair"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/169"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "tvSeries": [
+    "Season 6"
+  ],
+  "playedBy": [
+    "Michael Feast"
+  ]
+}

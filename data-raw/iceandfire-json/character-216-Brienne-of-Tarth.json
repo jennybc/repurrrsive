@@ -1,0 +1,40 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/216",
+  "name": "Brienne of Tarth",
+  "gender": "Female",
+  "culture": "",
+  "born": "In 280 AC",
+  "died": "",
+  "titles": [],
+  "aliases": [
+    "The Maid of Tarth",
+    "Brienne the Beauty",
+    "Brienne the Blue"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/17",
+    "http://www.anapioficeandfire.com/api/houses/362",
+    "http://www.anapioficeandfire.com/api/houses/380"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "tvSeries": [
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 5",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Gwendoline Christie"
+  ]
+}

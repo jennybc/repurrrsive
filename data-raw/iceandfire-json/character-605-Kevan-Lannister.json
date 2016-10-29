@@ -1,0 +1,39 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/605",
+  "name": "Kevan Lannister",
+  "gender": "Male",
+  "culture": "",
+  "born": "In 244 AC",
+  "died": "In 300 AC, at King's Landing",
+  "titles": [
+    "Ser",
+    "Master of laws",
+    "Lord Regent",
+    "Protector of the Realm"
+  ],
+  "aliases": [],
+  "father": "",
+  "mother": "",
+  "spouse": "http://www.anapioficeandfire.com/api/characters/327",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/229"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "tvSeries": [
+    "Season 1",
+    "Season 2",
+    "Season 5",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Ian Gelder"
+  ]
+}

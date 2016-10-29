@@ -1,0 +1,49 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/houses/17",
+  "name": "House Baratheon of Storm's End",
+  "region": "The Stormlands",
+  "coatOfArms": "A black crowned stag, on a gold field(Or, a stag salient, crowned, sable)",
+  "words": "Ours is the Fury",
+  "titles": [
+    "Lord of Storm's End",
+    "Lord Paramount of the Stormlands"
+  ],
+  "seats": [
+    "Storm's End",
+    "Dragonstone (House Baratheon of Dragonstone)"
+  ],
+  "currentLord": "http://www.anapioficeandfire.com/api/characters/1029",
+  "heir": "http://www.anapioficeandfire.com/api/characters/775",
+  "overlord": "http://www.anapioficeandfire.com/api/houses/16",
+  "founded": "1 AC",
+  "founder": "http://www.anapioficeandfire.com/api/characters/797",
+  "diedOut": "",
+  "ancestralWeapons": [],
+  "cadetBranches": [
+    "http://www.anapioficeandfire.com/api/houses/15",
+    "http://www.anapioficeandfire.com/api/houses/16",
+    "http://www.anapioficeandfire.com/api/houses/33",
+    "http://www.anapioficeandfire.com/api/houses/423"
+  ],
+  "swornMembers": [
+    "http://www.anapioficeandfire.com/api/characters/110",
+    "http://www.anapioficeandfire.com/api/characters/128",
+    "http://www.anapioficeandfire.com/api/characters/216",
+    "http://www.anapioficeandfire.com/api/characters/230",
+    "http://www.anapioficeandfire.com/api/characters/249",
+    "http://www.anapioficeandfire.com/api/characters/315",
+    "http://www.anapioficeandfire.com/api/characters/435",
+    "http://www.anapioficeandfire.com/api/characters/679",
+    "http://www.anapioficeandfire.com/api/characters/794",
+    "http://www.anapioficeandfire.com/api/characters/797",
+    "http://www.anapioficeandfire.com/api/characters/862",
+    "http://www.anapioficeandfire.com/api/characters/870",
+    "http://www.anapioficeandfire.com/api/characters/986",
+    "http://www.anapioficeandfire.com/api/characters/1044",
+    "http://www.anapioficeandfire.com/api/characters/1188",
+    "http://www.anapioficeandfire.com/api/characters/1233",
+    "http://www.anapioficeandfire.com/api/characters/1355",
+    "http://www.anapioficeandfire.com/api/characters/1473",
+    "http://www.anapioficeandfire.com/api/characters/1552"
+  ]
+}

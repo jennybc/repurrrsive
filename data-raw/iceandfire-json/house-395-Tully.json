@@ -1,0 +1,41 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/houses/395",
+  "name": "House Tully of Riverrun",
+  "region": "The Riverlands",
+  "coatOfArms": "A leaping silver trout on a field of blue and mud red(Paly wavy azure and gules, a trout embowed argent)",
+  "words": "Family, Duty, Honor",
+  "titles": [
+    "Lord of Riverrun",
+    "Lord Paramount of the Trident"
+  ],
+  "seats": [
+    "Scattered (formerly Riverrun)"
+  ],
+  "currentLord": "http://www.anapioficeandfire.com/api/characters/346",
+  "heir": "http://www.anapioficeandfire.com/api/characters/894",
+  "overlord": "http://www.anapioficeandfire.com/api/houses/362",
+  "founded": "",
+  "founder": "",
+  "diedOut": "",
+  "ancestralWeapons": [],
+  "cadetBranches": [],
+  "swornMembers": [
+    "http://www.anapioficeandfire.com/api/characters/223",
+    "http://www.anapioficeandfire.com/api/characters/232",
+    "http://www.anapioficeandfire.com/api/characters/346",
+    "http://www.anapioficeandfire.com/api/characters/347",
+    "http://www.anapioficeandfire.com/api/characters/503",
+    "http://www.anapioficeandfire.com/api/characters/688",
+    "http://www.anapioficeandfire.com/api/characters/733",
+    "http://www.anapioficeandfire.com/api/characters/755",
+    "http://www.anapioficeandfire.com/api/characters/909",
+    "http://www.anapioficeandfire.com/api/characters/937",
+    "http://www.anapioficeandfire.com/api/characters/1063",
+    "http://www.anapioficeandfire.com/api/characters/1321",
+    "http://www.anapioficeandfire.com/api/characters/1364",
+    "http://www.anapioficeandfire.com/api/characters/1371",
+    "http://www.anapioficeandfire.com/api/characters/1621",
+    "http://www.anapioficeandfire.com/api/characters/1744",
+    "http://www.anapioficeandfire.com/api/characters/1818"
+  ]
+}

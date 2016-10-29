@@ -1,0 +1,41 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/208",
+  "name": "Brandon Stark",
+  "gender": "Male",
+  "culture": "Northmen",
+  "born": "In 290 AC, at Winterfell",
+  "died": "",
+  "titles": [
+    "Prince of Winterfell"
+  ],
+  "aliases": [
+    "Bran",
+    "Bran the Broken",
+    "The Winged Wolf"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/362"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "tvSeries": [
+    "Season 1",
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Isaac Hempstead-Wright"
+  ]
+}

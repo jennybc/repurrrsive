@@ -1,0 +1,40 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/150",
+  "name": "Asha Greyjoy",
+  "gender": "Female",
+  "culture": "Ironborn",
+  "born": "In 275 AC or 276 AC, at Pyke",
+  "died": "",
+  "titles": [
+    "Princess",
+    "Captain of the Black Wind",
+    "Conqueror of Deepwood Motte"
+  ],
+  "aliases": [
+    "Esgred",
+    "The Kraken's Daughter"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "http://www.anapioficeandfire.com/api/characters/1372",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/169",
+    "http://www.anapioficeandfire.com/api/houses/210"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/5",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "tvSeries": [
+    "Season 2",
+    "Season 3",
+    "Season 4"
+  ],
+  "playedBy": [
+    "Gemma Whelan"
+  ]
+}

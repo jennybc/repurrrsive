@@ -1,0 +1,44 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/529",
+  "name": "Jaime Lannister",
+  "gender": "Male",
+  "culture": "Westerlands",
+  "born": "In 266 AC, at Casterly Rock",
+  "died": "",
+  "titles": [
+    "Ser",
+    "Lord Commander of the Kingsguard",
+    "Warden of the East (formerly)"
+  ],
+  "aliases": [
+    "The Kingslayer",
+    "The Lion of Lannister",
+    "The Young Lion",
+    "Cripple"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/229"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/5",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "tvSeries": [
+    "Season 1",
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 5"
+  ],
+  "playedBy": [
+    "Nikolaj Coster-Waldau"
+  ]
+}

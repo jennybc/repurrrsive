@@ -1,0 +1,44 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/238",
+  "name": "Cersei Lannister",
+  "gender": "Female",
+  "culture": "Westerman",
+  "born": "In 266 AC, at Casterly Rock",
+  "died": "",
+  "titles": [
+    "Light of the West",
+    "Queen Dowager",
+    "Protector of the Realm",
+    "Lady of Casterly Rock",
+    "Queen Regent"
+  ],
+  "aliases": [
+    "Brotherfuckerthe bitch queen"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "http://www.anapioficeandfire.com/api/characters/901",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/229"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/5",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "tvSeries": [
+    "Season 1",
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 5",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Lena Headey"
+  ]
+}

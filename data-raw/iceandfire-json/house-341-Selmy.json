@@ -1,0 +1,26 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/houses/341",
+  "name": "House Selmy of Harvest Hall",
+  "region": "The Stormlands",
+  "coatOfArms": "Three stalks of yellow wheat, on a brown field(Tenné, three stalks of wheat or)",
+  "words": "",
+  "titles": [
+    "Lord of Harvest Hall"
+  ],
+  "seats": [
+    "Harvest Hall"
+  ],
+  "currentLord": "http://www.anapioficeandfire.com/api/characters/139",
+  "heir": "",
+  "overlord": "http://www.anapioficeandfire.com/api/houses/17",
+  "founded": "",
+  "founder": "",
+  "diedOut": "",
+  "ancestralWeapons": [],
+  "cadetBranches": [],
+  "swornMembers": [
+    "http://www.anapioficeandfire.com/api/characters/139",
+    "http://www.anapioficeandfire.com/api/characters/168",
+    "http://www.anapioficeandfire.com/api/characters/683"
+  ]
+}

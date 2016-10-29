@@ -1,0 +1,54 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/1303",
+  "name": "Daenerys Targaryen",
+  "gender": "Female",
+  "culture": "Valyrian",
+  "born": "In 284 AC, at Dragonstone",
+  "died": "",
+  "titles": [
+    "Queen of the Andals and the Rhoynar and the First Men, Lord of the Seven Kingdoms",
+    "Khaleesi of the Great Grass Sea",
+    "Breaker of Shackles/Chains",
+    "Queen of Meereen",
+    "Princess of Dragonstone"
+  ],
+  "aliases": [
+    "Dany",
+    "Daenerys Stormborn",
+    "The Unburnt",
+    "Mother of Dragons",
+    "Mother",
+    "Mhysa",
+    "The Silver Queen",
+    "Silver Lady",
+    "Dragonmother",
+    "The Dragon Queen",
+    "The Mad King's daughter"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "http://www.anapioficeandfire.com/api/characters/1346",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/378"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "tvSeries": [
+    "Season 1",
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 5",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Emilia Clarke"
+  ]
+}

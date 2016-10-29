@@ -1,0 +1,46 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/1319",
+  "name": "Davos Seaworth",
+  "gender": "Male",
+  "culture": "Westeros",
+  "born": "In 260 AC or before, at King's Landing",
+  "died": "",
+  "titles": [
+    "Ser",
+    "Lord of the Rainwood",
+    "Admiral of the Narrow Sea",
+    "Hand of the King"
+  ],
+  "aliases": [
+    "Onion Knight",
+    "Davos Shorthand",
+    "Ser Onions",
+    "Onion Lord",
+    "Smuggler"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "http://www.anapioficeandfire.com/api/characters/1676",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/15",
+    "http://www.anapioficeandfire.com/api/houses/340"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "tvSeries": [
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 5",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Liam Cunningham"
+  ]
+}

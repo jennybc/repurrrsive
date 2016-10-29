@@ -1,0 +1,43 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/957",
+  "name": "Sansa Stark",
+  "gender": "Female",
+  "culture": "Northmen",
+  "born": "In 286 AC, at Winterfell",
+  "died": "",
+  "titles": [
+    "Princess"
+  ],
+  "aliases": [
+    "Little bird",
+    "Alayne Stone",
+    "Jonquil"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "http://www.anapioficeandfire.com/api/characters/1052",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/10",
+    "http://www.anapioficeandfire.com/api/houses/362"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "tvSeries": [
+    "Season 1",
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 5",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Sophie Turner"
+  ]
+}

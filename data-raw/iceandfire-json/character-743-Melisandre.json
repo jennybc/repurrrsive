@@ -1,0 +1,38 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/743",
+  "name": "Melisandre",
+  "gender": "Female",
+  "culture": "Asshai",
+  "born": "At Unknown",
+  "died": "",
+  "titles": [],
+  "aliases": [
+    "The Red Priestess",
+    "The Red Woman",
+    "The King's Red Shadow",
+    "Lady Red",
+    "Lot Seven"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "",
+  "allegiances": [],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "tvSeries": [
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 5",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Carice van Houten"
+  ]
+}

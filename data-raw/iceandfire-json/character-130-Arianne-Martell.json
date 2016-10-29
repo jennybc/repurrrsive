@@ -1,0 +1,29 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/130",
+  "name": "Arianne Martell",
+  "gender": "Female",
+  "culture": "Dornish",
+  "born": "In 276 AC, at Sunspear",
+  "died": "",
+  "titles": [
+    "Princess of Dorne"
+  ],
+  "aliases": [],
+  "father": "",
+  "mother": "",
+  "spouse": "",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/285"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "tvSeries": [],
+  "playedBy": []
+}

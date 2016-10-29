@@ -1,0 +1,45 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/1022",
+  "name": "Theon Greyjoy",
+  "gender": "Male",
+  "culture": "Ironborn",
+  "born": "In 278 AC or 279 AC, at Pyke",
+  "died": "",
+  "titles": [
+    "Prince of Winterfell",
+    "Captain of Sea Bitch",
+    "Lord of the Iron Islands (by law of the green lands)"
+  ],
+  "aliases": [
+    "Prince of Fools",
+    "Theon Turncloak",
+    "Reek",
+    "Theon Kinslayer"
+  ],
+  "father": "",
+  "mother": "",
+  "spouse": "",
+  "allegiances": [
+    "http://www.anapioficeandfire.com/api/houses/169"
+  ],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/3",
+    "http://www.anapioficeandfire.com/api/books/5"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/2",
+    "http://www.anapioficeandfire.com/api/books/8"
+  ],
+  "tvSeries": [
+    "Season 1",
+    "Season 2",
+    "Season 3",
+    "Season 4",
+    "Season 5",
+    "Season 6"
+  ],
+  "playedBy": [
+    "Alfie Allen"
+  ]
+}

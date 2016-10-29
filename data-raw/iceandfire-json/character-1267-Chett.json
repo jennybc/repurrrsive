@@ -1,0 +1,23 @@
+{
+  "url": "http://www.anapioficeandfire.com/api/characters/1267",
+  "name": "Chett",
+  "gender": "Male",
+  "culture": "",
+  "born": "At Hag's Mire",
+  "died": "In 299 AC, at Fist of the First Men",
+  "titles": [],
+  "aliases": [],
+  "father": "",
+  "mother": "",
+  "spouse": "",
+  "allegiances": [],
+  "books": [
+    "http://www.anapioficeandfire.com/api/books/1",
+    "http://www.anapioficeandfire.com/api/books/2"
+  ],
+  "povBooks": [
+    "http://www.anapioficeandfire.com/api/books/3"
+  ],
+  "tvSeries": [],
+  "playedBy": []
+}
