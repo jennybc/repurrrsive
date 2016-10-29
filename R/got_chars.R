@@ -1,6 +1,6 @@
 #' Game of Thrones POV characters
 #'
-#' Info on the "point of view" (POV) characters from the first five books in the
+#' Info on the point-of-view (POV) characters from the first five books in the
 #' Song of Ice and Fire series by George R. R. Martin. Retrieved from An API Of
 #' Ice And Fire.
 #'
