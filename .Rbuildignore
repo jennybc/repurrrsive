@@ -4,3 +4,4 @@
 ^README-.*\.png$
 ^data-raw$
 ^img$
+^\.travis\.yml$
