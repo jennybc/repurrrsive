@@ -4,11 +4,12 @@
 \name{repurrrsive-package}
 \alias{repurrrsive}
 \alias{repurrrsive-package}
-\title{repurrrsive: Recursive List Examples}
+\title{repurrrsive: Examples of Recursive Lists and Nested or Split Data Frames}
 \description{
 Recursive lists in the form of R objects, JSON, and XML, for use in
 teaching and examples. Examples include color palettes, Game of Thrones
-characters, and GitHub users and repos.
+characters, and GitHub users and repos. Data from the Gapminder package, as
+a simple data frame and in nested and split forms.
 }
 \details{
 Details

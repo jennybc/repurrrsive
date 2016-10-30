@@ -1,10 +1,11 @@
 
 -   [repurrrsive](#repurrrsive)
     -   [Installation](#installation)
-    -   [Usage](#usage)
+    -   [Recursive list examples](#recursive-list-examples)
         -   [wesanderson color palettes](#wesanderson-color-palettes)
         -   [Game of Thrones POV characters](#game-of-thrones-pov-characters)
         -   [GitHub user and repo data](#github-user-and-repo-data)
+    -   [Nested and split data frame examples](#nested-and-split-data-frame-examples)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 [![Travis-CI Build Status](https://travis-ci.org/jennybc/repurrrsive.svg?branch=master)](https://travis-ci.org/jennybc/repurrrsive) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/repurrrsive)](https://cran.r-project.org/package=repurrrsive)
@@ -14,7 +15,9 @@ repurrrsive
 
 The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()`. Datasets are stored as R list, JSON, and XML to provide the full non-rectangular data experience. Enjoy!
 
-For example, repurrrsive is used in this purrr tutorial:
+Package also includes the main data frame from the [gapminder package](https://CRAN.R-project.org/package=gapminder) in 3 different forms: simple data frame (no list-columns), data frame nested by country, and split into a named list of data frames.
+
+repurrrsive is used in this purrr tutorial:
 
 <https://jennybc.github.io/purrr-tutorial/>
 
@@ -28,8 +31,8 @@ You can install repurrrsive from github with:
 devtools::install_github("jennybc/repurrrsive")
 ```
 
-Usage
------
+Recursive list examples
+-----------------------
 
 #### wesanderson color palettes
 
@@ -297,4 +300,89 @@ repo_names[elevenses]
 #> [4] "juliasilge/juliasilge.github.io"         
 #> [5] "leeper/congressional-district-boundaries"
 #> [6] "masalmon/geoparsing_tweets"
+```
+
+Nested and split data frame examples
+------------------------------------
+
+Use the Gapminder data in various forms to practice different styles of grouped computation.
+
+``` r
+library(dplyr)
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:purrr':
+#> 
+#>     contains, order_by
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+library(purrr)
+library(tibble)
+
+## group_by() + summarize()
+gap_simple %>% 
+  group_by(country) %>%
+  summarize(cor = cor(lifeExp, year))
+#> # A tibble: 142 × 2
+#>        country       cor
+#>         <fctr>     <dbl>
+#> 1  Afghanistan 0.9735051
+#> 2      Albania 0.9542420
+#> 3      Algeria 0.9925307
+#> 4       Angola 0.9422392
+#> 5    Argentina 0.9977816
+#> 6    Australia 0.9897716
+#> 7      Austria 0.9960592
+#> 8      Bahrain 0.9832293
+#> 9   Bangladesh 0.9946662
+#> 10     Belgium 0.9972665
+#> # ... with 132 more rows
+
+## nest() + map_*() inside mutate()
+gap_nested %>%
+  mutate(cor = data %>% map_dbl(~ cor(.x$lifeExp, .x$year)))
+#> # A tibble: 142 × 4
+#>        country continent              data       cor
+#>         <fctr>    <fctr>            <list>     <dbl>
+#> 1  Afghanistan      Asia <tibble [12 × 4]> 0.9735051
+#> 2      Albania    Europe <tibble [12 × 4]> 0.9542420
+#> 3      Algeria    Africa <tibble [12 × 4]> 0.9925307
+#> 4       Angola    Africa <tibble [12 × 4]> 0.9422392
+#> 5    Argentina  Americas <tibble [12 × 4]> 0.9977816
+#> 6    Australia   Oceania <tibble [12 × 4]> 0.9897716
+#> 7      Austria    Europe <tibble [12 × 4]> 0.9960592
+#> 8      Bahrain      Asia <tibble [12 × 4]> 0.9832293
+#> 9   Bangladesh      Asia <tibble [12 × 4]> 0.9946662
+#> 10     Belgium    Europe <tibble [12 × 4]> 0.9972665
+#> # ... with 132 more rows
+
+## split + map_*()
+gap_split %>% 
+  map_dbl(~ cor(.x$lifeExp, .x$year)) %>% 
+  head()
+#> Afghanistan     Albania     Algeria      Angola   Argentina   Australia 
+#>   0.9735051   0.9542420   0.9925307   0.9422392   0.9977816   0.9897716
+
+## split + map_*() + tibble::enframe()
+gap_split %>% 
+  map_dbl(~ cor(.x$lifeExp, .x$year)) %>% 
+  enframe()
+#> # A tibble: 142 × 2
+#>           name     value
+#>          <chr>     <dbl>
+#> 1  Afghanistan 0.9735051
+#> 2      Albania 0.9542420
+#> 3      Algeria 0.9925307
+#> 4       Angola 0.9422392
+#> 5    Argentina 0.9977816
+#> 6    Australia 0.9897716
+#> 7      Austria 0.9960592
+#> 8      Bahrain 0.9832293
+#> 9   Bangladesh 0.9946662
+#> 10     Belgium 0.9972665
+#> # ... with 132 more rows
 ```

@@ -18,7 +18,9 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
 
 The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()`. Datasets are stored as R list, JSON, and XML to provide the full non-rectangular data experience. Enjoy!
 
-For example, repurrrsive is used in this purrr tutorial:
+Package also includes the main data frame from the [gapminder package](https://CRAN.R-project.org/package=gapminder) in 3 different forms: simple data frame (no list-columns), data frame nested by country, and split into a named list of data frames.
+
+repurrrsive is used in this purrr tutorial:
 
 <https://jennybc.github.io/purrr-tutorial/>
 
@@ -31,7 +33,7 @@ You can install repurrrsive from github with:
 devtools::install_github("jennybc/repurrrsive")
 ```
 
-## Usage
+## Recursive list examples
 
 #### wesanderson color palettes
 
@@ -148,3 +150,34 @@ elevenses <-
   11 + cumsum(c(0, head(table(gsub("(.*)/.*", "\\1", repo_names)), -1)))
 repo_names[elevenses]
 ```
+
+
+## Nested and split data frame examples
+
+Use the Gapminder data in various forms to practice different styles of grouped computation.
+
+```{r}
+library(dplyr)
+library(purrr)
+library(tibble)
+
+## group_by() + summarize()
+gap_simple %>% 
+  group_by(country) %>%
+  summarize(cor = cor(lifeExp, year))
+
+## nest() + map_*() inside mutate()
+gap_nested %>%
+  mutate(cor = data %>% map_dbl(~ cor(.x$lifeExp, .x$year)))
+
+## split + map_*()
+gap_split %>% 
+  map_dbl(~ cor(.x$lifeExp, .x$year)) %>% 
+  head()
+
+## split + map_*() + tibble::enframe()
+gap_split %>% 
+  map_dbl(~ cor(.x$lifeExp, .x$year)) %>% 
+  enframe()
+```
+

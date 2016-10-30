@@ -1,11 +1,12 @@
 Package: repurrrsive
-Title: Recursive List Examples
+Title: Examples of Recursive Lists and Nested or Split Data Frames
 Version: 0.0.0.9000
 Authors@R: person("Jennifer", "Bryan", role=c("aut", "cre"),
   email = "jenny@stat.ubc.ca")
 Description: Recursive lists in the form of R objects, JSON, and XML, for use in
     teaching and examples. Examples include color palettes, Game of Thrones
-    characters, and GitHub users and repos.
+    characters, and GitHub users and repos. Data from the Gapminder package, as
+    a simple data frame and in nested and split forms.
 Depends:
     R (>= 2.10)
 License: CC0
@@ -13,6 +14,7 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1.9000
 Suggests:
+    gapminder,
     jsonlite,
     purrr,
     rprojroot (>= 1.0-7),
