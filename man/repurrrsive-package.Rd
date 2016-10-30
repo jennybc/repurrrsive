@@ -12,7 +12,7 @@ characters, and GitHub users and repos. Data from the Gapminder package, as
 a simple data frame and in nested and split forms.
 }
 \details{
-Details
+Read more at \url{https://github.com/jennybc/repurrrsive#readme}.
 }
 \seealso{
 Useful links:
