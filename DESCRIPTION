@@ -22,3 +22,5 @@ Suggests:
 URL: https://github.com/jennybc/repurrrsive
 BugReports: https://github.com/jennybc/repurrrsive/issues
 Remotes: krlmlr/rprojroot
+Imports: tibble,
+    utils
