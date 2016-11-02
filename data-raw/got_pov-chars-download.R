@@ -7,10 +7,6 @@ library(tidyverse)
 library(stringr)
 library(listviewer)
 library(jsonlite)
-## devtools::install_github("jennybc/xml2@as-xml-first-try")
-## experimental as_xml() in this branch of my fork, used below
-library(xml2)
-
 
 ## determines number of pages implied by link header in httr response
 n_pages <- . %>%
@@ -57,8 +53,6 @@ iceandfire %>%
 books <-
   fromJSON(here("data-raw", "iceandfire-json", "books.json"),
            simplifyDataFrame = FALSE)
-str(books, max.level = 1)
-jsonedit(books)
 
 books_df <- tibble(
      book = books %>% map_chr("name"),
@@ -127,54 +121,3 @@ houses_df <- houses_df %>%
     paste0("-",str_replace_all(house_name, "\\s+", "-"), ".json")))
 walk2(houses_df$fname, houses_df$fname2, file.rename)
 
-## each character has two book components: povBooks and books
-##   each holds a list of books as API URLs
-##   swap out with book names
-##   simplify to atomic character vector at same time
-## each character has an allegiance component
-##   holds a list of houses as API URLs
-##   swap out with house names
-##   simplify to atomic character vector at same time
-book_lookup <- function(i) books_df$book[match(i, books_df$book_id)]
-house_lookup <- function(i) houses_df$house[match(i, houses_df$house_id)]
-pov_df <- pov_df %>%
-  mutate(from_api = map(from_api, function(chr_list) {
-    if (length(chr_list$povBooks) > 0) {
-      chr_list$povBooks <- chr_list$povBooks %>%
-        map_int(get_id) %>%
-        map_chr(book_lookup)
-    }
-    if (length(chr_list$books) > 0) {
-      chr_list$books <- chr_list$books %>%
-        map_int(get_id) %>%
-        map_chr(book_lookup)
-    }
-    if (length(chr_list$allegiances) > 0) {
-      chr_list$allegiances <- chr_list$allegiances %>%
-        map_int(get_id) %>%
-        map_chr(house_lookup)
-    }
-    chr_list
-  }))
-jsonedit(pov_df)
-pov_df %>% View()
-
-## this is the basically the list that will go in the package
-got_chars <- pov_df$from_api
-
-## Delete Cersei's alias
-cersei <- which(map_chr(got_chars, "name") == "Cersei Lannister")
-got_chars[[cersei]][["aliases"]] <- list()
-
-use_data(got_chars, overwrite = TRUE)
-
-## null = "null" is necessary for roundtrips to work:
-## list --> JSON --> original list
-got_chars %>%
-  toJSON(null = "null", auto_unbox = TRUE) %>%
-  prettify() %>%
-  writeLines(here("inst", "extdata", "got_chars.json"))
-
-got_chars %>%
-  xml2:::as_xml() %>%
-  write_xml(here("inst", "extdata", "got_chars.xml"))
