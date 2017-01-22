@@ -8,8 +8,9 @@
 \description{
 Recursive lists in the form of R objects, JSON, and XML, for use in
 teaching and examples. Examples include color palettes, Game of Thrones
-characters, and GitHub users and repos. Data from the Gapminder package, as
-a simple data frame and in nested and split forms.
+characters, GitHub users and repos, and entities from the Star Wars universe.
+Data from the Gapminder package, as a simple data frame and in nested and
+split forms.
 }
 \details{
 Read more at \url{https://github.com/jennybc/repurrrsive#readme}.
@@ -25,5 +26,9 @@ Useful links:
 \author{
 \strong{Maintainer}: Jennifer Bryan \email{jenny@stat.ubc.ca}
 
+Other contributors:
+\itemize{
+  \item Charlotte Wickham \email{cwickham@gmail.com} [contributor]
 }
 
+}
