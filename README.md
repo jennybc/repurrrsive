@@ -5,6 +5,7 @@
         -   [wesanderson color palettes](#wesanderson-color-palettes)
         -   [Game of Thrones POV characters](#game-of-thrones-pov-characters)
         -   [GitHub user and repo data](#github-user-and-repo-data)
+        -   [Star Wars Universe entities](#star-wars-universe-entities)
     -   [Nested and split data frame examples](#nested-and-split-data-frame-examples)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -300,6 +301,48 @@ repo_names[elevenses]
 #> [4] "juliasilge/juliasilge.github.io"         
 #> [5] "leeper/congressional-district-boundaries"
 #> [6] "masalmon/geoparsing_tweets"
+```
+
+#### Star Wars Universe entities
+
+`sw_people`, `sw_films`, `sw_species`, `sw_planets`, `sw_starships` and `sw_vehicles` are interrelated lists about entities in the Star Wars Universe retrieved from the [Star Wars API](http://swapi.co) using the package [`rwars`](https://github.com/Ironholds/rwars).
+
+``` r
+library(purrr)
+map_chr(sw_films, "title") 
+#> [1] "A New Hope"              "Attack of the Clones"   
+#> [3] "The Phantom Menace"      "Revenge of the Sith"    
+#> [5] "Return of the Jedi"      "The Empire Strikes Back"
+#> [7] "The Force Awakens"
+```
+
+Elements that contain URLs provide a way to link the lists together. For example, the `films` element of each person contains URLs for the films they have appeared in. For example, Luke Skywalker has been in five films.
+
+``` r
+luke <- sw_people[[1]]
+names(luke)
+#>  [1] "name"       "height"     "mass"       "hair_color" "skin_color"
+#>  [6] "eye_color"  "birth_year" "gender"     "homeworld"  "films"     
+#> [11] "species"    "vehicles"   "starships"  "created"    "edited"    
+#> [16] "url"
+luke[["films"]]
+#> [1] "http://swapi.co/api/films/6/" "http://swapi.co/api/films/3/"
+#> [3] "http://swapi.co/api/films/2/" "http://swapi.co/api/films/1/"
+#> [5] "http://swapi.co/api/films/7/"
+```
+
+These URLs can be looked up in the the `sw_films` list to find the titles of the films.
+
+``` r
+# Create a mapping between titles and urls
+film_lookup <- map_chr(sw_films, "title") %>% 
+  set_names(map_chr(sw_films, "url"))
+
+# The films Luke is in
+film_lookup[luke[["films"]]] %>% unname()
+#> [1] "Revenge of the Sith"     "Return of the Jedi"     
+#> [3] "The Empire Strikes Back" "A New Hope"             
+#> [5] "The Force Awakens"
 ```
 
 Nested and split data frame examples
