@@ -25,7 +25,13 @@ repurrrsive is used in this purrr tutorial:
 Installation
 ------------
 
-You can install repurrrsive from github with:
+You can install repurrrsive from CRAN like so:
+
+``` r
+install.packages("repurrrsive")
+```
+
+or from GitHub with:
 
 ``` r
 # install.packages("devtools")
@@ -37,9 +43,9 @@ Recursive list examples
 
 #### wesanderson color palettes
 
-`wesanderson` is the simplest list, containing color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors. *Screenshot is of the [listviewer](https://CRAN.R-project.org/package=listviewer) htmlwidget.*
+`wesanderson` is the simplest list, containing color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors. *Screenshot is of RStudio's [Object Explorer](https://blog.rstudio.com/2017/08/22/rstudio-v1-1-preview-object-explorer/), i.e. from calling `View(wesanderson)`.*
 
-![](img/wesanderson-listviewer-jsonedit.png)
+![](img/wesanderson-rstudio-view.png)
 
 ``` r
 library(repurrrsive)
@@ -147,36 +153,36 @@ as_list(xml_child(xml))
 
 #### Game of Thrones POV characters
 
-`got_chars` is a list with information on the 29 point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin. Retrieved from [An API Of Ice And Fire](https://anapioficeandfire.com).
+`got_chars` is a list with information on the 30 point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin. Retrieved from [An API Of Ice And Fire](https://anapioficeandfire.com).
 
 ``` r
 library(purrr)
 (nms <- map_chr(got_chars, "name"))
-#>  [1] "Arya Stark"         "Brandon Stark"      "Catelyn Stark"     
-#>  [4] "Eddard Stark"       "Jon Snow"           "Sansa Stark"       
-#>  [7] "Tyrion Lannister"   "Will"               "Daenerys Targaryen"
-#> [10] "Theon Greyjoy"      "Cressen"            "Davos Seaworth"    
-#> [13] "Jaime Lannister"    "Merrett Frey"       "Chett"             
-#> [16] "Aeron Greyjoy"      "Arianne Martell"    "Arys Oakheart"     
-#> [19] "Asha Greyjoy"       "Brienne of Tarth"   "Cersei Lannister"  
-#> [22] "Victarion Greyjoy"  "Areo Hotah"         "Barristan Selmy"   
-#> [25] "Jon Connington"     "Kevan Lannister"    "Melisandre"        
-#> [28] "Quentyn Martell"    "Varamyr"
+#>  [1] "Theon Greyjoy"      "Tyrion Lannister"   "Victarion Greyjoy" 
+#>  [4] "Will"               "Areo Hotah"         "Chett"             
+#>  [7] "Cressen"            "Arianne Martell"    "Daenerys Targaryen"
+#> [10] "Davos Seaworth"     "Arya Stark"         "Arys Oakheart"     
+#> [13] "Asha Greyjoy"       "Barristan Selmy"    "Varamyr"           
+#> [16] "Brandon Stark"      "Brienne of Tarth"   "Catelyn Stark"     
+#> [19] "Cersei Lannister"   "Eddard Stark"       "Jaime Lannister"   
+#> [22] "Jon Connington"     "Jon Snow"           "Aeron Greyjoy"     
+#> [25] "Kevan Lannister"    "Melisandre"         "Merrett Frey"      
+#> [28] "Quentyn Martell"    "Samwell Tarly"      "Sansa Stark"
 map_df(got_chars, `[`, c("name", "gender", "culture", "born"))
-#> # A tibble: 29 × 4
-#>                  name gender  culture                         born
-#>                 <chr>  <chr>    <chr>                        <chr>
-#> 1          Arya Stark Female Northmen     In 289 AC, at Winterfell
-#> 2       Brandon Stark   Male Northmen     In 290 AC, at Winterfell
-#> 3       Catelyn Stark Female Rivermen       In 264 AC, at Riverrun
-#> 4        Eddard Stark   Male Northmen     In 263 AC, at Winterfell
-#> 5            Jon Snow   Male Northmen                    In 283 AC
-#> 6         Sansa Stark Female Northmen     In 286 AC, at Winterfell
-#> 7    Tyrion Lannister   Male           In 273 AC, at Casterly Rock
-#> 8                Will   Male                                      
-#> 9  Daenerys Targaryen Female Valyrian    In 284 AC, at Dragonstone
-#> 10      Theon Greyjoy   Male Ironborn In 278 AC or 279 AC, at Pyke
-#> # ... with 19 more rows
+#> # A tibble: 30 x 4
+#>                  name gender  culture
+#>                 <chr>  <chr>    <chr>
+#>  1      Theon Greyjoy   Male Ironborn
+#>  2   Tyrion Lannister   Male         
+#>  3  Victarion Greyjoy   Male Ironborn
+#>  4               Will   Male         
+#>  5         Areo Hotah   Male Norvoshi
+#>  6              Chett   Male         
+#>  7            Cressen   Male         
+#>  8    Arianne Martell Female  Dornish
+#>  9 Daenerys Targaryen Female Valyrian
+#> 10     Davos Seaworth   Male Westeros
+#> # ... with 20 more rows, and 1 more variables: born <chr>
 ```
 
 The same `got_chars` data is also present as JSON and XML files. Accessor functions provide the local file path.
@@ -195,13 +201,15 @@ library(jsonlite)
 json <- fromJSON(got_chars_json(), simplifyDataFrame = FALSE)
 json[[1]][c("name", "titles", "playedBy")]
 #> $name
-#> [1] "Arya Stark"
+#> [1] "Theon Greyjoy"
 #> 
 #> $titles
-#> [1] "Princess"
+#> [1] "Prince of Winterfell"                                
+#> [2] "Captain of Sea Bitch"                                
+#> [3] "Lord of the Iron Islands (by law of the green lands)"
 #> 
 #> $playedBy
-#> [1] "Maisie Williams"
+#> [1] "Alfie Allen"
 identical(got_chars, json)
 #> [1] TRUE
 ```
@@ -214,22 +222,24 @@ xml <- read_xml(got_chars_xml())
 xml_child(xml)
 #> {xml_node}
 #> <elem>
-#>  [1] <url>http://www.anapioficeandfire.com/api/characters/148</url>
-#>  [2] <name>Arya Stark</name>
-#>  [3] <gender>Female</gender>
-#>  [4] <culture>Northmen</culture>
-#>  [5] <born>In 289 AC, at Winterfell</born>
-#>  [6] <died/>
-#>  [7] <titles>Princess</titles>
-#>  [8] <aliases>\n  <elem>Arya Horseface</elem>\n  <elem>Arya Underfoot</e ...
-#>  [9] <father/>
-#> [10] <mother/>
-#> [11] <spouse/>
-#> [12] <allegiances>House Stark of Winterfell</allegiances>
-#> [13] <books/>
-#> [14] <povBooks>\n  <elem>A Game of Thrones</elem>\n  <elem>A Clash of Ki ...
-#> [15] <tvSeries>\n  <elem>Season 1</elem>\n  <elem>Season 2</elem>\n  <el ...
-#> [16] <playedBy>Maisie Williams</playedBy>
+#>  [1] <url>https://www.anapioficeandfire.com/api/characters/1022</url>
+#>  [2] <id>1022</id>
+#>  [3] <name>Theon Greyjoy</name>
+#>  [4] <gender>Male</gender>
+#>  [5] <culture>Ironborn</culture>
+#>  [6] <born>In 278 AC or 279 AC, at Pyke</born>
+#>  [7] <died/>
+#>  [8] <alive>TRUE</alive>
+#>  [9] <titles>\n  <elem>Prince of Winterfell</elem>\n  <elem>Captain of S ...
+#> [10] <aliases>\n  <elem>Prince of Fools</elem>\n  <elem>Theon Turncloak< ...
+#> [11] <father/>
+#> [12] <mother/>
+#> [13] <spouse/>
+#> [14] <allegiances>House Greyjoy of Pyke</allegiances>
+#> [15] <books>\n  <elem>A Game of Thrones</elem>\n  <elem>A Storm of Sword ...
+#> [16] <povBooks>\n  <elem>A Clash of Kings</elem>\n  <elem>A Dance with D ...
+#> [17] <tvSeries>\n  <elem>Season 1</elem>\n  <elem>Season 2</elem>\n  <el ...
+#> [18] <playedBy>Alfie Allen</playedBy>
 ```
 
 #### GitHub user and repo data
@@ -248,7 +258,7 @@ map_chr(gh_users, 18)
 #> [3] "Jeff L."                "Julia Silge"           
 #> [5] "Thomas J. Leeper"       "Maëlle Salmon"
 map_df(gh_users, `[`, c("login", "name", "id", "location"))
-#> # A tibble: 6 × 4
+#> # A tibble: 6 x 4
 #>         login                   name       id               location
 #>         <chr>                  <chr>    <int>                  <chr>
 #> 1 gaborcsardi           Gábor Csárdi   660288         Chippenham, UK
@@ -354,9 +364,6 @@ Use the Gapminder data in various forms to practice different styles of grouped 
 library(dplyr)
 #> 
 #> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:purrr':
-#> 
-#>     contains, order_by
 #> The following objects are masked from 'package:stats':
 #> 
 #>     filter, lag
@@ -370,37 +377,37 @@ library(tibble)
 gap_simple %>% 
   group_by(country) %>%
   summarize(cor = cor(lifeExp, year))
-#> # A tibble: 142 × 2
+#> # A tibble: 142 x 2
 #>        country       cor
 #>         <fctr>     <dbl>
-#> 1  Afghanistan 0.9735051
-#> 2      Albania 0.9542420
-#> 3      Algeria 0.9925307
-#> 4       Angola 0.9422392
-#> 5    Argentina 0.9977816
-#> 6    Australia 0.9897716
-#> 7      Austria 0.9960592
-#> 8      Bahrain 0.9832293
-#> 9   Bangladesh 0.9946662
+#>  1 Afghanistan 0.9735051
+#>  2     Albania 0.9542420
+#>  3     Algeria 0.9925307
+#>  4      Angola 0.9422392
+#>  5   Argentina 0.9977816
+#>  6   Australia 0.9897716
+#>  7     Austria 0.9960592
+#>  8     Bahrain 0.9832293
+#>  9  Bangladesh 0.9946662
 #> 10     Belgium 0.9972665
 #> # ... with 132 more rows
 
 ## nest() + map_*() inside mutate()
 gap_nested %>%
   mutate(cor = data %>% map_dbl(~ cor(.x$lifeExp, .x$year)))
-#> # A tibble: 142 × 4
+#> # A tibble: 142 x 4
 #>        country continent              data       cor
 #>         <fctr>    <fctr>            <list>     <dbl>
-#> 1  Afghanistan      Asia <tibble [12 × 4]> 0.9735051
-#> 2      Albania    Europe <tibble [12 × 4]> 0.9542420
-#> 3      Algeria    Africa <tibble [12 × 4]> 0.9925307
-#> 4       Angola    Africa <tibble [12 × 4]> 0.9422392
-#> 5    Argentina  Americas <tibble [12 × 4]> 0.9977816
-#> 6    Australia   Oceania <tibble [12 × 4]> 0.9897716
-#> 7      Austria    Europe <tibble [12 × 4]> 0.9960592
-#> 8      Bahrain      Asia <tibble [12 × 4]> 0.9832293
-#> 9   Bangladesh      Asia <tibble [12 × 4]> 0.9946662
-#> 10     Belgium    Europe <tibble [12 × 4]> 0.9972665
+#>  1 Afghanistan      Asia <tibble [12 x 4]> 0.9735051
+#>  2     Albania    Europe <tibble [12 x 4]> 0.9542420
+#>  3     Algeria    Africa <tibble [12 x 4]> 0.9925307
+#>  4      Angola    Africa <tibble [12 x 4]> 0.9422392
+#>  5   Argentina  Americas <tibble [12 x 4]> 0.9977816
+#>  6   Australia   Oceania <tibble [12 x 4]> 0.9897716
+#>  7     Austria    Europe <tibble [12 x 4]> 0.9960592
+#>  8     Bahrain      Asia <tibble [12 x 4]> 0.9832293
+#>  9  Bangladesh      Asia <tibble [12 x 4]> 0.9946662
+#> 10     Belgium    Europe <tibble [12 x 4]> 0.9972665
 #> # ... with 132 more rows
 
 ## split + map_*()
@@ -414,18 +421,18 @@ gap_split %>%
 gap_split %>% 
   map_dbl(~ cor(.x$lifeExp, .x$year)) %>% 
   enframe()
-#> # A tibble: 142 × 2
+#> # A tibble: 142 x 2
 #>           name     value
 #>          <chr>     <dbl>
-#> 1  Afghanistan 0.9735051
-#> 2      Albania 0.9542420
-#> 3      Algeria 0.9925307
-#> 4       Angola 0.9422392
-#> 5    Argentina 0.9977816
-#> 6    Australia 0.9897716
-#> 7      Austria 0.9960592
-#> 8      Bahrain 0.9832293
-#> 9   Bangladesh 0.9946662
+#>  1 Afghanistan 0.9735051
+#>  2     Albania 0.9542420
+#>  3     Algeria 0.9925307
+#>  4      Angola 0.9422392
+#>  5   Argentina 0.9977816
+#>  6   Australia 0.9897716
+#>  7     Austria 0.9960592
+#>  8     Bahrain 0.9832293
+#>  9  Bangladesh 0.9946662
 #> 10     Belgium 0.9972665
 #> # ... with 132 more rows
 ```

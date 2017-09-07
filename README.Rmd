@@ -26,7 +26,13 @@ repurrrsive is used in this purrr tutorial:
 
 ## Installation
 
-You can install repurrrsive from github with:
+You can install repurrrsive from CRAN like so:
+
+```{r cran-installation, eval = FALSE}
+install.packages("repurrrsive")
+```
+
+or from GitHub with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
@@ -37,9 +43,9 @@ devtools::install_github("jennybc/repurrrsive")
 
 #### wesanderson color palettes
 
-`wesanderson` is the simplest list, containing color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors. *Screenshot is of the [listviewer](https://CRAN.R-project.org/package=listviewer) htmlwidget.*
+`wesanderson` is the simplest list, containing color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors. *Screenshot is of RStudio's [Object Explorer](https://blog.rstudio.com/2017/08/22/rstudio-v1-1-preview-object-explorer/), i.e. from calling `View(wesanderson)`.*
 
-![](img/wesanderson-listviewer-jsonedit.png)
+![](img/wesanderson-rstudio-view.png)
 
 ```{r}
 library(repurrrsive)
@@ -82,7 +88,7 @@ as_list(xml_child(xml))
 
 #### Game of Thrones POV characters
 
-`got_chars` is a list with information on the 29 point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin. Retrieved from [An API Of Ice And Fire](https://anapioficeandfire.com).
+`got_chars` is a list with information on the `r length(got_chars)` point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin. Retrieved from [An API Of Ice And Fire](https://anapioficeandfire.com).
 
 ```{r}
 library(purrr)
