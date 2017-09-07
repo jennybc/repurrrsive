@@ -26,4 +26,3 @@ Other GitHub data and functions: \code{\link{gh_users_json}},
   \code{\link{gh_users}}
 }
 \keyword{datasets}
-

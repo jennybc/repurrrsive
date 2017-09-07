@@ -26,4 +26,3 @@ wesanderson[["Rushmore"]]
 Other wesanderson data and functions: \code{\link{wesanderson_json}}
 }
 \keyword{datasets}
-

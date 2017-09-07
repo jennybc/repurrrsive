@@ -26,4 +26,3 @@ str(lapply(got_chars, `[`, c("name", "culture")))
 Other Game of Thrones data and functions: \code{\link{got_chars_json}}
 }
 \keyword{datasets}
-

@@ -28,4 +28,3 @@ if (require("xml2")) {
 \seealso{
 Other wesanderson data and functions: \code{\link{wesanderson}}
 }
-
