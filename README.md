@@ -45,7 +45,7 @@ Recursive list examples
 
 `wesanderson` is the simplest list, containing color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors. *Screenshot is of RStudio's [Object Explorer](https://blog.rstudio.com/2017/08/22/rstudio-v1-1-preview-object-explorer/), i.e. from calling `View(wesanderson)`.*
 
-![](img/wesanderson-rstudio-view.png)
+![](man/figures/wesanderson-rstudio-view.png)
 
 ``` r
 library(repurrrsive)
