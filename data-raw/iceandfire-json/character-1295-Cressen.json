@@ -1,29 +1,34 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/characters/1295",
-  "name": "Cressen",
-  "gender": "Male",
-  "culture": "",
-  "born": "In 219 AC or 220 AC",
-  "died": "In 299 AC, at Dragonstone",
-  "titles": [
-    "Maester"
-  ],
-  "aliases": [],
-  "father": "",
-  "mother": "",
-  "spouse": "",
-  "allegiances": [],
-  "books": [
-    "http://www.anapioficeandfire.com/api/books/3",
-    "http://www.anapioficeandfire.com/api/books/5"
-  ],
-  "povBooks": [
-    "http://www.anapioficeandfire.com/api/books/2"
-  ],
-  "tvSeries": [
-    "Season 2"
-  ],
-  "playedBy": [
-    "Oliver Ford"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/characters/1295",
+    "name": "Cressen",
+    "gender": "Male",
+    "culture": "",
+    "born": "In 219 AC or 220 AC",
+    "died": "In 299 AC, at Dragonstone",
+    "titles": [
+        "Maester"
+    ],
+    "aliases": [
+        ""
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "",
+    "allegiances": [
+
+    ],
+    "books": [
+        "https://www.anapioficeandfire.com/api/books/3",
+        "https://www.anapioficeandfire.com/api/books/5"
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/2"
+    ],
+    "tvSeries": [
+        "Season 2"
+    ],
+    "playedBy": [
+        "Oliver Ford"
+    ]
 }
+

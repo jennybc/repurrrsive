@@ -1,45 +1,46 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/characters/168",
-  "name": "Barristan Selmy",
-  "gender": "Male",
-  "culture": "Westeros",
-  "born": "In 237 AC",
-  "died": "",
-  "titles": [
-    "Ser",
-    "Hand of the Queen"
-  ],
-  "aliases": [
-    "Barristan the Bold",
-    "Arstan Whitebeard",
-    "Ser Grandfather",
-    "Barristan the Old",
-    "Old Ser"
-  ],
-  "father": "",
-  "mother": "",
-  "spouse": "",
-  "allegiances": [
-    "http://www.anapioficeandfire.com/api/houses/341",
-    "http://www.anapioficeandfire.com/api/houses/378"
-  ],
-  "books": [
-    "http://www.anapioficeandfire.com/api/books/1",
-    "http://www.anapioficeandfire.com/api/books/2",
-    "http://www.anapioficeandfire.com/api/books/3",
-    "http://www.anapioficeandfire.com/api/books/5",
-    "http://www.anapioficeandfire.com/api/books/11"
-  ],
-  "povBooks": [
-    "http://www.anapioficeandfire.com/api/books/8"
-  ],
-  "tvSeries": [
-    "Season 1",
-    "Season 3",
-    "Season 4",
-    "Season 5"
-  ],
-  "playedBy": [
-    "Ian McElhinney"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/characters/168",
+    "name": "Barristan Selmy",
+    "gender": "Male",
+    "culture": "Westeros",
+    "born": "In 237 AC",
+    "died": "",
+    "titles": [
+        "Ser",
+        "Hand of the Queen"
+    ],
+    "aliases": [
+        "Barristan the Bold",
+        "Arstan Whitebeard",
+        "Ser Grandfather",
+        "Barristan the Old",
+        "Old Ser"
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "",
+    "allegiances": [
+        "https://www.anapioficeandfire.com/api/houses/341",
+        "https://www.anapioficeandfire.com/api/houses/378"
+    ],
+    "books": [
+        "https://www.anapioficeandfire.com/api/books/1",
+        "https://www.anapioficeandfire.com/api/books/2",
+        "https://www.anapioficeandfire.com/api/books/3",
+        "https://www.anapioficeandfire.com/api/books/5",
+        "https://www.anapioficeandfire.com/api/books/11"
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/8"
+    ],
+    "tvSeries": [
+        "Season 1",
+        "Season 3",
+        "Season 4",
+        "Season 5"
+    ],
+    "playedBy": [
+        "Ian McElhinney"
+    ]
 }
+

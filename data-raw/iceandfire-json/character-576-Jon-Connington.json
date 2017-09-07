@@ -1,33 +1,38 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/characters/576",
-  "name": "Jon Connington",
-  "gender": "Male",
-  "culture": "Stormlands",
-  "born": "In or between 263 AC and 265 AC",
-  "died": "",
-  "titles": [
-    "Lord of Griffin's Roost",
-    "Hand of the King",
-    "Hand of the True King"
-  ],
-  "aliases": [
-    "Griffthe Mad King's Hand"
-  ],
-  "father": "",
-  "mother": "",
-  "spouse": "",
-  "allegiances": [
-    "http://www.anapioficeandfire.com/api/houses/80",
-    "http://www.anapioficeandfire.com/api/houses/378"
-  ],
-  "books": [
-    "http://www.anapioficeandfire.com/api/books/3",
-    "http://www.anapioficeandfire.com/api/books/5",
-    "http://www.anapioficeandfire.com/api/books/11"
-  ],
-  "povBooks": [
-    "http://www.anapioficeandfire.com/api/books/8"
-  ],
-  "tvSeries": [],
-  "playedBy": []
+    "url": "https://www.anapioficeandfire.com/api/characters/576",
+    "name": "Jon Connington",
+    "gender": "Male",
+    "culture": "Stormlands",
+    "born": "In or between 263 AC and 265 AC",
+    "died": "",
+    "titles": [
+        "Lord of Griffin's Roost",
+        "Hand of the King",
+        "Hand of the True King"
+    ],
+    "aliases": [
+        "Griffthe Mad King's Hand"
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "",
+    "allegiances": [
+        "https://www.anapioficeandfire.com/api/houses/80",
+        "https://www.anapioficeandfire.com/api/houses/378"
+    ],
+    "books": [
+        "https://www.anapioficeandfire.com/api/books/3",
+        "https://www.anapioficeandfire.com/api/books/5",
+        "https://www.anapioficeandfire.com/api/books/11"
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/8"
+    ],
+    "tvSeries": [
+        ""
+    ],
+    "playedBy": [
+        ""
+    ]
 }
+

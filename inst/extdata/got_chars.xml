@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/1022</url>
+    <url>https://www.anapioficeandfire.com/api/characters/1022</url>
     <id>1022</id>
     <name>Theon Greyjoy</name>
     <gender>Male</gender>
@@ -44,7 +44,7 @@
     <playedBy>Alfie Allen</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/1052</url>
+    <url>https://www.anapioficeandfire.com/api/characters/1052</url>
     <id>1052</id>
     <name>Tyrion Lannister</name>
     <gender>Male</gender>
@@ -71,7 +71,7 @@
     </aliases>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/2044</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/2044</spouse>
     <allegiances>House Lannister of Casterly Rock</allegiances>
     <books>
       <elem>A Feast for Crows</elem>
@@ -94,7 +94,7 @@
     <playedBy>Peter Dinklage</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/1074</url>
+    <url>https://www.anapioficeandfire.com/api/characters/1074</url>
     <id>1074</id>
     <name>Victarion Greyjoy</name>
     <gender>Male</gender>
@@ -124,7 +124,7 @@
     <playedBy/>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/1109</url>
+    <url>https://www.anapioficeandfire.com/api/characters/1109</url>
     <id>1109</id>
     <name>Will</name>
     <gender>Male</gender>
@@ -144,7 +144,7 @@
     <playedBy>Bronson Webb</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/1166</url>
+    <url>https://www.anapioficeandfire.com/api/characters/1166</url>
     <id>1166</id>
     <name>Areo Hotah</name>
     <gender>Male</gender>
@@ -174,7 +174,7 @@
     <playedBy>DeObia Oparei</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/1267</url>
+    <url>https://www.anapioficeandfire.com/api/characters/1267</url>
     <id>1267</id>
     <name>Chett</name>
     <gender>Male</gender>
@@ -197,7 +197,7 @@
     <playedBy/>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/1295</url>
+    <url>https://www.anapioficeandfire.com/api/characters/1295</url>
     <id>1295</id>
     <name>Cressen</name>
     <gender>Male</gender>
@@ -220,7 +220,7 @@
     <playedBy>Oliver Ford</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/130</url>
+    <url>https://www.anapioficeandfire.com/api/characters/130</url>
     <id>130</id>
     <name>Arianne Martell</name>
     <gender>Female</gender>
@@ -245,7 +245,7 @@
     <playedBy/>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/1303</url>
+    <url>https://www.anapioficeandfire.com/api/characters/1303</url>
     <id>1303</id>
     <name>Daenerys Targaryen</name>
     <gender>Female</gender>
@@ -275,7 +275,7 @@
     </aliases>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/1346</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/1346</spouse>
     <allegiances>House Targaryen of King's Landing</allegiances>
     <books>A Feast for Crows</books>
     <povBooks>
@@ -295,7 +295,7 @@
     <playedBy>Emilia Clarke</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/1319</url>
+    <url>https://www.anapioficeandfire.com/api/characters/1319</url>
     <id>1319</id>
     <name>Davos Seaworth</name>
     <gender>Male</gender>
@@ -318,7 +318,7 @@
     </aliases>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/1676</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/1676</spouse>
     <allegiances>
       <elem>House Baratheon of Dragonstone</elem>
       <elem>House Seaworth of Cape Wrath</elem>
@@ -339,7 +339,7 @@
     <playedBy>Liam Cunningham</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/148</url>
+    <url>https://www.anapioficeandfire.com/api/characters/148</url>
     <id>148</id>
     <name>Arya Stark</name>
     <gender>Female</gender>
@@ -389,7 +389,7 @@
     <playedBy>Maisie Williams</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/149</url>
+    <url>https://www.anapioficeandfire.com/api/characters/149</url>
     <id>149</id>
     <name>Arys Oakheart</name>
     <gender>Male</gender>
@@ -414,7 +414,7 @@
     <playedBy/>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/150</url>
+    <url>https://www.anapioficeandfire.com/api/characters/150</url>
     <id>150</id>
     <name>Asha Greyjoy</name>
     <gender>Female</gender>
@@ -433,7 +433,7 @@
     </aliases>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/1372</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/1372</spouse>
     <allegiances>
       <elem>House Greyjoy of Pyke</elem>
       <elem>House Ironmaker</elem>
@@ -454,7 +454,7 @@
     <playedBy>Gemma Whelan</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/168</url>
+    <url>https://www.anapioficeandfire.com/api/characters/168</url>
     <id>168</id>
     <name>Barristan Selmy</name>
     <gender>Male</gender>
@@ -497,7 +497,7 @@
     <playedBy>Ian McElhinney</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/2066</url>
+    <url>https://www.anapioficeandfire.com/api/characters/2066</url>
     <id>2066</id>
     <name>Varamyr</name>
     <gender>Male</gender>
@@ -521,12 +521,12 @@
     <playedBy/>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/208</url>
+    <url>https://www.anapioficeandfire.com/api/characters/208</url>
     <id>208</id>
     <name>Brandon Stark</name>
     <gender>Male</gender>
     <culture>Northmen</culture>
-    <born>In 290 AC, at Winterfell</born>
+    <born>In 290 AC, at Winterfell</born>
     <died/>
     <alive>TRUE</alive>
     <titles>Prince of Winterfell</titles>
@@ -556,7 +556,7 @@
     <playedBy>Isaac Hempstead-Wright</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/216</url>
+    <url>https://www.anapioficeandfire.com/api/characters/216</url>
     <id>216</id>
     <name>Brienne of Tarth</name>
     <gender>Female</gender>
@@ -594,7 +594,7 @@
     <playedBy>Gwendoline Christie</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/232</url>
+    <url>https://www.anapioficeandfire.com/api/characters/232</url>
     <id>232</id>
     <name>Catelyn Stark</name>
     <gender>Female</gender>
@@ -612,7 +612,7 @@
     </aliases>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/339</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/339</spouse>
     <allegiances>
       <elem>House Stark of Winterfell</elem>
       <elem>House Tully of Riverrun</elem>
@@ -634,7 +634,7 @@
     <playedBy>Michelle Fairley</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/238</url>
+    <url>https://www.anapioficeandfire.com/api/characters/238</url>
     <id>238</id>
     <name>Cersei Lannister</name>
     <gender>Female</gender>
@@ -652,7 +652,7 @@
     <aliases/>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/901</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/901</spouse>
     <allegiances>House Lannister of Casterly Rock</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
@@ -674,7 +674,7 @@
     <playedBy>Lena Headey</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/339</url>
+    <url>https://www.anapioficeandfire.com/api/characters/339</url>
     <id>339</id>
     <name>Eddard Stark</name>
     <gender>Male</gender>
@@ -696,7 +696,7 @@
     </aliases>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/232</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/232</spouse>
     <allegiances>House Stark of Winterfell</allegiances>
     <books>
       <elem>A Clash of Kings</elem>
@@ -717,12 +717,12 @@
     </playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/529</url>
+    <url>https://www.anapioficeandfire.com/api/characters/529</url>
     <id>529</id>
     <name>Jaime Lannister</name>
     <gender>Male</gender>
     <culture>Westerlands</culture>
-    <born>In 266 AC, at Casterly Rock</born>
+    <born>In 266 AC, at Casterly Rock</born>
     <died/>
     <alive>TRUE</alive>
     <titles>
@@ -759,7 +759,7 @@
     <playedBy>Nikolaj Coster-Waldau</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/576</url>
+    <url>https://www.anapioficeandfire.com/api/characters/576</url>
     <id>576</id>
     <name>Jon Connington</name>
     <gender>Male</gender>
@@ -790,7 +790,7 @@
     <playedBy/>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/583</url>
+    <url>https://www.anapioficeandfire.com/api/characters/583</url>
     <id>583</id>
     <name>Jon Snow</name>
     <gender>Male</gender>
@@ -831,7 +831,7 @@
     <playedBy>Kit Harington</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/60</url>
+    <url>https://www.anapioficeandfire.com/api/characters/60</url>
     <id>60</id>
     <name>Aeron Greyjoy</name>
     <gender>Male</gender>
@@ -862,7 +862,7 @@
     <playedBy>Michael Feast</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/605</url>
+    <url>https://www.anapioficeandfire.com/api/characters/605</url>
     <id>605</id>
     <name>Kevan Lannister</name>
     <gender>Male</gender>
@@ -879,7 +879,7 @@
     <aliases/>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/327</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/327</spouse>
     <allegiances>House Lannister of Casterly Rock</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
@@ -897,7 +897,7 @@
     <playedBy>Ian Gelder</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/743</url>
+    <url>https://www.anapioficeandfire.com/api/characters/743</url>
     <id>743</id>
     <name>Melisandre</name>
     <gender>Female</gender>
@@ -933,7 +933,7 @@
     <playedBy>Carice van Houten</playedBy>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/751</url>
+    <url>https://www.anapioficeandfire.com/api/characters/751</url>
     <id>751</id>
     <name>Merrett Frey</name>
     <gender>Male</gender>
@@ -945,7 +945,7 @@
     <aliases>Merrett Muttonhead</aliases>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/712</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/712</spouse>
     <allegiances>House Frey of the Crossing</allegiances>
     <books>
       <elem>A Game of Thrones</elem>
@@ -958,7 +958,7 @@
     <playedBy/>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/844</url>
+    <url>https://www.anapioficeandfire.com/api/characters/844</url>
     <id>844</id>
     <name>Quentyn Martell</name>
     <gender>Male</gender>
@@ -988,7 +988,49 @@
     <playedBy/>
   </elem>
   <elem>
-    <url>http://www.anapioficeandfire.com/api/characters/957</url>
+    <url>https://www.anapioficeandfire.com/api/characters/954</url>
+    <id>954</id>
+    <name>Samwell Tarly</name>
+    <gender>Male</gender>
+    <culture>Andal</culture>
+    <born>In 283 AC, at Horn Hill</born>
+    <died/>
+    <alive>TRUE</alive>
+    <titles/>
+    <aliases>
+      <elem>Sam</elem>
+      <elem>Ser Piggy</elem>
+      <elem>Prince Pork-chop</elem>
+      <elem>Lady Piggy</elem>
+      <elem>Sam the Slayer</elem>
+      <elem>Black Sam</elem>
+      <elem>Lord of Ham</elem>
+    </aliases>
+    <father/>
+    <mother/>
+    <spouse/>
+    <allegiances>House Tarly of Horn Hill</allegiances>
+    <books>
+      <elem>A Game of Thrones</elem>
+      <elem>A Clash of Kings</elem>
+      <elem>A Dance with Dragons</elem>
+    </books>
+    <povBooks>
+      <elem>A Storm of Swords</elem>
+      <elem>A Feast for Crows</elem>
+    </povBooks>
+    <tvSeries>
+      <elem>Season 1</elem>
+      <elem>Season 2</elem>
+      <elem>Season 3</elem>
+      <elem>Season 4</elem>
+      <elem>Season 5</elem>
+      <elem>Season 6</elem>
+    </tvSeries>
+    <playedBy>John Bradley-West</playedBy>
+  </elem>
+  <elem>
+    <url>https://www.anapioficeandfire.com/api/characters/957</url>
     <id>957</id>
     <name>Sansa Stark</name>
     <gender>Female</gender>
@@ -1004,7 +1046,7 @@
     </aliases>
     <father/>
     <mother/>
-    <spouse>http://www.anapioficeandfire.com/api/characters/1052</spouse>
+    <spouse>https://www.anapioficeandfire.com/api/characters/1052</spouse>
     <allegiances>
       <elem>House Baelish of Harrenhal</elem>
       <elem>House Stark of Winterfell</elem>

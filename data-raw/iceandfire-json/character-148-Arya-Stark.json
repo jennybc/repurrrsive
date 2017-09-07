@@ -1,54 +1,57 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/characters/148",
-  "name": "Arya Stark",
-  "gender": "Female",
-  "culture": "Northmen",
-  "born": "In 289 AC, at Winterfell",
-  "died": "",
-  "titles": [
-    "Princess"
-  ],
-  "aliases": [
-    "Arya Horseface",
-    "Arya Underfoot",
-    "Arry",
-    "Lumpyface",
-    "Lumpyhead",
-    "Stickboy",
-    "Weasel",
-    "Nymeria",
-    "Squan",
-    "Saltb",
-    "Cat of the Canaly",
-    "Bets",
-    "The Blind Girh",
-    "The Ugly Little Girl",
-    "Mercedenl",
-    "Mercye"
-  ],
-  "father": "",
-  "mother": "",
-  "spouse": "",
-  "allegiances": [
-    "http://www.anapioficeandfire.com/api/houses/362"
-  ],
-  "books": [],
-  "povBooks": [
-    "http://www.anapioficeandfire.com/api/books/1",
-    "http://www.anapioficeandfire.com/api/books/2",
-    "http://www.anapioficeandfire.com/api/books/3",
-    "http://www.anapioficeandfire.com/api/books/5",
-    "http://www.anapioficeandfire.com/api/books/8"
-  ],
-  "tvSeries": [
-    "Season 1",
-    "Season 2",
-    "Season 3",
-    "Season 4",
-    "Season 5",
-    "Season 6"
-  ],
-  "playedBy": [
-    "Maisie Williams"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/characters/148",
+    "name": "Arya Stark",
+    "gender": "Female",
+    "culture": "Northmen",
+    "born": "In 289 AC, at Winterfell",
+    "died": "",
+    "titles": [
+        "Princess"
+    ],
+    "aliases": [
+        "Arya Horseface",
+        "Arya Underfoot",
+        "Arry",
+        "Lumpyface",
+        "Lumpyhead",
+        "Stickboy",
+        "Weasel",
+        "Nymeria",
+        "Squan",
+        "Saltb",
+        "Cat of the Canaly",
+        "Bets",
+        "The Blind Girh",
+        "The Ugly Little Girl",
+        "Mercedenl",
+        "Mercye"
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "",
+    "allegiances": [
+        "https://www.anapioficeandfire.com/api/houses/362"
+    ],
+    "books": [
+
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/1",
+        "https://www.anapioficeandfire.com/api/books/2",
+        "https://www.anapioficeandfire.com/api/books/3",
+        "https://www.anapioficeandfire.com/api/books/5",
+        "https://www.anapioficeandfire.com/api/books/8"
+    ],
+    "tvSeries": [
+        "Season 1",
+        "Season 2",
+        "Season 3",
+        "Season 4",
+        "Season 5",
+        "Season 6"
+    ],
+    "playedBy": [
+        "Maisie Williams"
+    ]
 }
+

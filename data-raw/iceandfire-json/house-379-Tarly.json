@@ -1,0 +1,34 @@
+{
+    "url": "https://www.anapioficeandfire.com/api/houses/379",
+    "name": "House Tarly of Horn Hill",
+    "region": "The Reach",
+    "coatOfArms": "Vert, a huntsman striding to dexter proper garbed gules",
+    "words": "First in Battle",
+    "titles": [
+        "Lord of Horn Hill"
+    ],
+    "seats": [
+        "Horn Hill"
+    ],
+    "currentLord": "https://www.anapioficeandfire.com/api/characters/850",
+    "heir": "https://www.anapioficeandfire.com/api/characters/313",
+    "overlord": "https://www.anapioficeandfire.com/api/houses/398",
+    "founded": "",
+    "founder": "",
+    "diedOut": "",
+    "ancestralWeapons": [
+        "Heartsbane"
+    ],
+    "cadetBranches": [
+
+    ],
+    "swornMembers": [
+        "https://www.anapioficeandfire.com/api/characters/313",
+        "https://www.anapioficeandfire.com/api/characters/359",
+        "https://www.anapioficeandfire.com/api/characters/742",
+        "https://www.anapioficeandfire.com/api/characters/850",
+        "https://www.anapioficeandfire.com/api/characters/954",
+        "https://www.anapioficeandfire.com/api/characters/1008"
+    ]
+}
+

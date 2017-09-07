@@ -1,26 +1,35 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/characters/2066",
-  "name": "Varamyr",
-  "gender": "Male",
-  "culture": "Free Folk",
-  "born": "At a village Beyond the Wall",
-  "died": "In 300 AC, at a village Beyond the Wall",
-  "titles": [],
-  "aliases": [
-    "Varamyr Sixskins",
-    "Haggon",
-    "Lump"
-  ],
-  "father": "",
-  "mother": "",
-  "spouse": "",
-  "allegiances": [],
-  "books": [
-    "http://www.anapioficeandfire.com/api/books/3"
-  ],
-  "povBooks": [
-    "http://www.anapioficeandfire.com/api/books/8"
-  ],
-  "tvSeries": [],
-  "playedBy": []
+    "url": "https://www.anapioficeandfire.com/api/characters/2066",
+    "name": "Varamyr",
+    "gender": "Male",
+    "culture": "Free Folk",
+    "born": "At a village Beyond the Wall",
+    "died": "In 300 AC, at a village Beyond the Wall",
+    "titles": [
+        ""
+    ],
+    "aliases": [
+        "Varamyr Sixskins",
+        "Haggon",
+        "Lump"
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "",
+    "allegiances": [
+
+    ],
+    "books": [
+        "https://www.anapioficeandfire.com/api/books/3"
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/8"
+    ],
+    "tvSeries": [
+        ""
+    ],
+    "playedBy": [
+        ""
+    ]
 }
+

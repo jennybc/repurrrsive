@@ -1,24 +1,33 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/characters/1109",
-  "name": "Will",
-  "gender": "Male",
-  "culture": "",
-  "born": "",
-  "died": "In 297 AC, at Haunted Forest",
-  "titles": [],
-  "aliases": [],
-  "father": "",
-  "mother": "",
-  "spouse": "",
-  "allegiances": [],
-  "books": [
-    "http://www.anapioficeandfire.com/api/books/2"
-  ],
-  "povBooks": [
-    "http://www.anapioficeandfire.com/api/books/1"
-  ],
-  "tvSeries": [],
-  "playedBy": [
-    "Bronson Webb"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/characters/1109",
+    "name": "Will",
+    "gender": "Male",
+    "culture": "",
+    "born": "",
+    "died": "In 297 AC, at Haunted Forest",
+    "titles": [
+        ""
+    ],
+    "aliases": [
+        ""
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "",
+    "allegiances": [
+
+    ],
+    "books": [
+        "https://www.anapioficeandfire.com/api/books/2"
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/1"
+    ],
+    "tvSeries": [
+        ""
+    ],
+    "playedBy": [
+        "Bronson Webb"
+    ]
 }
+

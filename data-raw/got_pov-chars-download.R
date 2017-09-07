@@ -1,11 +1,9 @@
 ## https://anapioficeandfire.com
 
-## devtools::install_github("krlmlr/here")
 library(here)
 library(httr)
 library(tidyverse)
 library(stringr)
-library(listviewer)
 library(jsonlite)
 
 ## determines number of pages implied by link header in httr response
@@ -46,13 +44,17 @@ resp <- GET("http://www.anapioficeandfire.com/api/houses?pageSize=1")
 iceandfire <- "http://www.anapioficeandfire.com"
 
 ## get all books
+books_json <- here("data-raw", "iceandfire-json", "books.json")
 iceandfire %>%
   modify_url(path = c("api", "books"), query = list(pageSize = n_books)) %>%
-  download.file(here("data-raw", "iceandfire-json", "books.json"))
+  download.file(books_json)
+books_json %>%
+  readLines(warn = FALSE) %>%
+  prettify() %>%
+  writeLines(books_json)
 
-books <-
-  fromJSON(here("data-raw", "iceandfire-json", "books.json"),
-           simplifyDataFrame = FALSE)
+books <- books_json %>%
+  fromJSON(simplifyDataFrame = FALSE)
 
 books_df <- tibble(
      book = books %>% map_chr("name"),
@@ -60,7 +62,8 @@ books_df <- tibble(
       pov = books %>% map("povCharacters"),
     n_pov = lengths(pov)
 )
-books_df
+books_df %>%
+  arrange(desc(n_pov))
 ## Confirmed: I can concentrate on only the 5 main books
 ## A Game of Thrones, A Clash of Kings, A Storm of Swords,
 ## A Feast for Crows, and A Dance with Dragons
@@ -87,7 +90,7 @@ pov_df <- tibble(
                paste0("character-", character_id, ".json"))
 )
 walk2(pov_df$url, pov_df$fname,
-      function(url, file) GET(url) %>% write_lines(file))
+      function(url, file) GET(url) %>% prettify() %>% write_lines(file))
 
 ## give POV character JSON files better names
 pov_df <- pov_df %>%
@@ -96,7 +99,7 @@ pov_df <- pov_df %>%
          fname2 = str_replace(fname, ".json$",
                              paste0("-", str_replace_all(name, "\\s+", "-"), ".json")))
 walk2(pov_df$fname, pov_df$fname2, file.rename)
-jsonedit(pov_df$from_api)
+## View(pov_df$from_api)
 
 ## download JSON for the houses found in allegiances of POV characters
 houses_df <- tibble(
@@ -105,8 +108,13 @@ houses_df <- tibble(
   fname = here("data-raw", "iceandfire-json",
                paste0("house-", house_id, ".json"))
 )
+## guard against this form of duplication:
+## https://www.anapioficeandfire.com/api/houses/362
+## https://anapioficeandfire.com/api/houses/362
+houses_df <- houses_df %>%
+  filter(!duplicated(houses_df$house_id))
 walk2(houses_df$url, houses_df$fname,
-      function(url, file) GET(url) %>% write_lines(file))
+      function(url, file) GET(url) %>% prettify() %>% write_lines(file))
 
 ## give house JSON files better names
 houses_df <- houses_df %>%
@@ -120,4 +128,3 @@ houses_df <- houses_df %>%
     fname, ".json$",
     paste0("-",str_replace_all(house_name, "\\s+", "-"), ".json")))
 walk2(houses_df$fname, houses_df$fname2, file.rename)
-

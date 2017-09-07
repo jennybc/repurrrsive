@@ -1,49 +1,52 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/houses/17",
-  "name": "House Baratheon of Storm's End",
-  "region": "The Stormlands",
-  "coatOfArms": "A black crowned stag, on a gold field(Or, a stag salient, crowned, sable)",
-  "words": "Ours is the Fury",
-  "titles": [
-    "Lord of Storm's End",
-    "Lord Paramount of the Stormlands"
-  ],
-  "seats": [
-    "Storm's End",
-    "Dragonstone (House Baratheon of Dragonstone)"
-  ],
-  "currentLord": "http://www.anapioficeandfire.com/api/characters/1029",
-  "heir": "http://www.anapioficeandfire.com/api/characters/775",
-  "overlord": "http://www.anapioficeandfire.com/api/houses/16",
-  "founded": "1 AC",
-  "founder": "http://www.anapioficeandfire.com/api/characters/797",
-  "diedOut": "",
-  "ancestralWeapons": [],
-  "cadetBranches": [
-    "http://www.anapioficeandfire.com/api/houses/15",
-    "http://www.anapioficeandfire.com/api/houses/16",
-    "http://www.anapioficeandfire.com/api/houses/33",
-    "http://www.anapioficeandfire.com/api/houses/423"
-  ],
-  "swornMembers": [
-    "http://www.anapioficeandfire.com/api/characters/110",
-    "http://www.anapioficeandfire.com/api/characters/128",
-    "http://www.anapioficeandfire.com/api/characters/216",
-    "http://www.anapioficeandfire.com/api/characters/230",
-    "http://www.anapioficeandfire.com/api/characters/249",
-    "http://www.anapioficeandfire.com/api/characters/315",
-    "http://www.anapioficeandfire.com/api/characters/435",
-    "http://www.anapioficeandfire.com/api/characters/679",
-    "http://www.anapioficeandfire.com/api/characters/794",
-    "http://www.anapioficeandfire.com/api/characters/797",
-    "http://www.anapioficeandfire.com/api/characters/862",
-    "http://www.anapioficeandfire.com/api/characters/870",
-    "http://www.anapioficeandfire.com/api/characters/986",
-    "http://www.anapioficeandfire.com/api/characters/1044",
-    "http://www.anapioficeandfire.com/api/characters/1188",
-    "http://www.anapioficeandfire.com/api/characters/1233",
-    "http://www.anapioficeandfire.com/api/characters/1355",
-    "http://www.anapioficeandfire.com/api/characters/1473",
-    "http://www.anapioficeandfire.com/api/characters/1552"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/houses/17",
+    "name": "House Baratheon of Storm's End",
+    "region": "The Stormlands",
+    "coatOfArms": "A black crowned stag, on a gold field(Or, a stag salient, crowned, sable)",
+    "words": "Ours is the Fury",
+    "titles": [
+        "Lord of Storm's End",
+        "Lord Paramount of the Stormlands"
+    ],
+    "seats": [
+        "Storm's End",
+        "Dragonstone (House Baratheon of Dragonstone)"
+    ],
+    "currentLord": "https://www.anapioficeandfire.com/api/characters/1029",
+    "heir": "https://www.anapioficeandfire.com/api/characters/775",
+    "overlord": "https://www.anapioficeandfire.com/api/houses/16",
+    "founded": "1 AC",
+    "founder": "https://www.anapioficeandfire.com/api/characters/797",
+    "diedOut": "",
+    "ancestralWeapons": [
+        ""
+    ],
+    "cadetBranches": [
+        "https://www.anapioficeandfire.com/api/houses/15",
+        "https://www.anapioficeandfire.com/api/houses/16",
+        "https://www.anapioficeandfire.com/api/houses/33",
+        "https://www.anapioficeandfire.com/api/houses/423"
+    ],
+    "swornMembers": [
+        "https://www.anapioficeandfire.com/api/characters/110",
+        "https://www.anapioficeandfire.com/api/characters/128",
+        "https://www.anapioficeandfire.com/api/characters/216",
+        "https://www.anapioficeandfire.com/api/characters/230",
+        "https://www.anapioficeandfire.com/api/characters/249",
+        "https://www.anapioficeandfire.com/api/characters/315",
+        "https://www.anapioficeandfire.com/api/characters/435",
+        "https://www.anapioficeandfire.com/api/characters/679",
+        "https://www.anapioficeandfire.com/api/characters/794",
+        "https://www.anapioficeandfire.com/api/characters/797",
+        "https://www.anapioficeandfire.com/api/characters/862",
+        "https://www.anapioficeandfire.com/api/characters/870",
+        "https://www.anapioficeandfire.com/api/characters/986",
+        "https://www.anapioficeandfire.com/api/characters/1044",
+        "https://www.anapioficeandfire.com/api/characters/1188",
+        "https://www.anapioficeandfire.com/api/characters/1233",
+        "https://www.anapioficeandfire.com/api/characters/1355",
+        "https://www.anapioficeandfire.com/api/characters/1473",
+        "https://www.anapioficeandfire.com/api/characters/1552"
+    ]
 }
+

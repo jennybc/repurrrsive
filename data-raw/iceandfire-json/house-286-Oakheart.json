@@ -1,27 +1,34 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/houses/286",
-  "name": "House Oakheart of Old Oak",
-  "region": "The Reach",
-  "coatOfArms": "Or, three oak leaves vert",
-  "words": "Our Roots Go Deep",
-  "titles": [],
-  "seats": [
-    "Old Oak"
-  ],
-  "currentLord": "http://www.anapioficeandfire.com/api/characters/147",
-  "heir": "",
-  "overlord": "http://www.anapioficeandfire.com/api/houses/398",
-  "founded": "",
-  "founder": "http://www.anapioficeandfire.com/api/characters/570",
-  "diedOut": "",
-  "ancestralWeapons": [],
-  "cadetBranches": [],
-  "swornMembers": [
-    "http://www.anapioficeandfire.com/api/characters/74",
-    "http://www.anapioficeandfire.com/api/characters/147",
-    "http://www.anapioficeandfire.com/api/characters/149",
-    "http://www.anapioficeandfire.com/api/characters/343",
-    "http://www.anapioficeandfire.com/api/characters/570",
-    "http://www.anapioficeandfire.com/api/characters/787"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/houses/286",
+    "name": "House Oakheart of Old Oak",
+    "region": "The Reach",
+    "coatOfArms": "Or, three oak leaves vert",
+    "words": "Our Roots Go Deep",
+    "titles": [
+        ""
+    ],
+    "seats": [
+        "Old Oak"
+    ],
+    "currentLord": "https://www.anapioficeandfire.com/api/characters/147",
+    "heir": "",
+    "overlord": "https://www.anapioficeandfire.com/api/houses/398",
+    "founded": "",
+    "founder": "https://www.anapioficeandfire.com/api/characters/570",
+    "diedOut": "",
+    "ancestralWeapons": [
+        ""
+    ],
+    "cadetBranches": [
+
+    ],
+    "swornMembers": [
+        "https://www.anapioficeandfire.com/api/characters/74",
+        "https://www.anapioficeandfire.com/api/characters/147",
+        "https://www.anapioficeandfire.com/api/characters/149",
+        "https://www.anapioficeandfire.com/api/characters/343",
+        "https://www.anapioficeandfire.com/api/characters/570",
+        "https://www.anapioficeandfire.com/api/characters/787"
+    ]
 }
+

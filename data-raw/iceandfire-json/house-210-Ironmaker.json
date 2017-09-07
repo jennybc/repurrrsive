@@ -1,24 +1,33 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/houses/210",
-  "name": "House Ironmaker",
-  "region": "Iron Islands",
-  "coatOfArms": "",
-  "words": "",
-  "titles": [],
-  "seats": [],
-  "currentLord": "http://www.anapioficeandfire.com/api/characters/1372",
-  "heir": "",
-  "overlord": "http://www.anapioficeandfire.com/api/houses/169",
-  "founded": "",
-  "founder": "",
-  "diedOut": "",
-  "ancestralWeapons": [],
-  "cadetBranches": [],
-  "swornMembers": [
-    "http://www.anapioficeandfire.com/api/characters/150",
-    "http://www.anapioficeandfire.com/api/characters/1307",
-    "http://www.anapioficeandfire.com/api/characters/1372",
-    "http://www.anapioficeandfire.com/api/characters/2001",
-    "http://www.anapioficeandfire.com/api/characters/2055"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/houses/210",
+    "name": "House Ironmaker",
+    "region": "Iron Islands",
+    "coatOfArms": "",
+    "words": "",
+    "titles": [
+        ""
+    ],
+    "seats": [
+        ""
+    ],
+    "currentLord": "https://www.anapioficeandfire.com/api/characters/1372",
+    "heir": "",
+    "overlord": "https://www.anapioficeandfire.com/api/houses/169",
+    "founded": "",
+    "founder": "",
+    "diedOut": "",
+    "ancestralWeapons": [
+        ""
+    ],
+    "cadetBranches": [
+
+    ],
+    "swornMembers": [
+        "https://www.anapioficeandfire.com/api/characters/150",
+        "https://www.anapioficeandfire.com/api/characters/1307",
+        "https://www.anapioficeandfire.com/api/characters/1372",
+        "https://www.anapioficeandfire.com/api/characters/2001",
+        "https://www.anapioficeandfire.com/api/characters/2055"
+    ]
 }
+

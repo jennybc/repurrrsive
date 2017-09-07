@@ -1,28 +1,33 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/houses/80",
-  "name": "House Connington of Griffin's Roost",
-  "region": "The Stormlands",
-  "coatOfArms": "Two combatant griffins, counterchanged, on a red and white field(Per pale gules and argent, two griffins combatant counterchanged)",
-  "words": "",
-  "titles": [
-    "The Knight of Griffin's Roost"
-  ],
-  "seats": [
-    "Griffin's Roost"
-  ],
-  "currentLord": "http://www.anapioficeandfire.com/api/characters/576",
-  "heir": "",
-  "overlord": "http://www.anapioficeandfire.com/api/houses/17",
-  "founded": "",
-  "founder": "",
-  "diedOut": "",
-  "ancestralWeapons": [],
-  "cadetBranches": [],
-  "swornMembers": [
-    "http://www.anapioficeandfire.com/api/characters/84",
-    "http://www.anapioficeandfire.com/api/characters/576",
-    "http://www.anapioficeandfire.com/api/characters/928",
-    "http://www.anapioficeandfire.com/api/characters/932",
-    "http://www.anapioficeandfire.com/api/characters/1899"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/houses/80",
+    "name": "House Connington of Griffin's Roost",
+    "region": "The Stormlands",
+    "coatOfArms": "Two combatant griffins, counterchanged, on a red and white field(Per pale gules and argent, two griffins combatant counterchanged)",
+    "words": "",
+    "titles": [
+        "The Knight of Griffin's Roost"
+    ],
+    "seats": [
+        "Griffin's Roost"
+    ],
+    "currentLord": "https://www.anapioficeandfire.com/api/characters/576",
+    "heir": "",
+    "overlord": "https://www.anapioficeandfire.com/api/houses/17",
+    "founded": "",
+    "founder": "",
+    "diedOut": "",
+    "ancestralWeapons": [
+        ""
+    ],
+    "cadetBranches": [
+
+    ],
+    "swornMembers": [
+        "https://www.anapioficeandfire.com/api/characters/84",
+        "https://www.anapioficeandfire.com/api/characters/576",
+        "https://www.anapioficeandfire.com/api/characters/928",
+        "https://www.anapioficeandfire.com/api/characters/932",
+        "https://www.anapioficeandfire.com/api/characters/1899"
+    ]
 }
+

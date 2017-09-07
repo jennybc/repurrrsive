@@ -1,52 +1,53 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/characters/1052",
-  "name": "Tyrion Lannister",
-  "gender": "Male",
-  "culture": "",
-  "born": "In 273 AC, at Casterly Rock",
-  "died": "",
-  "titles": [
-    "Acting Hand of the King (former)",
-    "Master of Coin (former)"
-  ],
-  "aliases": [
-    "The Imp",
-    "Halfman",
-    "The boyman",
-    "Giant of Lannister",
-    "Lord Tywin's Doom",
-    "Lord Tywin's Bane",
-    "Yollo",
-    "Hugor Hill",
-    "No-Nose",
-    "Freak",
-    "Dwarf"
-  ],
-  "father": "",
-  "mother": "",
-  "spouse": "http://www.anapioficeandfire.com/api/characters/2044",
-  "allegiances": [
-    "http://www.anapioficeandfire.com/api/houses/229"
-  ],
-  "books": [
-    "http://www.anapioficeandfire.com/api/books/5",
-    "http://www.anapioficeandfire.com/api/books/11"
-  ],
-  "povBooks": [
-    "http://www.anapioficeandfire.com/api/books/1",
-    "http://www.anapioficeandfire.com/api/books/2",
-    "http://www.anapioficeandfire.com/api/books/3",
-    "http://www.anapioficeandfire.com/api/books/8"
-  ],
-  "tvSeries": [
-    "Season 1",
-    "Season 2",
-    "Season 3",
-    "Season 4",
-    "Season 5",
-    "Season 6"
-  ],
-  "playedBy": [
-    "Peter Dinklage"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/characters/1052",
+    "name": "Tyrion Lannister",
+    "gender": "Male",
+    "culture": "",
+    "born": "In 273 AC, at Casterly Rock",
+    "died": "",
+    "titles": [
+        "Acting Hand of the King (former)",
+        "Master of Coin (former)"
+    ],
+    "aliases": [
+        "The Imp",
+        "Halfman",
+        "The boyman",
+        "Giant of Lannister",
+        "Lord Tywin's Doom",
+        "Lord Tywin's Bane",
+        "Yollo",
+        "Hugor Hill",
+        "No-Nose",
+        "Freak",
+        "Dwarf"
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "https://www.anapioficeandfire.com/api/characters/2044",
+    "allegiances": [
+        "https://www.anapioficeandfire.com/api/houses/229"
+    ],
+    "books": [
+        "https://www.anapioficeandfire.com/api/books/5",
+        "https://www.anapioficeandfire.com/api/books/11"
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/1",
+        "https://www.anapioficeandfire.com/api/books/2",
+        "https://www.anapioficeandfire.com/api/books/3",
+        "https://www.anapioficeandfire.com/api/books/8"
+    ],
+    "tvSeries": [
+        "Season 1",
+        "Season 2",
+        "Season 3",
+        "Season 4",
+        "Season 5",
+        "Season 6"
+    ],
+    "playedBy": [
+        "Peter Dinklage"
+    ]
 }
+

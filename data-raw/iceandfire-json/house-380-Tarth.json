@@ -1,32 +1,37 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/houses/380",
-  "name": "House Tarth of Evenfall Hall",
-  "region": "The Stormlands",
-  "coatOfArms": "Quartered, yellow sun on a rose-coloured field and white crescents on a blue field(Quarterly, first and fourth, carnation, a sun-in-splendour or, second and third, azure, a moon increscent argent)",
-  "words": "",
-  "titles": [
-    "Lord of Tarth",
-    "The Evenstar"
-  ],
-  "seats": [
-    "Evenfall Hall"
-  ],
-  "currentLord": "http://www.anapioficeandfire.com/api/characters/966",
-  "heir": "http://www.anapioficeandfire.com/api/characters/216",
-  "overlord": "http://www.anapioficeandfire.com/api/houses/17",
-  "founded": "",
-  "founder": "",
-  "diedOut": "",
-  "ancestralWeapons": [],
-  "cadetBranches": [],
-  "swornMembers": [
-    "http://www.anapioficeandfire.com/api/characters/106",
-    "http://www.anapioficeandfire.com/api/characters/131",
-    "http://www.anapioficeandfire.com/api/characters/216",
-    "http://www.anapioficeandfire.com/api/characters/379",
-    "http://www.anapioficeandfire.com/api/characters/398",
-    "http://www.anapioficeandfire.com/api/characters/919",
-    "http://www.anapioficeandfire.com/api/characters/966",
-    "http://www.anapioficeandfire.com/api/characters/1432"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/houses/380",
+    "name": "House Tarth of Evenfall Hall",
+    "region": "The Stormlands",
+    "coatOfArms": "Quartered, yellow sun on a rose-coloured field and white crescents on a blue field(Quarterly, first and fourth, carnation, a sun-in-splendour or, second and third, azure, a moon increscent argent)",
+    "words": "",
+    "titles": [
+        "Lord of Tarth",
+        "The Evenstar"
+    ],
+    "seats": [
+        "Evenfall Hall"
+    ],
+    "currentLord": "https://www.anapioficeandfire.com/api/characters/966",
+    "heir": "https://www.anapioficeandfire.com/api/characters/216",
+    "overlord": "https://www.anapioficeandfire.com/api/houses/17",
+    "founded": "",
+    "founder": "",
+    "diedOut": "",
+    "ancestralWeapons": [
+        ""
+    ],
+    "cadetBranches": [
+
+    ],
+    "swornMembers": [
+        "https://www.anapioficeandfire.com/api/characters/106",
+        "https://www.anapioficeandfire.com/api/characters/131",
+        "https://www.anapioficeandfire.com/api/characters/216",
+        "https://www.anapioficeandfire.com/api/characters/379",
+        "https://www.anapioficeandfire.com/api/characters/398",
+        "https://www.anapioficeandfire.com/api/characters/919",
+        "https://www.anapioficeandfire.com/api/characters/966",
+        "https://www.anapioficeandfire.com/api/characters/1432"
+    ]
 }
+

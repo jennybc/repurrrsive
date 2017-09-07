@@ -1,6 +1,4 @@
-## devtools::install_github("krlmlr/here")
 library(here)
-library(listviewer)
 library(jsonlite)
 library(assertthat)
 library(tidyverse)
@@ -11,11 +9,13 @@ library(xml2)
 ## get resource id from URL
 get_id <- . %>% basename() %>% as.integer()
 
-books <- fromJSON(here("data-raw", "iceandfire-json", "books.json"),
-                  simplifyDataFrame = FALSE)
+books <- fromJSON(
+  here("data-raw", "iceandfire-json", "books.json"),
+  simplifyDataFrame = FALSE
+)
 assert_that(length(books) == 12)
 #str(books, max.level = 1)
-#jsonedit(books)
+#View(books)
 
 books_df <- tibble(
   book = books %>% map_chr("name"),
@@ -25,18 +25,24 @@ books_df <- tibble(
 )
 books_df
 
-pov_json_files <- list.files(here("data-raw", "iceandfire-json"),
-                             pattern = "^character", full.names = TRUE)
-assert_that(length(pov_json_files) == 29)
+pov_json_files <- list.files(
+  here("data-raw", "iceandfire-json"),
+  pattern = "^character",
+  full.names = TRUE
+)
+assert_that(length(pov_json_files) == 30)
 
 pov_df <- tibble(
   from_api = map(pov_json_files, fromJSON),
   name = from_api %>% map_chr("name")
 )
 
-houses_json_files <- list.files(here("data-raw", "iceandfire-json"),
-                                pattern = "^house", full.names = TRUE)
-assert_that(length(houses_json_files) == 16)
+houses_json_files <- list.files(
+  here("data-raw", "iceandfire-json"),
+  pattern = "^house",
+  full.names = TRUE
+)
+assert_that(length(houses_json_files) == 17)
 houses_df <- tibble(
   from_api = map(houses_json_files, fromJSON),
   house = from_api %>% map_chr("name"),
@@ -72,8 +78,7 @@ pov_df <- pov_df %>%
     }
     chr_list
   }))
-jsonedit(pov_df)
-pov_df %>% View()
+View(pov_df)
 
 ## create integer and logical elements for each character for pedagogy
 pov_df <- pov_df %>%
@@ -89,7 +94,7 @@ pov_df <- pov_df %>%
              "allegiances", "books", "povBooks", "tvSeries", "playedBy")
     chr_list[nms]
   }))
-jsonedit(pov_df)
+View(pov_df)
 
 ## this is the basically the list that will go in the package
 got_chars <- pov_df$from_api

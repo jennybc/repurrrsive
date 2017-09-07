@@ -1,6 +1,6 @@
 [
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/1022",
+        "url": "https://www.anapioficeandfire.com/api/characters/1022",
         "id": 1022,
         "name": "Theon Greyjoy",
         "gender": "Male",
@@ -43,7 +43,7 @@
         "playedBy": "Alfie Allen"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/1052",
+        "url": "https://www.anapioficeandfire.com/api/characters/1052",
         "id": 1052,
         "name": "Tyrion Lannister",
         "gender": "Male",
@@ -70,7 +70,7 @@
         ],
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/2044",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/2044",
         "allegiances": "House Lannister of Casterly Rock",
         "books": [
             "A Feast for Crows",
@@ -93,7 +93,7 @@
         "playedBy": "Peter Dinklage"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/1074",
+        "url": "https://www.anapioficeandfire.com/api/characters/1074",
         "id": 1074,
         "name": "Victarion Greyjoy",
         "gender": "Male",
@@ -119,15 +119,11 @@
             "A Feast for Crows",
             "A Dance with Dragons"
         ],
-        "tvSeries": [
-
-        ],
-        "playedBy": [
-
-        ]
+        "tvSeries": "",
+        "playedBy": ""
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/1109",
+        "url": "https://www.anapioficeandfire.com/api/characters/1109",
         "id": 1109,
         "name": "Will",
         "gender": "Male",
@@ -135,12 +131,8 @@
         "born": "",
         "died": "In 297 AC, at Haunted Forest",
         "alive": false,
-        "titles": [
-
-        ],
-        "aliases": [
-
-        ],
+        "titles": "",
+        "aliases": "",
         "father": "",
         "mother": "",
         "spouse": "",
@@ -149,13 +141,11 @@
         ],
         "books": "A Clash of Kings",
         "povBooks": "A Game of Thrones",
-        "tvSeries": [
-
-        ],
+        "tvSeries": "",
         "playedBy": "Bronson Webb"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/1166",
+        "url": "https://www.anapioficeandfire.com/api/characters/1166",
         "id": 1166,
         "name": "Areo Hotah",
         "gender": "Male",
@@ -164,9 +154,7 @@
         "died": "",
         "alive": true,
         "titles": "Captain of the Guard at Sunspear",
-        "aliases": [
-
-        ],
+        "aliases": "",
         "father": "",
         "mother": "",
         "spouse": "",
@@ -187,7 +175,7 @@
         "playedBy": "DeObia Oparei"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/1267",
+        "url": "https://www.anapioficeandfire.com/api/characters/1267",
         "id": 1267,
         "name": "Chett",
         "gender": "Male",
@@ -195,12 +183,8 @@
         "born": "At Hag's Mire",
         "died": "In 299 AC, at Fist of the First Men",
         "alive": false,
-        "titles": [
-
-        ],
-        "aliases": [
-
-        ],
+        "titles": "",
+        "aliases": "",
         "father": "",
         "mother": "",
         "spouse": "",
@@ -212,15 +196,11 @@
             "A Clash of Kings"
         ],
         "povBooks": "A Storm of Swords",
-        "tvSeries": [
-
-        ],
-        "playedBy": [
-
-        ]
+        "tvSeries": "",
+        "playedBy": ""
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/1295",
+        "url": "https://www.anapioficeandfire.com/api/characters/1295",
         "id": 1295,
         "name": "Cressen",
         "gender": "Male",
@@ -229,9 +209,7 @@
         "died": "In 299 AC, at Dragonstone",
         "alive": false,
         "titles": "Maester",
-        "aliases": [
-
-        ],
+        "aliases": "",
         "father": "",
         "mother": "",
         "spouse": "",
@@ -247,7 +225,7 @@
         "playedBy": "Oliver Ford"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/130",
+        "url": "https://www.anapioficeandfire.com/api/characters/130",
         "id": 130,
         "name": "Arianne Martell",
         "gender": "Female",
@@ -256,9 +234,7 @@
         "died": "",
         "alive": true,
         "titles": "Princess of Dorne",
-        "aliases": [
-
-        ],
+        "aliases": "",
         "father": "",
         "mother": "",
         "spouse": "",
@@ -270,15 +246,11 @@
             "A Dance with Dragons"
         ],
         "povBooks": "A Feast for Crows",
-        "tvSeries": [
-
-        ],
-        "playedBy": [
-
-        ]
+        "tvSeries": "",
+        "playedBy": ""
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/1303",
+        "url": "https://www.anapioficeandfire.com/api/characters/1303",
         "id": 1303,
         "name": "Daenerys Targaryen",
         "gender": "Female",
@@ -308,7 +280,7 @@
         ],
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/1346",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/1346",
         "allegiances": "House Targaryen of King's Landing",
         "books": "A Feast for Crows",
         "povBooks": [
@@ -328,7 +300,7 @@
         "playedBy": "Emilia Clarke"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/1319",
+        "url": "https://www.anapioficeandfire.com/api/characters/1319",
         "id": 1319,
         "name": "Davos Seaworth",
         "gender": "Male",
@@ -351,7 +323,7 @@
         ],
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/1676",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/1676",
         "allegiances": [
             "House Baratheon of Dragonstone",
             "House Seaworth of Cape Wrath"
@@ -372,7 +344,7 @@
         "playedBy": "Liam Cunningham"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/148",
+        "url": "https://www.anapioficeandfire.com/api/characters/148",
         "id": 148,
         "name": "Arya Stark",
         "gender": "Female",
@@ -424,7 +396,7 @@
         "playedBy": "Maisie Williams"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/149",
+        "url": "https://www.anapioficeandfire.com/api/characters/149",
         "id": 149,
         "name": "Arys Oakheart",
         "gender": "Male",
@@ -433,9 +405,7 @@
         "died": "In 300 AC, at the Greenblood",
         "alive": false,
         "titles": "Ser",
-        "aliases": [
-
-        ],
+        "aliases": "",
         "father": "",
         "mother": "",
         "spouse": "",
@@ -447,15 +417,11 @@
             "A Dance with Dragons"
         ],
         "povBooks": "A Feast for Crows",
-        "tvSeries": [
-
-        ],
-        "playedBy": [
-
-        ]
+        "tvSeries": "",
+        "playedBy": ""
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/150",
+        "url": "https://www.anapioficeandfire.com/api/characters/150",
         "id": 150,
         "name": "Asha Greyjoy",
         "gender": "Female",
@@ -474,7 +440,7 @@
         ],
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/1372",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/1372",
         "allegiances": [
             "House Greyjoy of Pyke",
             "House Ironmaker"
@@ -495,7 +461,7 @@
         "playedBy": "Gemma Whelan"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/168",
+        "url": "https://www.anapioficeandfire.com/api/characters/168",
         "id": 168,
         "name": "Barristan Selmy",
         "gender": "Male",
@@ -538,7 +504,7 @@
         "playedBy": "Ian McElhinney"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/2066",
+        "url": "https://www.anapioficeandfire.com/api/characters/2066",
         "id": 2066,
         "name": "Varamyr",
         "gender": "Male",
@@ -546,9 +512,7 @@
         "born": "At a village Beyond the Wall",
         "died": "In 300 AC, at a village Beyond the Wall",
         "alive": false,
-        "titles": [
-
-        ],
+        "titles": "",
         "aliases": [
             "Varamyr Sixskins",
             "Haggon",
@@ -562,20 +526,16 @@
         ],
         "books": "A Storm of Swords",
         "povBooks": "A Dance with Dragons",
-        "tvSeries": [
-
-        ],
-        "playedBy": [
-
-        ]
+        "tvSeries": "",
+        "playedBy": ""
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/208",
+        "url": "https://www.anapioficeandfire.com/api/characters/208",
         "id": 208,
         "name": "Brandon Stark",
         "gender": "Male",
         "culture": "Northmen",
-        "born": "In 290 AC, at Winterfell",
+        "born": "In 290 AC, at Winterfell",
         "died": "",
         "alive": true,
         "titles": "Prince of Winterfell",
@@ -605,7 +565,7 @@
         "playedBy": "Isaac Hempstead-Wright"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/216",
+        "url": "https://www.anapioficeandfire.com/api/characters/216",
         "id": 216,
         "name": "Brienne of Tarth",
         "gender": "Female",
@@ -613,9 +573,7 @@
         "born": "In 280 AC",
         "died": "",
         "alive": true,
-        "titles": [
-
-        ],
+        "titles": "",
         "aliases": [
             "The Maid of Tarth",
             "Brienne the Beauty",
@@ -645,7 +603,7 @@
         "playedBy": "Gwendoline Christie"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/232",
+        "url": "https://www.anapioficeandfire.com/api/characters/232",
         "id": 232,
         "name": "Catelyn Stark",
         "gender": "Female",
@@ -663,7 +621,7 @@
         ],
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/339",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/339",
         "allegiances": [
             "House Stark of Winterfell",
             "House Tully of Riverrun"
@@ -685,7 +643,7 @@
         "playedBy": "Michelle Fairley"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/238",
+        "url": "https://www.anapioficeandfire.com/api/characters/238",
         "id": 238,
         "name": "Cersei Lannister",
         "gender": "Female",
@@ -705,7 +663,7 @@
         ],
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/901",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/901",
         "allegiances": "House Lannister of Casterly Rock",
         "books": [
             "A Game of Thrones",
@@ -727,7 +685,7 @@
         "playedBy": "Lena Headey"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/339",
+        "url": "https://www.anapioficeandfire.com/api/characters/339",
         "id": 339,
         "name": "Eddard Stark",
         "gender": "Male",
@@ -749,7 +707,7 @@
         ],
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/232",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/232",
         "allegiances": "House Stark of Winterfell",
         "books": [
             "A Clash of Kings",
@@ -770,12 +728,12 @@
         ]
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/529",
+        "url": "https://www.anapioficeandfire.com/api/characters/529",
         "id": 529,
         "name": "Jaime Lannister",
         "gender": "Male",
         "culture": "Westerlands",
-        "born": "In 266 AC, at Casterly Rock",
+        "born": "In 266 AC, at Casterly Rock",
         "died": "",
         "alive": true,
         "titles": [
@@ -812,7 +770,7 @@
         "playedBy": "Nikolaj Coster-Waldau"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/576",
+        "url": "https://www.anapioficeandfire.com/api/characters/576",
         "id": 576,
         "name": "Jon Connington",
         "gender": "Male",
@@ -839,15 +797,11 @@
             "The World of Ice and Fire"
         ],
         "povBooks": "A Dance with Dragons",
-        "tvSeries": [
-
-        ],
-        "playedBy": [
-
-        ]
+        "tvSeries": "",
+        "playedBy": ""
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/583",
+        "url": "https://www.anapioficeandfire.com/api/characters/583",
         "id": 583,
         "name": "Jon Snow",
         "gender": "Male",
@@ -888,7 +842,7 @@
         "playedBy": "Kit Harington"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/60",
+        "url": "https://www.anapioficeandfire.com/api/characters/60",
         "id": 60,
         "name": "Aeron Greyjoy",
         "gender": "Male",
@@ -919,7 +873,7 @@
         "playedBy": "Michael Feast"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/605",
+        "url": "https://www.anapioficeandfire.com/api/characters/605",
         "id": 605,
         "name": "Kevan Lannister",
         "gender": "Male",
@@ -933,12 +887,10 @@
             "Lord Regent",
             "Protector of the Realm"
         ],
-        "aliases": [
-
-        ],
+        "aliases": "",
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/327",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/327",
         "allegiances": "House Lannister of Casterly Rock",
         "books": [
             "A Game of Thrones",
@@ -956,7 +908,7 @@
         "playedBy": "Ian Gelder"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/743",
+        "url": "https://www.anapioficeandfire.com/api/characters/743",
         "id": 743,
         "name": "Melisandre",
         "gender": "Female",
@@ -964,9 +916,7 @@
         "born": "At Unknown",
         "died": "",
         "alive": true,
-        "titles": [
-
-        ],
+        "titles": "",
         "aliases": [
             "The Red Priestess",
             "The Red Woman",
@@ -996,7 +946,7 @@
         "playedBy": "Carice van Houten"
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/751",
+        "url": "https://www.anapioficeandfire.com/api/characters/751",
         "id": 751,
         "name": "Merrett Frey",
         "gender": "Male",
@@ -1004,13 +954,11 @@
         "born": "In 262 AC",
         "died": "In 300 AC, at Near Oldstones",
         "alive": false,
-        "titles": [
-
-        ],
+        "titles": "",
         "aliases": "Merrett Muttonhead",
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/712",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/712",
         "allegiances": "House Frey of the Crossing",
         "books": [
             "A Game of Thrones",
@@ -1019,15 +967,11 @@
             "A Dance with Dragons"
         ],
         "povBooks": "A Storm of Swords",
-        "tvSeries": [
-
-        ],
-        "playedBy": [
-
-        ]
+        "tvSeries": "",
+        "playedBy": ""
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/844",
+        "url": "https://www.anapioficeandfire.com/api/characters/844",
         "id": 844,
         "name": "Quentyn Martell",
         "gender": "Male",
@@ -1053,15 +997,53 @@
             "A Feast for Crows"
         ],
         "povBooks": "A Dance with Dragons",
-        "tvSeries": [
-
-        ],
-        "playedBy": [
-
-        ]
+        "tvSeries": "",
+        "playedBy": ""
     },
     {
-        "url": "http://www.anapioficeandfire.com/api/characters/957",
+        "url": "https://www.anapioficeandfire.com/api/characters/954",
+        "id": 954,
+        "name": "Samwell Tarly",
+        "gender": "Male",
+        "culture": "Andal",
+        "born": "In 283 AC, at Horn Hill",
+        "died": "",
+        "alive": true,
+        "titles": "",
+        "aliases": [
+            "Sam",
+            "Ser Piggy",
+            "Prince Pork-chop",
+            "Lady Piggy",
+            "Sam the Slayer",
+            "Black Sam",
+            "Lord of Ham"
+        ],
+        "father": "",
+        "mother": "",
+        "spouse": "",
+        "allegiances": "House Tarly of Horn Hill",
+        "books": [
+            "A Game of Thrones",
+            "A Clash of Kings",
+            "A Dance with Dragons"
+        ],
+        "povBooks": [
+            "A Storm of Swords",
+            "A Feast for Crows"
+        ],
+        "tvSeries": [
+            "Season 1",
+            "Season 2",
+            "Season 3",
+            "Season 4",
+            "Season 5",
+            "Season 6"
+        ],
+        "playedBy": "John Bradley-West"
+    },
+    {
+        "url": "https://www.anapioficeandfire.com/api/characters/957",
         "id": 957,
         "name": "Sansa Stark",
         "gender": "Female",
@@ -1077,7 +1059,7 @@
         ],
         "father": "",
         "mother": "",
-        "spouse": "http://www.anapioficeandfire.com/api/characters/1052",
+        "spouse": "https://www.anapioficeandfire.com/api/characters/1052",
         "allegiances": [
             "House Baelish of Harrenhal",
             "House Stark of Winterfell"

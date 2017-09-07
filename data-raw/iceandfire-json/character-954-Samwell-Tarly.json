@@ -1,0 +1,47 @@
+{
+    "url": "https://www.anapioficeandfire.com/api/characters/954",
+    "name": "Samwell Tarly",
+    "gender": "Male",
+    "culture": "Andal",
+    "born": "In 283 AC, at Horn Hill",
+    "died": "",
+    "titles": [
+        ""
+    ],
+    "aliases": [
+        "Sam",
+        "Ser Piggy",
+        "Prince Pork-chop",
+        "Lady Piggy",
+        "Sam the Slayer",
+        "Black Sam",
+        "Lord of Ham"
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "",
+    "allegiances": [
+        "https://www.anapioficeandfire.com/api/houses/379"
+    ],
+    "books": [
+        "https://www.anapioficeandfire.com/api/books/1",
+        "https://www.anapioficeandfire.com/api/books/2",
+        "https://www.anapioficeandfire.com/api/books/8"
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/3",
+        "https://www.anapioficeandfire.com/api/books/5"
+    ],
+    "tvSeries": [
+        "Season 1",
+        "Season 2",
+        "Season 3",
+        "Season 4",
+        "Season 5",
+        "Season 6"
+    ],
+    "playedBy": [
+        "John Bradley-West"
+    ]
+}
+

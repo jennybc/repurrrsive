@@ -1,32 +1,37 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/characters/1074",
-  "name": "Victarion Greyjoy",
-  "gender": "Male",
-  "culture": "Ironborn",
-  "born": "In 268 AC or before, at Pyke",
-  "died": "",
-  "titles": [
-    "Lord Captain of the Iron Fleet",
-    "Master of the Iron Victory"
-  ],
-  "aliases": [
-    "The Iron Captain"
-  ],
-  "father": "",
-  "mother": "",
-  "spouse": "",
-  "allegiances": [
-    "http://www.anapioficeandfire.com/api/houses/169"
-  ],
-  "books": [
-    "http://www.anapioficeandfire.com/api/books/1",
-    "http://www.anapioficeandfire.com/api/books/2",
-    "http://www.anapioficeandfire.com/api/books/3"
-  ],
-  "povBooks": [
-    "http://www.anapioficeandfire.com/api/books/5",
-    "http://www.anapioficeandfire.com/api/books/8"
-  ],
-  "tvSeries": [],
-  "playedBy": []
+    "url": "https://www.anapioficeandfire.com/api/characters/1074",
+    "name": "Victarion Greyjoy",
+    "gender": "Male",
+    "culture": "Ironborn",
+    "born": "In 268 AC or before, at Pyke",
+    "died": "",
+    "titles": [
+        "Lord Captain of the Iron Fleet",
+        "Master of the Iron Victory"
+    ],
+    "aliases": [
+        "The Iron Captain"
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "",
+    "allegiances": [
+        "https://www.anapioficeandfire.com/api/houses/169"
+    ],
+    "books": [
+        "https://www.anapioficeandfire.com/api/books/1",
+        "https://www.anapioficeandfire.com/api/books/2",
+        "https://www.anapioficeandfire.com/api/books/3"
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/5",
+        "https://www.anapioficeandfire.com/api/books/8"
+    ],
+    "tvSeries": [
+        ""
+    ],
+    "playedBy": [
+        ""
+    ]
 }
+

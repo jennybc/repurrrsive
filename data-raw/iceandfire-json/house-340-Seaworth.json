@@ -1,28 +1,37 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/houses/340",
-  "name": "House Seaworth of Cape Wrath",
-  "region": "The Stormlands",
-  "coatOfArms": "A black ship on a pale grey field, with a white onion on its sails(Cendrée, a ship sable, its sail charged with an onion argent)",
-  "words": "",
-  "titles": [],
-  "seats": [],
-  "currentLord": "http://www.anapioficeandfire.com/api/characters/1319",
-  "heir": "http://www.anapioficeandfire.com/api/characters/308",
-  "overlord": "http://www.anapioficeandfire.com/api/houses/15",
-  "founded": "284 AC",
-  "founder": "http://www.anapioficeandfire.com/api/characters/1319",
-  "diedOut": "",
-  "ancestralWeapons": [],
-  "cadetBranches": [],
-  "swornMembers": [
-    "http://www.anapioficeandfire.com/api/characters/308",
-    "http://www.anapioficeandfire.com/api/characters/710",
-    "http://www.anapioficeandfire.com/api/characters/1155",
-    "http://www.anapioficeandfire.com/api/characters/1310",
-    "http://www.anapioficeandfire.com/api/characters/1319",
-    "http://www.anapioficeandfire.com/api/characters/1676",
-    "http://www.anapioficeandfire.com/api/characters/1683",
-    "http://www.anapioficeandfire.com/api/characters/1964",
-    "http://www.anapioficeandfire.com/api/characters/1967"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/houses/340",
+    "name": "House Seaworth of Cape Wrath",
+    "region": "The Stormlands",
+    "coatOfArms": "A black ship on a pale grey field, with a white onion on its sails(Cendrée, a ship sable, its sail charged with an onion argent)",
+    "words": "",
+    "titles": [
+        ""
+    ],
+    "seats": [
+        ""
+    ],
+    "currentLord": "https://www.anapioficeandfire.com/api/characters/1319",
+    "heir": "https://www.anapioficeandfire.com/api/characters/308",
+    "overlord": "https://www.anapioficeandfire.com/api/houses/15",
+    "founded": "284 AC",
+    "founder": "https://www.anapioficeandfire.com/api/characters/1319",
+    "diedOut": "",
+    "ancestralWeapons": [
+        ""
+    ],
+    "cadetBranches": [
+
+    ],
+    "swornMembers": [
+        "https://www.anapioficeandfire.com/api/characters/308",
+        "https://www.anapioficeandfire.com/api/characters/710",
+        "https://www.anapioficeandfire.com/api/characters/1155",
+        "https://www.anapioficeandfire.com/api/characters/1310",
+        "https://www.anapioficeandfire.com/api/characters/1319",
+        "https://www.anapioficeandfire.com/api/characters/1676",
+        "https://www.anapioficeandfire.com/api/characters/1683",
+        "https://www.anapioficeandfire.com/api/characters/1964",
+        "https://www.anapioficeandfire.com/api/characters/1967"
+    ]
 }
+

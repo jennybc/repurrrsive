@@ -1,42 +1,43 @@
 {
-  "url": "http://www.anapioficeandfire.com/api/characters/232",
-  "name": "Catelyn Stark",
-  "gender": "Female",
-  "culture": "Rivermen",
-  "born": "In 264 AC, at Riverrun",
-  "died": "In 299 AC, at the Twins",
-  "titles": [
-    "Lady of Winterfell"
-  ],
-  "aliases": [
-    "Catelyn Tully",
-    "Lady Stoneheart",
-    "The Silent Sistet",
-    "Mother Mercilesr",
-    "The Hangwomans"
-  ],
-  "father": "",
-  "mother": "",
-  "spouse": "http://www.anapioficeandfire.com/api/characters/339",
-  "allegiances": [
-    "http://www.anapioficeandfire.com/api/houses/362",
-    "http://www.anapioficeandfire.com/api/houses/395"
-  ],
-  "books": [
-    "http://www.anapioficeandfire.com/api/books/5",
-    "http://www.anapioficeandfire.com/api/books/8"
-  ],
-  "povBooks": [
-    "http://www.anapioficeandfire.com/api/books/1",
-    "http://www.anapioficeandfire.com/api/books/2",
-    "http://www.anapioficeandfire.com/api/books/3"
-  ],
-  "tvSeries": [
-    "Season 1",
-    "Season 2",
-    "Season 3"
-  ],
-  "playedBy": [
-    "Michelle Fairley"
-  ]
+    "url": "https://www.anapioficeandfire.com/api/characters/232",
+    "name": "Catelyn Stark",
+    "gender": "Female",
+    "culture": "Rivermen",
+    "born": "In 264 AC, at Riverrun",
+    "died": "In 299 AC, at the Twins",
+    "titles": [
+        "Lady of Winterfell"
+    ],
+    "aliases": [
+        "Catelyn Tully",
+        "Lady Stoneheart",
+        "The Silent Sistet",
+        "Mother Mercilesr",
+        "The Hangwomans"
+    ],
+    "father": "",
+    "mother": "",
+    "spouse": "https://www.anapioficeandfire.com/api/characters/339",
+    "allegiances": [
+        "https://www.anapioficeandfire.com/api/houses/362",
+        "https://www.anapioficeandfire.com/api/houses/395"
+    ],
+    "books": [
+        "https://www.anapioficeandfire.com/api/books/5",
+        "https://www.anapioficeandfire.com/api/books/8"
+    ],
+    "povBooks": [
+        "https://www.anapioficeandfire.com/api/books/1",
+        "https://www.anapioficeandfire.com/api/books/2",
+        "https://www.anapioficeandfire.com/api/books/3"
+    ],
+    "tvSeries": [
+        "Season 1",
+        "Season 2",
+        "Season 3"
+    ],
+    "playedBy": [
+        "Michelle Fairley"
+    ]
 }
+
