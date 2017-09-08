@@ -1,6 +1,6 @@
 Package: repurrrsive
 Title: Examples of Recursive Lists and Nested or Split Data Frames
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: c(
   person("Jennifer", "Bryan", role=c("aut", "cre"),
     email = "jenny@rstudio.com"),
