@@ -28,7 +28,7 @@ Installation
 You can install repurrrsive from CRAN like so:
 
 ``` r
-install.packages("repurrrsive")
+install.packages("repurrrsive", dependencies = TRUE)
 ```
 
 or from GitHub with:
