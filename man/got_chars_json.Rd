@@ -30,3 +30,4 @@ if (require("xml2")) {
 \seealso{
 Other Game of Thrones data and functions: \code{\link{got_chars}}
 }
+\concept{Game of Thrones data and functions}

@@ -7,10 +7,10 @@
 \title{repurrrsive: Examples of Recursive Lists and Nested or Split Data Frames}
 \description{
 Recursive lists in the form of R objects, 'JSON', and 'XML', for use in
-teaching and examples. Examples include color palettes, Game of Thrones
-characters, 'GitHub' users and repositories, and entities from the Star Wars
-universe. Data from the 'gapminder' package is also included, as a simple data
-frame and in nested and split forms.
+    teaching and examples. Examples include color palettes, Game of Thrones
+    characters, 'GitHub' users and repositories, and entities from the Star Wars
+    universe. Data from the 'gapminder' package is also included, as a simple data
+    frame and in nested and split forms.
 }
 \details{
 Read more at \url{https://github.com/jennybc/repurrrsive#readme}.

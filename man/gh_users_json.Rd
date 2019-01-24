@@ -47,3 +47,4 @@ if (require("xml2")) {
 Other GitHub data and functions: \code{\link{gh_repos}},
   \code{\link{gh_users}}
 }
+\concept{GitHub data and functions}
