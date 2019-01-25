@@ -24,4 +24,5 @@ str(lapply(gh_users, `[`, c("login", "name")))
 Other GitHub data and functions: \code{\link{gh_repos}},
   \code{\link{gh_users_json}}
 }
+\concept{GitHub data and functions}
 \keyword{datasets}

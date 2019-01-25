@@ -4,8 +4,8 @@
 \name{got_chars}
 \alias{got_chars}
 \title{Game of Thrones POV characters}
-\format{A unnamed list with 29 components, each representing a POV character.
-  Each character's component is a named list of length 16, containing
+\format{A unnamed list with 30 components, each representing a POV character.
+  Each character's component is a named list of length 18, containing
   information such as name, aliases, and house allegiances.}
 \source{
 \url{https://anapioficeandfire.com}
@@ -25,4 +25,5 @@ str(lapply(got_chars, `[`, c("name", "culture")))
 \seealso{
 Other Game of Thrones data and functions: \code{\link{got_chars_json}}
 }
+\concept{Game of Thrones data and functions}
 \keyword{datasets}

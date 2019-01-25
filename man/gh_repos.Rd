@@ -25,4 +25,5 @@ str(lapply(gh_repos[[1]][1:3], `[`, c("full_name", "created_at")))
 Other GitHub data and functions: \code{\link{gh_users_json}},
   \code{\link{gh_users}}
 }
+\concept{GitHub data and functions}
 \keyword{datasets}
