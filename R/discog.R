@@ -7,4 +7,9 @@
 #'   Sharla's music collection.
 #' @examples
 #' length(discog)
+#' discog %>%
+#' head(2) %>%
+#' str(max.level = 2)
+#' @note Yao Nie from Tidyverse Developer Day, July 8, 2019
+#'   Toulouse, France
 "discog"
