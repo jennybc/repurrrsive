@@ -15,5 +15,7 @@ Retrieved on 2019-04-30 from <discogs.com>.
 }
 \examples{
 length(discog)
+
+str(discog, max.level = 2, list.len = 2)
 }
 \keyword{datasets}
