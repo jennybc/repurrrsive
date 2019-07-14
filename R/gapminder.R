@@ -1,10 +1,10 @@
 #' Gapminder data frame in various forms
 #'
-#' The main data frame from the \code{gapminder} package in three forms:
+#' The main data frame from the `gapminder` package in three forms:
 #' \enumerate{
-#' \item \code{gap_simple}, same as \code{gapminder::gapminder}
-#' \item \code{gap_nested}, nested by country and continent
-#' \item \code{gap_split}, split by country
+#' \item `gap_simple`, same as `gapminder::gapminder`
+#' \item `gap_nested`, nested by country and continent
+#' \item `gap_split`, split by country
 #' }
 #'
 #' @examples

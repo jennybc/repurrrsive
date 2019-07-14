@@ -1,3 +1,3 @@
 #' @importFrom tibble tibble
-#' @details Read more at \url{https://github.com/jennybc/repurrrsive#readme}.
+#' @details Read more at <https://github.com/jennybc/repurrrsive#readme>.
 "_PACKAGE"

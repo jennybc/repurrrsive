@@ -1,13 +1,13 @@
 #' Color palettes from Wes Anderson movies
 #'
 #' A list of color palettes inspired by Wes Anderson movies, taken from the from
-#' \code{\link{wesanderson}} package.
+#' [wesanderson][wesanderson::wesanderson-package] package.
 #'
 #' @format A named list with 15 components, each containing a color palette from
 #'   a specific movie. Each palette consists of 4 or 5 hexadecimal color values.
 #'
-#' @source \url{https://cran.r-project.org/package=wesanderson}
-#' @source \url{http://wesandersonpalettes.tumblr.com}
+#' @source <https://cran.r-project.org/package=wesanderson>
+#' @source <http://wesandersonpalettes.tumblr.com>
 #' @family wesanderson data and functions
 #' @examples
 #' wesanderson[4:5]

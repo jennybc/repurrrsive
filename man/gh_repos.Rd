@@ -5,9 +5,9 @@
 \alias{gh_repos}
 \title{GitHub repos}
 \format{A unnamed list with 6 components, each itself a list of 30 repos for
-  a specific GitHub user. Each repo's component is a list of length >60,
-  containing information such as name, owner (a list), fork status, and
-  creation date.}
+a specific GitHub user. Each repo's component is a list of length >60,
+containing information such as name, owner (a list), fork status, and
+creation date.}
 \source{
 \url{https://developer.github.com/v3/repos/#list-user-repositories}
 }

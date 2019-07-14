@@ -5,7 +5,7 @@
 \alias{wesanderson}
 \title{Color palettes from Wes Anderson movies}
 \format{A named list with 15 components, each containing a color palette from
-  a specific movie. Each palette consists of 4 or 5 hexadecimal color values.}
+a specific movie. Each palette consists of 4 or 5 hexadecimal color values.}
 \source{
 \url{https://cran.r-project.org/package=wesanderson}
 
@@ -16,7 +16,7 @@ wesanderson
 }
 \description{
 A list of color palettes inspired by Wes Anderson movies, taken from the from
-\code{\link{wesanderson}} package.
+\link[wesanderson:wesanderson-package]{wesanderson} package.
 }
 \examples{
 wesanderson[4:5]

@@ -12,7 +12,7 @@
 \format{Unnamed lists with varying number of components.}
 \source{
 Data comes from \url{http://swapi.co/} retrieved using
-   the \code{rwars} package: \url{https://github.com/Ironholds/rwars}
+the \code{rwars} package: \url{https://github.com/Ironholds/rwars}
 }
 \usage{
 sw_people
@@ -32,12 +32,12 @@ Data retrieved from the swapi API on the Star Wars Universe.
 }
 \details{
 \itemize{
-  \item \code{sw_people} List of individual people or characters within the Star Wars universe.
-  \item \code{sw_starships} List of transport crafts with hyperdrive capability.
-  \item \code{sw_vehicles} List of transport crafts without hyperdrive capability.
-  \item \code{sw_films} List of Star Wars films.
-  \item \code{sw_species} List of types of people or characters within the Star Wars Universe.
-  \item \code{sw_planets} List of large masses, planets or planetoids in the Star Wars Universe, at the time of 0 ABY.
+\item \code{sw_people} List of individual people or characters within the Star Wars universe.
+\item \code{sw_starships} List of transport crafts with hyperdrive capability.
+\item \code{sw_vehicles} List of transport crafts without hyperdrive capability.
+\item \code{sw_films} List of Star Wars films.
+\item \code{sw_species} List of types of people or characters within the Star Wars Universe.
+\item \code{sw_planets} List of large masses, planets or planetoids in the Star Wars Universe, at the time of 0 ABY.
 }
 }
 \examples{

@@ -9,7 +9,7 @@
 #'   information such as name, aliases, and house allegiances.
 #'
 #' @family Game of Thrones data and functions
-#' @source \url{https://anapioficeandfire.com}
+#' @source <https://anapioficeandfire.com>
 #' @examples
 #' got_chars
 #' str(lapply(got_chars, `[`, c("name", "culture")))

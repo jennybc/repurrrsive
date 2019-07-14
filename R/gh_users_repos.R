@@ -7,7 +7,7 @@
 #'   as username, GitHub id, and join date.
 #'
 #' @family GitHub data and functions
-#' @source \url{https://developer.github.com/v3/users/#get-a-single-user}
+#' @source <https://developer.github.com/v3/users/#get-a-single-user>
 #' @examples
 #' gh_users
 #' str(lapply(gh_users, `[`, c("login", "name")))
@@ -24,7 +24,7 @@
 #'   containing information such as name, owner (a list), fork status, and
 #'   creation date.
 #'
-#' @source \url{https://developer.github.com/v3/repos/#list-user-repositories}
+#' @source <https://developer.github.com/v3/repos/#list-user-repositories>
 #' @examples
 #' gh_repos
 #' str(lapply(gh_repos[[1]][1:3], `[`, c("full_name", "created_at")))

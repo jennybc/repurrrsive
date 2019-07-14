@@ -5,8 +5,8 @@
 \alias{got_chars}
 \title{Game of Thrones POV characters}
 \format{A unnamed list with 30 components, each representing a POV character.
-  Each character's component is a named list of length 18, containing
-  information such as name, aliases, and house allegiances.}
+Each character's component is a named list of length 18, containing
+information such as name, aliases, and house allegiances.}
 \source{
 \url{https://anapioficeandfire.com}
 }

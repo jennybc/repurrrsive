@@ -5,13 +5,13 @@
 \alias{discog}
 \title{Sharla Gelfand's music collection}
 \format{A unnamed list with 155 components, each representing an item in
-  Sharla's music collection.}
+Sharla's music collection.}
 \usage{
 discog
 }
 \description{
-Inspired by <https://sharla.party/posts/discog-purrr/>.
-Retrieved on 2019-04-30 from <discogs.com>.
+Inspired by \url{https://sharla.party/posts/discog-purrr/}.
+Retrieved on 2019-05-02 from <discogs.com>.
 }
 \examples{
 length(discog)
