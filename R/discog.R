@@ -7,4 +7,6 @@
 #'   Sharla's music collection.
 #' @examples
 #' length(discog)
+#'
+#' str(discog, max.level = 2, list.len = 2)
 "discog"
