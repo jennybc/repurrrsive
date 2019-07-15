@@ -1,5 +1,5 @@
 test_that("discog hasn't changed", {
-  expect_equal_to_reference(discog, reference_file("discog.rds"))
+  expect_known_value(discog, reference_file("discog.rds"))
 })
 
 test_that("discog JSON gives rise to same list as the built-in", {
