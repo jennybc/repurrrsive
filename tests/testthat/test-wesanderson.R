@@ -1,6 +1,5 @@
 test_that("wesanderson list hasn't changed", {
-  expect_equal_to_reference(wesanderson,
-                            reference_file("wesanderson.rds"))
+  expect_known_value(wesanderson, reference_file("wesanderson.rds"))
 })
 
 test_that("wesanderson JSON gives rise to same list as the built-in", {

@@ -1,6 +1,5 @@
 test_that("got_chars list hasn't changed", {
-  expect_equal_to_reference(got_chars,
-                            reference_file("got_chars.rds"))
+  expect_known_value(got_chars, reference_file("got_chars.rds"))
 })
 
 test_that("got_chars JSON gives rise to same list as the built-in", {
