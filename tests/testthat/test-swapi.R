@@ -1,5 +1,3 @@
-context("swapi data")
-
 test_that("sw_* lists haven't changed", {
   expect_equal_to_reference(sw_people,
     reference_file("sw_people.rds"))

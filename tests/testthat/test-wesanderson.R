@@ -1,5 +1,3 @@
-context("wesanderson")
-
 test_that("wesanderson list hasn't changed", {
   expect_equal_to_reference(wesanderson,
                             reference_file("wesanderson.rds"))

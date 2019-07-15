@@ -1,5 +1,3 @@
-context("github users and repos")
-
 test_that("gh_users and gh_repos lists haven't changed", {
   expect_equal_to_reference(gh_users,
                             reference_file("gh_users.rds"))

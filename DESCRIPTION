@@ -31,7 +31,7 @@ Suggests:
     jsonlite,
     purrr,
     rprojroot,
-    testthat,
+    testthat (>= 2.1.0),
     wesanderson,
     xml2
 Encoding: UTF-8
