@@ -1,29 +1,27 @@
 
--   [repurrrsive](#repurrrsive)
-    -   [Installation](#installation)
-    -   [Recursive list examples](#recursive-list-examples)
-        -   [wesanderson color palettes](#wesanderson-color-palettes)
-        -   [Game of Thrones POV characters](#game-of-thrones-pov-characters)
-        -   [GitHub user and repo data](#github-user-and-repo-data)
-        -   [Star Wars Universe entities](#star-wars-universe-entities)
-    -   [Nested and split data frame examples](#nested-and-split-data-frame-examples)
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/jennybc/repurrrsive.svg?branch=master)](https://travis-ci.org/jennybc/repurrrsive) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/repurrrsive)](https://cran.r-project.org/package=repurrrsive)
 
-repurrrsive
-===========
+[![Travis-CI Build
+Status](https://travis-ci.org/jennybc/repurrrsive.svg?branch=master)](https://travis-ci.org/jennybc/repurrrsive)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/repurrrsive)](https://cran.r-project.org/package=repurrrsive)
 
-The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()`. Datasets are stored as R list, JSON, and XML to provide the full non-rectangular data experience. Enjoy!
+# repurrrsive
 
-Package also includes the main data frame from the [gapminder package](https://CRAN.R-project.org/package=gapminder) in 3 different forms: simple data frame (no list-columns), data frame nested by country, and split into a named list of data frames.
+The repurrrsive package provides recursive lists that are handy when
+teaching or exampling functions such as `purrr::map()`. Datasets are
+stored as R list, JSON, and XML to provide the full non-rectangular data
+experience. Enjoy\!
+
+Package also includes the main data frame from the [gapminder
+package](https://CRAN.R-project.org/package=gapminder) in 3 different
+forms: simple data frame (no list-columns), data frame nested by
+country, and split into a named list of data frames.
 
 repurrrsive is used in this purrr tutorial:
 
 <https://jennybc.github.io/purrr-tutorial/>
 
-Installation
-------------
+## Installation
 
 You can install repurrrsive from CRAN like so:
 
@@ -38,12 +36,16 @@ or from GitHub with:
 devtools::install_github("jennybc/repurrrsive")
 ```
 
-Recursive list examples
------------------------
+## Recursive list examples
 
 #### wesanderson color palettes
 
-`wesanderson` is the simplest list, containing color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors. *Screenshot is of RStudio's [Object Explorer](https://blog.rstudio.com/2017/08/22/rstudio-v1-1-preview-object-explorer/), i.e. from calling `View(wesanderson)`.*
+`wesanderson` is the simplest list, containing color palettes, from the
+[wesanderson package](https://cran.r-project.org/package=wesanderson).
+Here’s a glimpse: one component per palette, each containing a character
+vector of hex colors. *Screenshot is of RStudio’s [Object
+Explorer](https://blog.rstudio.com/2017/08/22/rstudio-v1-1-preview-object-explorer/),
+i.e. from calling `View(wesanderson)`.*
 
 ![](man/figures/wesanderson-rstudio-view.png)
 
@@ -87,13 +89,14 @@ map_chr(wesanderson[7:9], paste, collapse = ", ")
 #>          "#446455, #FDD262, #D3DDDC, #C7B19C"
 ```
 
-The same `wesanderson` data is also present as JSON and XML files. Accessor functions provide the local file path.
+The same `wesanderson` data is also present as JSON and XML files.
+Accessor functions provide the local file path.
 
 ``` r
 wesanderson_json()
-#> [1] "/Users/jenny/resources/R/library/repurrrsive/extdata/wesanderson.json"
+#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/wesanderson.json"
 wesanderson_xml()
-#> [1] "/Users/jenny/resources/R/library/repurrrsive/extdata/wesanderson.xml"
+#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/wesanderson.xml"
 ```
 
 Practice bringing data from JSON into an R list.
@@ -114,7 +117,9 @@ identical(wesanderson, json$wesanderson)
 #> [1] TRUE
 ```
 
-Practice bringing data into R from XML. You can get it into an R list with `xml2::as_list()`, but to get a list as nice as those above? That requires a bit more work. Such is XML life.
+Practice bringing data into R from XML. You can get it into an R list
+with `xml2::as_list()`, but to get a list as nice as those above? That
+requires a bit more work. Such is XML life.
 
 ``` r
 library(xml2)
@@ -153,7 +158,10 @@ as_list(xml_child(xml))
 
 #### Game of Thrones POV characters
 
-`got_chars` is a list with information on the 30 point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin. Retrieved from [An API Of Ice And Fire](https://anapioficeandfire.com).
+`got_chars` is a list with information on the 30 point-of-view
+characters from the first five books in the Song of Ice and Fire series
+by George R. R. Martin. Retrieved from [An API Of Ice And
+Fire](https://anapioficeandfire.com).
 
 ``` r
 library(purrr)
@@ -170,28 +178,29 @@ library(purrr)
 #> [28] "Quentyn Martell"    "Samwell Tarly"      "Sansa Stark"
 map_df(got_chars, `[`, c("name", "gender", "culture", "born"))
 #> # A tibble: 30 x 4
-#>                  name gender  culture
-#>                 <chr>  <chr>    <chr>
-#>  1      Theon Greyjoy   Male Ironborn
-#>  2   Tyrion Lannister   Male         
-#>  3  Victarion Greyjoy   Male Ironborn
-#>  4               Will   Male         
-#>  5         Areo Hotah   Male Norvoshi
-#>  6              Chett   Male         
-#>  7            Cressen   Male         
-#>  8    Arianne Martell Female  Dornish
-#>  9 Daenerys Targaryen Female Valyrian
-#> 10     Davos Seaworth   Male Westeros
-#> # ... with 20 more rows, and 1 more variables: born <chr>
+#>    name               gender culture  born                                 
+#>    <chr>              <chr>  <chr>    <chr>                                
+#>  1 Theon Greyjoy      Male   Ironborn In 278 AC or 279 AC, at Pyke         
+#>  2 Tyrion Lannister   Male   ""       In 273 AC, at Casterly Rock          
+#>  3 Victarion Greyjoy  Male   Ironborn In 268 AC or before, at Pyke         
+#>  4 Will               Male   ""       ""                                   
+#>  5 Areo Hotah         Male   Norvoshi In 257 AC or before, at Norvos       
+#>  6 Chett              Male   ""       At Hag's Mire                        
+#>  7 Cressen            Male   ""       In 219 AC or 220 AC                  
+#>  8 Arianne Martell    Female Dornish  In 276 AC, at Sunspear               
+#>  9 Daenerys Targaryen Female Valyrian In 284 AC, at Dragonstone            
+#> 10 Davos Seaworth     Male   Westeros In 260 AC or before, at King's Landi…
+#> # … with 20 more rows
 ```
 
-The same `got_chars` data is also present as JSON and XML files. Accessor functions provide the local file path.
+The same `got_chars` data is also present as JSON and XML files.
+Accessor functions provide the local file path.
 
 ``` r
 got_chars_json()
-#> [1] "/Users/jenny/resources/R/library/repurrrsive/extdata/got_chars.json"
+#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/got_chars.json"
 got_chars_xml()
-#> [1] "/Users/jenny/resources/R/library/repurrrsive/extdata/got_chars.xml"
+#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/got_chars.xml"
 ```
 
 Practice bringing data from JSON into an R list.
@@ -214,7 +223,9 @@ identical(got_chars, json)
 #> [1] TRUE
 ```
 
-Practice bringing data into R from XML. You can get it into an R list with `xml2::as_list()`, but to get a list as nice as those above? That requires a bit more work. Such is XML life.
+Practice bringing data into R from XML. You can get it into an R list
+with `xml2::as_list()`, but to get a list as nice as those above? That
+requires a bit more work. Such is XML life.
 
 ``` r
 library(xml2)
@@ -244,7 +255,8 @@ xml_child(xml)
 
 #### GitHub user and repo data
 
-`gh_users` and `gh_repos` are lists with information for 6 GitHub users and up to 30 of each user's repositories.
+`gh_users` and `gh_repos` are lists with information for 6 GitHub users
+and up to 30 of each user’s repositories.
 
 GitHub users.
 
@@ -259,17 +271,18 @@ map_chr(gh_users, 18)
 #> [5] "Thomas J. Leeper"       "Maëlle Salmon"
 map_df(gh_users, `[`, c("login", "name", "id", "location"))
 #> # A tibble: 6 x 4
-#>         login                   name       id               location
-#>         <chr>                  <chr>    <int>                  <chr>
-#> 1 gaborcsardi           Gábor Csárdi   660288         Chippenham, UK
-#> 2     jennybc Jennifer (Jenny) Bryan   599454  Vancouver, BC, Canada
-#> 3      jtleek                Jeff L.  1571674           Baltimore,MD
-#> 4  juliasilge            Julia Silge 12505835     Salt Lake City, UT
-#> 5      leeper       Thomas J. Leeper  3505428 London, United Kingdom
-#> 6    masalmon          Maëlle Salmon  8360597       Barcelona, Spain
+#>   login       name                         id location              
+#>   <chr>       <chr>                     <int> <chr>                 
+#> 1 gaborcsardi Gábor Csárdi             660288 Chippenham, UK        
+#> 2 jennybc     Jennifer (Jenny) Bryan   599454 Vancouver, BC, Canada 
+#> 3 jtleek      Jeff L.                 1571674 Baltimore,MD          
+#> 4 juliasilge  Julia Silge            12505835 Salt Lake City, UT    
+#> 5 leeper      Thomas J. Leeper        3505428 London, United Kingdom
+#> 6 masalmon    Maëlle Salmon           8360597 Barcelona, Spain
 ```
 
-First ~30 repos of these users. Peek at some info from first repo for the first user. Get full name of each user's 11th repo.
+First ~30 repos of these users. Peek at some info from first repo for
+the first user. Get full name of each user’s 11th repo.
 
 ``` r
 str(gh_repos[[1]][[1]][c("full_name", "html_url", "description")])
@@ -290,13 +303,14 @@ Want to parse it yourself? Paths to local JSON and XML files.
 
 ``` r
 c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
-#> [1] "/Users/jenny/resources/R/library/repurrrsive/extdata/gh_users.json"
-#> [2] "/Users/jenny/resources/R/library/repurrrsive/extdata/gh_repos.json"
-#> [3] "/Users/jenny/resources/R/library/repurrrsive/extdata/gh_users.xml" 
-#> [4] "/Users/jenny/resources/R/library/repurrrsive/extdata/gh_repos.xml"
+#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/gh_users.json"
+#> [2] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/gh_repos.json"
+#> [3] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/gh_users.xml" 
+#> [4] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/gh_repos.xml"
 ```
 
-Redo this: Get full name of each user's 11th repo. But using only the XML.
+Redo this: Get full name of each user’s 11th repo. But using only the
+XML.
 
 ``` r
 library(xml2)
@@ -315,7 +329,10 @@ repo_names[elevenses]
 
 #### Star Wars Universe entities
 
-`sw_people`, `sw_films`, `sw_species`, `sw_planets`, `sw_starships` and `sw_vehicles` are interrelated lists about entities in the Star Wars Universe retrieved from the [Star Wars API](http://swapi.co) using the package [`rwars`](https://github.com/Ironholds/rwars).
+`sw_people`, `sw_films`, `sw_species`, `sw_planets`, `sw_starships` and
+`sw_vehicles` are interrelated lists about entities in the Star Wars
+Universe retrieved from the [Star Wars API](http://swapi.co) using the
+package [`rwars`](https://github.com/Ironholds/rwars).
 
 ``` r
 library(purrr)
@@ -326,7 +343,10 @@ map_chr(sw_films, "title")
 #> [7] "The Force Awakens"
 ```
 
-Elements that contain URLs provide a way to link the lists together. For example, the `films` element of each person contains URLs for the films they have appeared in. For example, Luke Skywalker has been in five films.
+Elements that contain URLs provide a way to link the lists together. For
+example, the `films` element of each person contains URLs for the films
+they have appeared in. For example, Luke Skywalker has been in five
+films.
 
 ``` r
 luke <- sw_people[[1]]
@@ -341,7 +361,8 @@ luke[["films"]]
 #> [5] "http://swapi.co/api/films/7/"
 ```
 
-These URLs can be looked up in the the `sw_films` list to find the titles of the films.
+These URLs can be looked up in the the `sw_films` list to find the
+titles of the films.
 
 ``` r
 # Create a mapping between titles and urls
@@ -355,10 +376,10 @@ film_lookup[luke[["films"]]] %>% unname()
 #> [5] "The Force Awakens"
 ```
 
-Nested and split data frame examples
-------------------------------------
+## Nested and split data frame examples
 
-Use the Gapminder data in various forms to practice different styles of grouped computation.
+Use the Gapminder data in various forms to practice different styles of
+grouped computation.
 
 ``` r
 library(dplyr)
@@ -378,37 +399,37 @@ gap_simple %>%
   group_by(country) %>%
   summarize(cor = cor(lifeExp, year))
 #> # A tibble: 142 x 2
-#>        country       cor
-#>         <fctr>     <dbl>
-#>  1 Afghanistan 0.9735051
-#>  2     Albania 0.9542420
-#>  3     Algeria 0.9925307
-#>  4      Angola 0.9422392
-#>  5   Argentina 0.9977816
-#>  6   Australia 0.9897716
-#>  7     Austria 0.9960592
-#>  8     Bahrain 0.9832293
-#>  9  Bangladesh 0.9946662
-#> 10     Belgium 0.9972665
-#> # ... with 132 more rows
+#>    country       cor
+#>    <fct>       <dbl>
+#>  1 Afghanistan 0.974
+#>  2 Albania     0.954
+#>  3 Algeria     0.993
+#>  4 Angola      0.942
+#>  5 Argentina   0.998
+#>  6 Australia   0.990
+#>  7 Austria     0.996
+#>  8 Bahrain     0.983
+#>  9 Bangladesh  0.995
+#> 10 Belgium     0.997
+#> # … with 132 more rows
 
 ## nest() + map_*() inside mutate()
 gap_nested %>%
   mutate(cor = data %>% map_dbl(~ cor(.x$lifeExp, .x$year)))
 #> # A tibble: 142 x 4
-#>        country continent              data       cor
-#>         <fctr>    <fctr>            <list>     <dbl>
-#>  1 Afghanistan      Asia <tibble [12 x 4]> 0.9735051
-#>  2     Albania    Europe <tibble [12 x 4]> 0.9542420
-#>  3     Algeria    Africa <tibble [12 x 4]> 0.9925307
-#>  4      Angola    Africa <tibble [12 x 4]> 0.9422392
-#>  5   Argentina  Americas <tibble [12 x 4]> 0.9977816
-#>  6   Australia   Oceania <tibble [12 x 4]> 0.9897716
-#>  7     Austria    Europe <tibble [12 x 4]> 0.9960592
-#>  8     Bahrain      Asia <tibble [12 x 4]> 0.9832293
-#>  9  Bangladesh      Asia <tibble [12 x 4]> 0.9946662
-#> 10     Belgium    Europe <tibble [12 x 4]> 0.9972665
-#> # ... with 132 more rows
+#>    country     continent data                cor
+#>    <fct>       <fct>     <list>            <dbl>
+#>  1 Afghanistan Asia      <tibble [12 × 4]> 0.974
+#>  2 Albania     Europe    <tibble [12 × 4]> 0.954
+#>  3 Algeria     Africa    <tibble [12 × 4]> 0.993
+#>  4 Angola      Africa    <tibble [12 × 4]> 0.942
+#>  5 Argentina   Americas  <tibble [12 × 4]> 0.998
+#>  6 Australia   Oceania   <tibble [12 × 4]> 0.990
+#>  7 Austria     Europe    <tibble [12 × 4]> 0.996
+#>  8 Bahrain     Asia      <tibble [12 × 4]> 0.983
+#>  9 Bangladesh  Asia      <tibble [12 × 4]> 0.995
+#> 10 Belgium     Europe    <tibble [12 × 4]> 0.997
+#> # … with 132 more rows
 
 ## split + map_*()
 gap_split %>% 
@@ -422,17 +443,17 @@ gap_split %>%
   map_dbl(~ cor(.x$lifeExp, .x$year)) %>% 
   enframe()
 #> # A tibble: 142 x 2
-#>           name     value
-#>          <chr>     <dbl>
-#>  1 Afghanistan 0.9735051
-#>  2     Albania 0.9542420
-#>  3     Algeria 0.9925307
-#>  4      Angola 0.9422392
-#>  5   Argentina 0.9977816
-#>  6   Australia 0.9897716
-#>  7     Austria 0.9960592
-#>  8     Bahrain 0.9832293
-#>  9  Bangladesh 0.9946662
-#> 10     Belgium 0.9972665
-#> # ... with 132 more rows
+#>    name        value
+#>    <chr>       <dbl>
+#>  1 Afghanistan 0.974
+#>  2 Albania     0.954
+#>  3 Algeria     0.993
+#>  4 Angola      0.942
+#>  5 Argentina   0.998
+#>  6 Australia   0.990
+#>  7 Austria     0.996
+#>  8 Bahrain     0.983
+#>  9 Bangladesh  0.995
+#> 10 Belgium     0.997
+#> # … with 132 more rows
 ```
