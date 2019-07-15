@@ -10,19 +10,21 @@ output:
 [![Travis-CI Build Status](https://travis-ci.org/jennybc/repurrrsive.svg?branch=master)](https://travis-ci.org/jennybc/repurrrsive) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/repurrrsive)](https://cran.r-project.org/package=repurrrsive)
 
 ```{r, echo = FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", error = TRUE,
                       fig.path = "README-")
+library(repurrrsive)
 ```
 
 # repurrrsive
 
-The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()`. Datasets are stored as R list, JSON, and XML to provide the full non-rectangular data experience. Enjoy!
+The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as `purrr::map()` and the `unnest_*()` functions in the tidyr package. Datasets are stored as R list, JSON, and XML to provide the full non-rectangular data experience. Enjoy!
 
 Package also includes the main data frame from the [gapminder package](https://CRAN.R-project.org/package=gapminder) in 3 different forms: simple data frame (no list-columns), data frame nested by country, and split into a named list of data frames.
 
-repurrrsive is used in this purrr tutorial:
+Resources that use repurrrsive, where you can much more list wrangling:
 
-<https://jennybc.github.io/purrr-tutorial/>
+  * A purrr tutorial: <https://jennybc.github.io/purrr-tutorial/>
+  * A tidyr [vignette on rectangling](https://tidyr.tidyverse.org/articles/)
 
 ## Installation
 
@@ -40,6 +42,140 @@ devtools::install_github("jennybc/repurrrsive")
 ```
 
 ## Recursive list examples
+
+#### Game of Thrones POV characters
+
+`got_chars` is a list with information on the `r length(got_chars)` point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin. Retrieved from [An API Of Ice And Fire](https://anapioficeandfire.com).
+
+```{r}
+library(repurrrsive)
+library(purrr)
+(nms <- map_chr(got_chars, "name"))
+map_dfr(got_chars, `[`, c("name", "gender", "culture", "born"))
+```
+
+The same `got_chars` data is also present as JSON and XML files. Accessor functions provide the local file path.
+
+```{r}
+got_chars_json()
+got_chars_xml()
+```
+
+Practice bringing data from JSON into an R list.
+
+```{r message = FALSE}
+library(jsonlite)
+json <- fromJSON(got_chars_json(), simplifyDataFrame = FALSE)
+json[[1]][c("name", "titles", "playedBy")]
+identical(got_chars, json)
+```
+
+Practice bringing data into R from XML. You can get it into an R list with `xml2::as_list()`, but to get a list as nice as those above? That requires a bit more work. Such is XML life.
+
+```{r}
+library(xml2)
+xml <- read_xml(got_chars_xml())
+xml_child(xml)
+```
+
+#### Star Wars Universe entities
+
+`sw_people`, `sw_films`, `sw_species`, `sw_planets`, `sw_starships` and `sw_vehicles` are interrelated lists about entities in the Star Wars Universe retrieved from the [Star Wars API](http://swapi.co) using the package [`rwars`](https://github.com/Ironholds/rwars).
+
+```{r}
+library(repurrrsive)
+library(purrr)
+map_chr(sw_films, "title") 
+```
+
+Elements that contain URLs provide a way to link the lists together.  For example, the `films` element of each person contains URLs for the films they have appeared in.  For example, Luke Skywalker has been in five films.
+```{r}
+luke <- sw_people[[1]]
+names(luke)
+luke[["films"]]
+```
+
+These URLs can be looked up in the the `sw_films` list to find the titles of the films.
+```{r}
+# Create a mapping between titles and urls
+film_lookup <- map_chr(sw_films, "title") %>% 
+  set_names(map_chr(sw_films, "url"))
+
+# The films Luke is in
+film_lookup[luke[["films"]]] %>% unname()
+```
+
+#### GitHub user and repo data
+
+`gh_users` and `gh_repos` are lists with information for 6 GitHub users and up to 30 of each user's repositories.
+
+GitHub users.
+
+```{r}
+library(repurrrsive)
+library(purrr)
+map_chr(gh_users, "login")
+map_chr(gh_users, 18)
+map_dfr(gh_users, `[`, c("login", "name", "id", "location"))
+```
+
+First ~30 repos of these users. Peek at some info from first repo for the first user. Get full name of each user's 11th repo.
+
+```{r}
+str(gh_repos[[1]][[1]][c("full_name", "html_url", "description")])
+map_chr(gh_repos, list(11, "full_name"))
+```
+
+Want to parse it yourself? Paths to local JSON and XML files.
+
+```{r}
+c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
+```
+
+Redo this: Get full name of each user's 11th repo. But using only the XML.
+
+```{r}
+library(xml2)
+repo_xml <- read_xml(gh_repos_xml())
+repo_names <- map_chr(xml_find_all(repo_xml, "//full_name"), xml_text)
+elevenses <- 
+  11 + cumsum(c(0, head(table(gsub("(.*)/.*", "\\1", repo_names)), -1)))
+repo_names[elevenses]
+```
+
+#### Sharla Gelfand's music collection
+
+`discog` holds a list of 155 items, representing a music collection stored in the Discogs database and retrieved via their API. It's useful for demonstrating capabilities of purrr and tidyr.
+
+```{r}
+library(repurrrsive)
+library(purrr)
+library(tidyr) # version >= 0.8.3.9000
+library(tibble)
+library(dplyr)
+```
+
+Here we get just the album names:
+
+```{r}
+discog %>% 
+  map_chr(c("basic_information", "title")) %>% 
+  head()
+```
+
+Put the `discog` list into a list-column and use `tidyr::hoist()` to dig some info out of it.
+
+```{r}
+tibble(disc = discog) %>% 
+  hoist(disc, info = "basic_information") %>% 
+  hoist(info,
+       title = "title",
+       year = "year",
+       label = list("labels", 1, "name"),
+       artist = list("artists", 1, "name")
+  ) %>% 
+  select(-disc, -info)
+```
 
 #### wesanderson color palettes
 
@@ -84,103 +220,6 @@ library(xml2)
 xml <- read_xml(wesanderson_xml())
 xml_child(xml)
 as_list(xml_child(xml))
-```
-
-#### Game of Thrones POV characters
-
-`got_chars` is a list with information on the `r length(got_chars)` point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin. Retrieved from [An API Of Ice And Fire](https://anapioficeandfire.com).
-
-```{r}
-library(purrr)
-(nms <- map_chr(got_chars, "name"))
-map_df(got_chars, `[`, c("name", "gender", "culture", "born"))
-```
-
-The same `got_chars` data is also present as JSON and XML files. Accessor functions provide the local file path.
-
-```{r}
-got_chars_json()
-got_chars_xml()
-```
-
-Practice bringing data from JSON into an R list.
-
-```{r message = FALSE}
-library(jsonlite)
-json <- fromJSON(got_chars_json(), simplifyDataFrame = FALSE)
-json[[1]][c("name", "titles", "playedBy")]
-identical(got_chars, json)
-```
-
-Practice bringing data into R from XML. You can get it into an R list with `xml2::as_list()`, but to get a list as nice as those above? That requires a bit more work. Such is XML life.
-
-```{r}
-library(xml2)
-xml <- read_xml(got_chars_xml())
-xml_child(xml)
-```
-
-#### GitHub user and repo data
-
-`gh_users` and `gh_repos` are lists with information for 6 GitHub users and up to 30 of each user's repositories.
-
-GitHub users.
-
-```{r}
-library(purrr)
-map_chr(gh_users, "login")
-map_chr(gh_users, 18)
-map_df(gh_users, `[`, c("login", "name", "id", "location"))
-```
-
-First ~30 repos of these users. Peek at some info from first repo for the first user. Get full name of each user's 11th repo.
-
-```{r}
-str(gh_repos[[1]][[1]][c("full_name", "html_url", "description")])
-map_chr(gh_repos, list(11, "full_name"))
-```
-
-Want to parse it yourself? Paths to local JSON and XML files.
-
-```{r}
-c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
-```
-
-Redo this: Get full name of each user's 11th repo. But using only the XML.
-
-```{r}
-library(xml2)
-repo_xml <- read_xml(gh_repos_xml())
-repo_names <- map_chr(xml_find_all(repo_xml, "//full_name"), xml_text)
-elevenses <- 
-  11 + cumsum(c(0, head(table(gsub("(.*)/.*", "\\1", repo_names)), -1)))
-repo_names[elevenses]
-```
-
-#### Star Wars Universe entities
-
-`sw_people`, `sw_films`, `sw_species`, `sw_planets`, `sw_starships` and `sw_vehicles` are interrelated lists about entities in the Star Wars Universe retrieved from the [Star Wars API](http://swapi.co) using the package [`rwars`](https://github.com/Ironholds/rwars).
-
-```{r}
-library(purrr)
-map_chr(sw_films, "title") 
-```
-
-Elements that contain URLs provide a way to link the lists together.  For example, the `films` element of each person contains URLs for the films they have appeared in.  For example, Luke Skywalker has been in five films.
-```{r}
-luke <- sw_people[[1]]
-names(luke)
-luke[["films"]]
-```
-
-These URLs can be looked up in the the `sw_films` list to find the titles of the films.
-```{r}
-# Create a mapping between titles and urls
-film_lookup <- map_chr(sw_films, "title") %>% 
-  set_names(map_chr(sw_films, "url"))
-
-# The films Luke is in
-film_lookup[luke[["films"]]] %>% unname()
 ```
 
 ## Nested and split data frame examples
