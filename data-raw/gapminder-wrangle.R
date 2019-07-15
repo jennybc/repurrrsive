@@ -29,9 +29,3 @@ lm(lifeExp ~ year, data = canada)
 lm(lifeExp ~ I(year - 1950), data = canada)
 gap_nested %>%
   mutate(fit = map(data, ~ lm(lifeExp ~ I(year - 1950), data = .x)))
-
-
-
-
-
-

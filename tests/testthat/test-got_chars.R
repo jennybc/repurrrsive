@@ -4,7 +4,10 @@ test_that("got_chars list hasn't changed", {
 
 test_that("got_chars JSON gives rise to same list as the built-in", {
   skip_if_not_installed("jsonlite")
-  expect_identical(got_chars,
-                   jsonlite::fromJSON(got_chars_json(),
-                                      simplifyDataFrame = FALSE))
+  expect_identical(
+    got_chars,
+    jsonlite::fromJSON(got_chars_json(),
+      simplifyDataFrame = FALSE
+    )
+  )
 })

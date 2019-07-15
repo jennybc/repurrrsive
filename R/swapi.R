@@ -40,5 +40,3 @@
 
 #' @rdname sw_people
 "sw_starships"
-
-

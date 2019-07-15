@@ -14,11 +14,13 @@ n_pages <- . %>%
   .[[1]] %>%
   str_subset('rel=\"last\"') %>%
   str_match("\\?page=([0-9]+)") %>%
-  .[ , 2, drop = TRUE] %>%
+  .[, 2, drop = TRUE] %>%
   as.integer()
 
 ## get resource id from URL
-get_id <- . %>% basename() %>% as.integer()
+get_id <- . %>%
+  basename() %>%
+  as.integer()
 
 ## books
 ## how many books? = # of pages at pageSize = 1
@@ -57,10 +59,10 @@ books <- books_json %>%
   fromJSON(simplifyDataFrame = FALSE)
 
 books_df <- tibble(
-     book = books %>% map_chr("name"),
+  book = books %>% map_chr("name"),
   book_id = books %>% map_chr("url") %>% map_int(get_id),
-      pov = books %>% map("povCharacters"),
-    n_pov = lengths(pov)
+  pov = books %>% map("povCharacters"),
+  n_pov = lengths(pov)
 )
 books_df %>%
   arrange(desc(n_pov))
@@ -75,9 +77,11 @@ books_df %>%
 ## and we use books_df later to look up titles.
 
 pov_urls <- books_df %>%
-  filter(book %in% c("A Game of Thrones", "A Clash of Kings",
-                     "A Storm of Swords", "A Feast for Crows",
-                     "A Dance with Dragons")) %>%
+  filter(book %in% c(
+    "A Game of Thrones", "A Clash of Kings",
+    "A Storm of Swords", "A Feast for Crows",
+    "A Dance with Dragons"
+  )) %>%
   .[["pov"]] %>%
   unlist() %>%
   unique()
@@ -86,18 +90,28 @@ pov_urls <- books_df %>%
 pov_df <- tibble(
   url = pov_urls,
   character_id = get_id(url),
-  fname = here("data-raw", "iceandfire-json",
-               paste0("character-", character_id, ".json"))
+  fname = here(
+    "data-raw", "iceandfire-json",
+    paste0("character-", character_id, ".json")
+  )
 )
-walk2(pov_df$url, pov_df$fname,
-      function(url, file) GET(url) %>% prettify() %>% write_lines(file))
+walk2(
+  pov_df$url, pov_df$fname,
+  function(url, file) GET(url) %>%
+      prettify() %>%
+      write_lines(file)
+)
 
 ## give POV character JSON files better names
 pov_df <- pov_df %>%
-  mutate(from_api = map(fname, fromJSON),
-         name = from_api %>% map_chr("name"),
-         fname2 = str_replace(fname, ".json$",
-                             paste0("-", str_replace_all(name, "\\s+", "-"), ".json")))
+  mutate(
+    from_api = map(fname, fromJSON),
+    name = from_api %>% map_chr("name"),
+    fname2 = str_replace(
+      fname, ".json$",
+      paste0("-", str_replace_all(name, "\\s+", "-"), ".json")
+    )
+  )
 walk2(pov_df$fname, pov_df$fname2, file.rename)
 ## View(pov_df$from_api)
 
@@ -105,26 +119,35 @@ walk2(pov_df$fname, pov_df$fname2, file.rename)
 houses_df <- tibble(
   url = pov_df$from_api %>% map("allegiances") %>% unlist() %>% unique(),
   house_id = get_id(url),
-  fname = here("data-raw", "iceandfire-json",
-               paste0("house-", house_id, ".json"))
+  fname = here(
+    "data-raw", "iceandfire-json",
+    paste0("house-", house_id, ".json")
+  )
 )
 ## guard against this form of duplication:
 ## https://www.anapioficeandfire.com/api/houses/362
 ## https://anapioficeandfire.com/api/houses/362
 houses_df <- houses_df %>%
   filter(!duplicated(houses_df$house_id))
-walk2(houses_df$url, houses_df$fname,
-      function(url, file) GET(url) %>% prettify() %>% write_lines(file))
+walk2(
+  houses_df$url, houses_df$fname,
+  function(url, file) GET(url) %>%
+      prettify() %>%
+      write_lines(file)
+)
 
 ## give house JSON files better names
 houses_df <- houses_df %>%
-  mutate(from_api = map(fname, fromJSON),
-         house = from_api %>% map_chr("name"))
+  mutate(
+    from_api = map(fname, fromJSON),
+    house = from_api %>% map_chr("name")
+  )
 ## this should be one nice regex but ... it's not ... wasted too much time here
-house_name <- str_match(houses_df$house, "House (.*)")[ , 2, drop = TRUE]
+house_name <- str_match(houses_df$house, "House (.*)")[, 2, drop = TRUE]
 house_name <- map_chr(str_split(house_name, " of"), 1)
 houses_df <- houses_df %>%
   mutate(fname2 = str_replace(
     fname, ".json$",
-    paste0("-",str_replace_all(house_name, "\\s+", "-"), ".json")))
+    paste0("-", str_replace_all(house_name, "\\s+", "-"), ".json")
+  ))
 walk2(houses_df$fname, houses_df$fname2, file.rename)

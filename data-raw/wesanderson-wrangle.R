@@ -4,7 +4,7 @@ library(wesanderson)
 library(devtools)
 library(jsonlite)
 library(xml2)
-#library(xmlview)
+# library(xmlview)
 library(purrr)
 
 wesanderson <- wes_palettes
@@ -18,15 +18,17 @@ list(wesanderson = wes_palettes) %>%
 wes_xml <- xml_new_document() %>%
   xml_add_child("package", name = "wesanderson") %>%
   xml_root()
-#xml_view(wes_xml)
+# xml_view(wes_xml)
 walk2(names(wes_palettes), wes_palettes, function(pal_name, pal_cols) {
   pal_node <- xml_add_child(wes_xml, "palette", name = pal_name)
   map(pal_cols, ~ xml_add_child(pal_node, "hex", .x))
 })
-#xml_view(wes_xml)
+# xml_view(wes_xml)
 
-write_xml(wes_xml,
-          here("inst", "extdata", "wesanderson.xml"))
+write_xml(
+  wes_xml,
+  here("inst", "extdata", "wesanderson.xml")
+)
 
 ## my personal XML journey
 # wes_xml2 <- xml_new_document() %>%

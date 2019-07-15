@@ -7,15 +7,17 @@ library(tidyverse)
 library(xml2)
 
 ## get resource id from URL
-get_id <- . %>% basename() %>% as.integer()
+get_id <- . %>%
+  basename() %>%
+  as.integer()
 
 books <- fromJSON(
   here("data-raw", "iceandfire-json", "books.json"),
   simplifyDataFrame = FALSE
 )
 assert_that(length(books) == 12)
-#str(books, max.level = 1)
-#View(books)
+# str(books, max.level = 1)
+# View(books)
 
 books_df <- tibble(
   book = books %>% map_chr("name"),
@@ -88,10 +90,12 @@ pov_df <- pov_df %>%
     ## integer vector
     chr_list$id <- chr_list$url %>% get_id()
     ## insert them in logical locations
-    nms <- c("url", "id",
-             "name", "gender", "culture", "born", "died", "alive",
-             "titles", "aliases", "father", "mother", "spouse",
-             "allegiances", "books", "povBooks", "tvSeries", "playedBy")
+    nms <- c(
+      "url", "id",
+      "name", "gender", "culture", "born", "died", "alive",
+      "titles", "aliases", "father", "mother", "spouse",
+      "allegiances", "books", "povBooks", "tvSeries", "playedBy"
+    )
     chr_list[nms]
   }))
 View(pov_df)
