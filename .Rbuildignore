@@ -6,3 +6,4 @@
 ^img$
 ^\.travis\.yml$
 ^cran-comments\.md$
+^revdep$
