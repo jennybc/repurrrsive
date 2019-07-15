@@ -7,17 +7,28 @@
 \format{A unnamed list with 155 components, each representing an item in
 Sharla's music collection.}
 \source{
-Retrieved on 2019-07-15 from \url{https://www.discogs.com}.
+\itemize{
+\item Data retrieved on 2019-07-15 from \url{https://www.discogs.com}
+\item Original blog post by Sharla Gelfand
+\url{https://sharla.party/posts/discog-purrr/}
+}
 }
 \usage{
 discog
 }
 \description{
-Inspired by \url{https://sharla.party/posts/discog-purrr/}.
+A music collection, as represented in a recursive list returned from the
+Discogs API.
 }
 \examples{
 length(discog)
 
 str(discog, max.level = 2, list.len = 2)
+
+vapply(discog[1:6], `[[`, c("basic_information", "title"), FUN.VALUE = "")
 }
+\seealso{
+Other Discogs data and functions: \code{\link{discog_json}}
+}
+\concept{Discogs data and functions}
 \keyword{datasets}
