@@ -1,10 +1,11 @@
 #' Sharla Gelfand's music collection
 #'
 #' Inspired by <https://sharla.party/posts/discog-purrr/>.
-#' Retrieved on 2019-05-02 from <discogs.com>.
 #'
 #' @format A unnamed list with 155 components, each representing an item in
 #'   Sharla's music collection.
+#'
+#' @source Retrieved on 2019-07-15 from <https://www.discogs.com>.
 #' @examples
 #' length(discog)
 #'
