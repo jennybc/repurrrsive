@@ -13,8 +13,10 @@
 #' gap_split
 "gap_simple"
 
+#' @format NULL
 #' @rdname gap_simple
 "gap_nested"
 
+#' @format NULL
 #' @rdname gap_simple
 "gap_split"

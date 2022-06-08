@@ -4,10 +4,12 @@
 \name{gh_repos}
 \alias{gh_repos}
 \title{GitHub repos}
-\format{A unnamed list with 6 components, each itself a list of 30 repos for
+\format{
+A unnamed list with 6 components, each itself a list of 30 repos for
 a specific GitHub user. Each repo's component is a list of length >60,
 containing information such as name, owner (a list), fork status, and
-creation date.}
+creation date.
+}
 \source{
 \url{https://developer.github.com/v3/repos/#list-user-repositories}
 }
@@ -22,8 +24,9 @@ gh_repos
 str(lapply(gh_repos[[1]][1:3], `[`, c("full_name", "created_at")))
 }
 \seealso{
-Other GitHub data and functions: \code{\link{gh_users_json}},
-  \code{\link{gh_users}}
+Other GitHub data and functions: 
+\code{\link{gh_users_json}()},
+\code{\link{gh_users}}
 }
 \concept{GitHub data and functions}
 \keyword{datasets}

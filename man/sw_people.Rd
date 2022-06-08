@@ -9,7 +9,9 @@
 \alias{sw_vehicles}
 \alias{sw_starships}
 \title{Entities from the Star Wars Universe}
-\format{Unnamed lists with varying number of components.}
+\format{
+Unnamed lists with varying number of components.
+}
 \source{
 Data comes from \url{http://swapi.co/} retrieved using
 the \code{rwars} package: \url{https://github.com/Ironholds/rwars}

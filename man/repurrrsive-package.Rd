@@ -4,15 +4,9 @@
 \name{repurrrsive-package}
 \alias{repurrrsive}
 \alias{repurrrsive-package}
-\title{repurrrsive: Examples of Recursive Lists and Nested or Split Data
-    Frames}
+\title{repurrrsive: Examples of Recursive Lists and Nested or Split Data Frames}
 \description{
-Recursive lists in the form of R objects, 'JSON',
-    and 'XML', for use in teaching and examples. Examples include color
-    palettes, Game of Thrones characters, 'GitHub' users and repositories,
-    music collections, and entities from the Star Wars universe. Data from
-    the 'gapminder' package is also included, as a simple data frame and
-    in nested and split forms.
+Recursive lists in the form of R objects, 'JSON', and 'XML', for use in teaching and examples. Examples include color palettes, Game of Thrones characters, 'GitHub' users and repositories, music collections, and entities from the Star Wars universe. Data from the 'gapminder' package is also included, as a simple data frame and in nested and split forms.
 }
 \details{
 Read more at \url{https://github.com/jennybc/repurrrsive#readme}.
@@ -26,7 +20,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Jennifer Bryan \email{jenny@rstudio.com} (0000-0002-6983-2759)
+\strong{Maintainer}: Jennifer Bryan \email{jenny@rstudio.com} (\href{https://orcid.org/0000-0002-6983-2759}{ORCID})
 
 Other contributors:
 \itemize{

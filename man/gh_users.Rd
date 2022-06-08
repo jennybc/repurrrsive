@@ -4,9 +4,11 @@
 \name{gh_users}
 \alias{gh_users}
 \title{GitHub users}
-\format{A unnamed list with 6 components, each representing a GitHub user.
+\format{
+A unnamed list with 6 components, each representing a GitHub user.
 Each user's component is a list of length 30, containing information such
-as username, GitHub id, and join date.}
+as username, GitHub id, and join date.
+}
 \source{
 \url{https://developer.github.com/v3/users/#get-a-single-user}
 }
@@ -21,8 +23,9 @@ gh_users
 str(lapply(gh_users, `[`, c("login", "name")))
 }
 \seealso{
-Other GitHub data and functions: \code{\link{gh_repos}},
-  \code{\link{gh_users_json}}
+Other GitHub data and functions: 
+\code{\link{gh_repos}},
+\code{\link{gh_users_json}()}
 }
 \concept{GitHub data and functions}
 \keyword{datasets}
