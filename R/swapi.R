@@ -12,8 +12,10 @@
 #' }
 #'
 #' @format Unnamed lists with varying number of components.
-#' @source Data comes from <http://swapi.co/> retrieved using
-#'    the `rwars` package: <https://github.com/Ironholds/rwars>
+#' @source Data originally obtained from `http://swapi.co/` using the rwars
+#'   package: <https://github.com/Ironholds/rwars>. The Star Wars API appears to
+#'   have moved to `https://pipedream.com/apps/swapi` since that time.
+#'
 #' @examples
 #' # sw_people
 #' length(sw_people)

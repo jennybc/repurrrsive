@@ -9,7 +9,7 @@
 #' @source
 #'   * Data retrieved on 2019-07-15 from <https://www.discogs.com>
 #'   * Original blog post by Sharla Gelfand
-#'   <https://sharla.party/posts/discog-purrr/>
+#'   <https://sharla.party/post/discog-purrr/>
 #'
 #' @family Discogs data and functions
 #'

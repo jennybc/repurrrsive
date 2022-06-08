@@ -80,7 +80,9 @@ xml_child(xml)
 
 #### Star Wars Universe entities
 
-`sw_people`, `sw_films`, `sw_species`, `sw_planets`, `sw_starships` and `sw_vehicles` are interrelated lists about entities in the Star Wars Universe retrieved from the [Star Wars API](http://swapi.co) using the package [`rwars`](https://github.com/Ironholds/rwars).
+`sw_people`, `sw_films`, `sw_species`, `sw_planets`, `sw_starships` and `sw_vehicles` are interrelated lists about entities in the Star Wars Universe.
+The data was originally retrieved from the Star Wars API previously available at `http://swapi.co` using the R package [rwars](https://github.com/Ironholds/rwars).
+The Star Wars API appears to have moved to `https://pipedream.com/apps/swapi` since that time.
 
 ```{r}
 library(repurrrsive)
@@ -179,7 +181,7 @@ tibble(disc = discog) %>%
 
 #### wesanderson color palettes
 
-`wesanderson` is the simplest list, containing color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors. *Screenshot is of RStudio's [Object Explorer](https://blog.rstudio.com/2017/08/22/rstudio-v1-1-preview-object-explorer/), i.e. from calling `View(wesanderson)`.*
+`wesanderson` is the simplest list, containing color palettes, from the [wesanderson package](https://cran.r-project.org/package=wesanderson). Here's a glimpse: one component per palette, each containing a character vector of hex colors. *Screenshot is of RStudio's [Object Explorer](https://www.rstudio.com/blog/rstudio-v1-1-preview-object-explorer/), i.e. from calling `View(wesanderson)`.*
 
 ![](man/figures/wesanderson-rstudio-view.png)
 

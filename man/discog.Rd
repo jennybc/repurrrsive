@@ -12,7 +12,7 @@ Sharla's music collection.
 \itemize{
 \item Data retrieved on 2019-07-15 from \url{https://www.discogs.com}
 \item Original blog post by Sharla Gelfand
-\url{https://sharla.party/posts/discog-purrr/}
+\url{https://sharla.party/post/discog-purrr/}
 }
 }
 \usage{

@@ -86,9 +86,9 @@ Accessor functions provide the local file path.
 
 ``` r
 got_chars_json()
-#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/got_chars.json"
+#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/got_chars.json"
 got_chars_xml()
-#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/got_chars.xml"
+#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/got_chars.xml"
 ```
 
 Practice bringing data from JSON into an R list.
@@ -145,8 +145,10 @@ xml_child(xml)
 
 `sw_people`, `sw_films`, `sw_species`, `sw_planets`, `sw_starships` and
 `sw_vehicles` are interrelated lists about entities in the Star Wars
-Universe retrieved from the [Star Wars API](http://swapi.co) using the
-package [`rwars`](https://github.com/Ironholds/rwars).
+Universe. The data was originally retrieved from the Star Wars API
+previously available at `http://swapi.co` using the R package
+[rwars](https://github.com/Ironholds/rwars). The Star Wars API appears
+to have moved to `https://pipedream.com/apps/swapi` since that time.
 
 ``` r
 library(repurrrsive)
@@ -241,10 +243,10 @@ Want to parse it yourself? Paths to local JSON and XML files.
 
 ``` r
 c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
-#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/gh_users.json"
-#> [2] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/gh_repos.json"
-#> [3] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/gh_users.xml" 
-#> [4] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/gh_repos.xml"
+#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/gh_users.json"
+#> [2] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/gh_repos.json"
+#> [3] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/gh_users.xml" 
+#> [4] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/gh_repos.xml"
 ```
 
 Redo this: Get full name of each user’s 11th repo. But using only the
@@ -333,7 +335,7 @@ tibble(disc = discog) %>%
 [wesanderson package](https://cran.r-project.org/package=wesanderson).
 Here’s a glimpse: one component per palette, each containing a character
 vector of hex colors. *Screenshot is of RStudio’s [Object
-Explorer](https://blog.rstudio.com/2017/08/22/rstudio-v1-1-preview-object-explorer/),
+Explorer](https://www.rstudio.com/blog/rstudio-v1-1-preview-object-explorer/),
 i.e. from calling `View(wesanderson)`.*
 
 ![](man/figures/wesanderson-rstudio-view.png)
@@ -383,9 +385,9 @@ Accessor functions provide the local file path.
 
 ``` r
 wesanderson_json()
-#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/wesanderson.json"
+#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/wesanderson.json"
 wesanderson_xml()
-#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/wesanderson.xml"
+#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/wesanderson.xml"
 ```
 
 Practice bringing data from JSON into an R list.

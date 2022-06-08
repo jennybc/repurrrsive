@@ -13,8 +13,9 @@
 Unnamed lists with varying number of components.
 }
 \source{
-Data comes from \url{http://swapi.co/} retrieved using
-the \code{rwars} package: \url{https://github.com/Ironholds/rwars}
+Data originally obtained from \verb{http://swapi.co/} using the rwars
+package: \url{https://github.com/Ironholds/rwars}. The Star Wars API appears to
+have moved to \verb{https://pipedream.com/apps/swapi} since that time.
 }
 \usage{
 sw_people
