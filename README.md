@@ -1,9 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- badges: start -->
 
-[![Travis-CI Build
-Status](https://travis-ci.org/jennybc/repurrrsive.svg?branch=master)](https://travis-ci.org/jennybc/repurrrsive)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/repurrrsive)](https://cran.r-project.org/package=repurrrsive)
+[![R-CMD-check](https://github.com/jennybc/repurrrsive/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jennybc/repurrrsive/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/jennybc/repurrrsive/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jennybc/repurrrsive?branch=main)
+<!-- badges: end -->
 
 # repurrrsive
 
@@ -11,7 +13,7 @@ The repurrrsive package provides recursive lists that are handy when
 teaching or exampling functions such as `purrr::map()` and the
 `unnest_*()` functions in the tidyr package. Datasets are stored as R
 list, JSON, and XML to provide the full non-rectangular data experience.
-Enjoy\!
+Enjoy!
 
 Package also includes the main data frame from the [gapminder
 package](https://CRAN.R-project.org/package=gapminder) in 3 different
@@ -20,8 +22,8 @@ country, and split into a named list of data frames.
 
 Resources that use repurrrsive, where you can much more list wrangling:
 
-  - A purrr tutorial: <https://jennybc.github.io/purrr-tutorial/>
-  - A tidyr [vignette on
+-   A purrr tutorial: <https://jennybc.github.io/purrr-tutorial/>
+-   A tidyr [vignette on
     rectangling](https://tidyr.tidyverse.org/articles/)
 
 ## Installation
@@ -63,19 +65,19 @@ library(purrr)
 #> [25] "Kevan Lannister"    "Melisandre"         "Merrett Frey"      
 #> [28] "Quentyn Martell"    "Samwell Tarly"      "Sansa Stark"
 map_dfr(got_chars, `[`, c("name", "gender", "culture", "born"))
-#> # A tibble: 30 x 4
-#>    name               gender culture  born                                 
-#>    <chr>              <chr>  <chr>    <chr>                                
-#>  1 Theon Greyjoy      Male   Ironborn In 278 AC or 279 AC, at Pyke         
-#>  2 Tyrion Lannister   Male   ""       In 273 AC, at Casterly Rock          
-#>  3 Victarion Greyjoy  Male   Ironborn In 268 AC or before, at Pyke         
-#>  4 Will               Male   ""       ""                                   
-#>  5 Areo Hotah         Male   Norvoshi In 257 AC or before, at Norvos       
-#>  6 Chett              Male   ""       At Hag's Mire                        
-#>  7 Cressen            Male   ""       In 219 AC or 220 AC                  
-#>  8 Arianne Martell    Female Dornish  In 276 AC, at Sunspear               
-#>  9 Daenerys Targaryen Female Valyrian In 284 AC, at Dragonstone            
-#> 10 Davos Seaworth     Male   Westeros In 260 AC or before, at King's Landi…
+#> # A tibble: 30 × 4
+#>    name               gender culture    born                                    
+#>    <chr>              <chr>  <chr>      <chr>                                   
+#>  1 Theon Greyjoy      Male   "Ironborn" "In 278 AC or 279 AC, at Pyke"          
+#>  2 Tyrion Lannister   Male   ""         "In 273 AC, at Casterly Rock"           
+#>  3 Victarion Greyjoy  Male   "Ironborn" "In 268 AC or before, at Pyke"          
+#>  4 Will               Male   ""         ""                                      
+#>  5 Areo Hotah         Male   "Norvoshi" "In 257 AC or before, at Norvos"        
+#>  6 Chett              Male   ""         "At Hag's Mire"                         
+#>  7 Cressen            Male   ""         "In 219 AC or 220 AC"                   
+#>  8 Arianne Martell    Female "Dornish"  "In 276 AC, at Sunspear"                
+#>  9 Daenerys Targaryen Female "Valyrian" "In 284 AC, at Dragonstone"             
+#> 10 Davos Seaworth     Male   "Westeros" "In 260 AC or before, at King's Landing"
 #> # … with 20 more rows
 ```
 
@@ -84,9 +86,9 @@ Accessor functions provide the local file path.
 
 ``` r
 got_chars_json()
-#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/got_chars.json"
+#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/got_chars.json"
 got_chars_xml()
-#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/got_chars.xml"
+#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/got_chars.xml"
 ```
 
 Practice bringing data from JSON into an R list.
@@ -127,15 +129,15 @@ xml_child(xml)
 #>  [6] <born>In 278 AC or 279 AC, at Pyke</born>
 #>  [7] <died/>
 #>  [8] <alive>TRUE</alive>
-#>  [9] <titles>\n  <elem>Prince of Winterfell</elem>\n  <elem>Captain of S ...
-#> [10] <aliases>\n  <elem>Prince of Fools</elem>\n  <elem>Theon Turncloak< ...
+#>  [9] <titles>\n  <elem>Prince of Winterfell</elem>\n  <elem>Captain of Sea Bi ...
+#> [10] <aliases>\n  <elem>Prince of Fools</elem>\n  <elem>Theon Turncloak</elem ...
 #> [11] <father/>
 #> [12] <mother/>
 #> [13] <spouse/>
 #> [14] <allegiances>House Greyjoy of Pyke</allegiances>
-#> [15] <books>\n  <elem>A Game of Thrones</elem>\n  <elem>A Storm of Sword ...
-#> [16] <povBooks>\n  <elem>A Clash of Kings</elem>\n  <elem>A Dance with D ...
-#> [17] <tvSeries>\n  <elem>Season 1</elem>\n  <elem>Season 2</elem>\n  <el ...
+#> [15] <books>\n  <elem>A Game of Thrones</elem>\n  <elem>A Storm of Swords</el ...
+#> [16] <povBooks>\n  <elem>A Clash of Kings</elem>\n  <elem>A Dance with Dragon ...
+#> [17] <tvSeries>\n  <elem>Season 1</elem>\n  <elem>Season 2</elem>\n  <elem>Se ...
 #> [18] <playedBy>Alfie Allen</playedBy>
 ```
 
@@ -203,11 +205,10 @@ map_chr(gh_users, "login")
 #> [1] "gaborcsardi" "jennybc"     "jtleek"      "juliasilge"  "leeper"     
 #> [6] "masalmon"
 map_chr(gh_users, 18)
-#> [1] "Gábor Csárdi"           "Jennifer (Jenny) Bryan"
-#> [3] "Jeff L."                "Julia Silge"           
-#> [5] "Thomas J. Leeper"       "Maëlle Salmon"
+#> [1] "Gábor Csárdi"           "Jennifer (Jenny) Bryan" "Jeff L."               
+#> [4] "Julia Silge"            "Thomas J. Leeper"       "Maëlle Salmon"
 map_dfr(gh_users, `[`, c("login", "name", "id", "location"))
-#> # A tibble: 6 x 4
+#> # A tibble: 6 × 4
 #>   login       name                         id location              
 #>   <chr>       <chr>                     <int> <chr>                 
 #> 1 gaborcsardi Gábor Csárdi             660288 Chippenham, UK        
@@ -218,7 +219,7 @@ map_dfr(gh_users, `[`, c("login", "name", "id", "location"))
 #> 6 masalmon    Maëlle Salmon           8360597 Barcelona, Spain
 ```
 
-First ~30 repos of these users. Peek at some info from first repo for
+First \~30 repos of these users. Peek at some info from first repo for
 the first user. Get full name of each user’s 11th repo.
 
 ``` r
@@ -240,10 +241,10 @@ Want to parse it yourself? Paths to local JSON and XML files.
 
 ``` r
 c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
-#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/gh_users.json"
-#> [2] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/gh_repos.json"
-#> [3] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/gh_users.xml" 
-#> [4] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/gh_repos.xml"
+#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/gh_users.json"
+#> [2] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/gh_repos.json"
+#> [3] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/gh_users.xml" 
+#> [4] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/gh_repos.xml"
 ```
 
 Redo this: Get full name of each user’s 11th repo. But using only the
@@ -310,19 +311,19 @@ tibble(disc = discog) %>%
        artist = list("artists", 1, "name")
   ) %>% 
   select(-disc, -info)
-#> # A tibble: 155 x 4
-#>    title                   year label                      artist          
-#>    <chr>                  <int> <chr>                      <chr>           
-#>  1 Demo                    2015 Tobi Records (2)           Mollot          
-#>  2 Observant Com El Mon …  2013 La Vida Es Un Mus          Una Bèstia Inco…
-#>  3 I                       2017 La Vida Es Un Mus          S.H.I.T. (3)    
-#>  4 Oído Absoluto           2017 La Vida Es Un Mus          Rata Negra      
-#>  5 A Cat's Cause, No Dog…  2015 Katorga Works              Ivy (18)        
-#>  6 Tashme                  2019 High Fashion Industries    Tashme          
-#>  7 Demo                    2014 Mind Control Records (6)   Desgraciados    
-#>  8 Let The Miracles Begin  2015 Not On Label (Phantom Hea… Phantom Head    
-#>  9 Sub Space               2017 Not On Label (Sub Space (… Sub Space (2)   
-#> 10 Demo                    2017 Prescience Tapes           Small Man (2)   
+#> # A tibble: 155 × 4
+#>    title                              year label                          artist
+#>    <chr>                             <int> <chr>                          <chr> 
+#>  1 Demo                               2015 Tobi Records (2)               Mollot
+#>  2 Observant Com El Mon Es Destrueix  2013 La Vida Es Un Mus              Una B…
+#>  3 I                                  2017 La Vida Es Un Mus              S.H.I…
+#>  4 Oído Absoluto                      2017 La Vida Es Un Mus              Rata …
+#>  5 A Cat's Cause, No Dogs Problem     2015 Katorga Works                  Ivy (…
+#>  6 Tashme                             2019 High Fashion Industries        Tashme
+#>  7 Demo                               2014 Mind Control Records (6)       Desgr…
+#>  8 Let The Miracles Begin             2015 Not On Label (Phantom Head Se… Phant…
+#>  9 Sub Space                          2017 Not On Label (Sub Space (2) S… Sub S…
+#> 10 Demo                               2017 Prescience Tapes               Small…
 #> # … with 145 more rows
 ```
 
@@ -382,9 +383,9 @@ Accessor functions provide the local file path.
 
 ``` r
 wesanderson_json()
-#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/wesanderson.json"
+#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/wesanderson.json"
 wesanderson_xml()
-#> [1] "/Users/jenny/resources/R/library_3.6/repurrrsive/extdata/wesanderson.xml"
+#> [1] "/Library/Frameworks/R.framework/Versions/4.1/Resources/library/repurrrsive/extdata/wesanderson.xml"
 ```
 
 Practice bringing data from JSON into an R list.
@@ -458,7 +459,7 @@ library(tibble)
 gap_simple %>% 
   group_by(country) %>%
   summarize(cor = cor(lifeExp, year))
-#> # A tibble: 142 x 2
+#> # A tibble: 142 × 2
 #>    country       cor
 #>    <fct>       <dbl>
 #>  1 Afghanistan 0.974
@@ -476,7 +477,7 @@ gap_simple %>%
 ## nest() + map_*() inside mutate()
 gap_nested %>%
   mutate(cor = data %>% map_dbl(~ cor(.x$lifeExp, .x$year)))
-#> # A tibble: 142 x 4
+#> # A tibble: 142 × 4
 #>    country     continent data                cor
 #>    <fct>       <fct>     <list>            <dbl>
 #>  1 Afghanistan Asia      <tibble [12 × 4]> 0.974
@@ -502,7 +503,7 @@ gap_split %>%
 gap_split %>% 
   map_dbl(~ cor(.x$lifeExp, .x$year)) %>% 
   enframe()
-#> # A tibble: 142 x 2
+#> # A tibble: 142 × 2
 #>    name        value
 #>    <chr>       <dbl>
 #>  1 Afghanistan 0.974
