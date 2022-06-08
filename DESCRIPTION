@@ -27,6 +27,7 @@ Imports:
     tibble,
     utils
 Suggests:
+    covr,
     gapminder,
     jsonlite,
     purrr,
