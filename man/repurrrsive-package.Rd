@@ -15,6 +15,7 @@ Read more at \url{https://github.com/jennybc/repurrrsive#readme}.
 Useful links:
 \itemize{
   \item \url{https://github.com/jennybc/repurrrsive}
+  \item \url{https://jennybc.github.io/repurrrsive/}
   \item Report bugs at \url{https://github.com/jennybc/repurrrsive/issues}
 }
 
