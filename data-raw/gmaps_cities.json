@@ -1,0 +1,486 @@
+[
+  {
+    "results": [
+      {
+        "address_components": [
+          {
+            "long_name": ["Houston"],
+            "short_name": ["Houston"],
+            "types": [
+              ["locality"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["Harris County"],
+            "short_name": ["Harris County"],
+            "types": [
+              ["administrative_area_level_2"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["Texas"],
+            "short_name": ["TX"],
+            "types": [
+              ["administrative_area_level_1"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["United States"],
+            "short_name": ["US"],
+            "types": [
+              ["country"],
+              ["political"]
+            ]
+          }
+        ],
+        "formatted_address": ["Houston, TX, USA"],
+        "geometry": {
+          "bounds": {
+            "northeast": {
+              "lat": [30.1107],
+              "lng": [-95.0145]
+            },
+            "southwest": {
+              "lat": [29.5236],
+              "lng": [-95.7881]
+            }
+          },
+          "location": {
+            "lat": [29.7604],
+            "lng": [-95.3698]
+          },
+          "location_type": ["APPROXIMATE"],
+          "viewport": {
+            "northeast": {
+              "lat": [30.1107],
+              "lng": [-95.0145]
+            },
+            "southwest": {
+              "lat": [29.5236],
+              "lng": [-95.7881]
+            }
+          }
+        },
+        "place_id": ["ChIJAYWNSLS4QIYROwVl894CDco"],
+        "types": [
+          ["locality"],
+          ["political"]
+        ]
+      }
+    ],
+    "status": ["OK"]
+  },
+  {
+    "results": [
+      {
+        "address_components": [
+          {
+            "long_name": ["Washington"],
+            "short_name": ["WA"],
+            "types": [
+              ["administrative_area_level_1"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["United States"],
+            "short_name": ["US"],
+            "types": [
+              ["country"],
+              ["political"]
+            ]
+          }
+        ],
+        "formatted_address": ["Washington, USA"],
+        "geometry": {
+          "bounds": {
+            "northeast": {
+              "lat": [49.0024],
+              "lng": [-116.9156]
+            },
+            "southwest": {
+              "lat": [45.5435],
+              "lng": [-124.849]
+            }
+          },
+          "location": {
+            "lat": [47.7511],
+            "lng": [-120.7401]
+          },
+          "location_type": ["APPROXIMATE"],
+          "viewport": {
+            "northeast": {
+              "lat": [49.0025],
+              "lng": [-116.9156]
+            },
+            "southwest": {
+              "lat": [45.5435],
+              "lng": [-124.849]
+            }
+          }
+        },
+        "place_id": ["ChIJ-bDD5__lhVQRuvNfbGh4QpQ"],
+        "types": [
+          ["administrative_area_level_1"],
+          ["political"]
+        ]
+      },
+      {
+        "address_components": [
+          {
+            "long_name": ["Washington"],
+            "short_name": ["Washington"],
+            "types": [
+              ["locality"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["District of Columbia"],
+            "short_name": ["District of Columbia"],
+            "types": [
+              ["administrative_area_level_2"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["District of Columbia"],
+            "short_name": ["DC"],
+            "types": [
+              ["administrative_area_level_1"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["United States"],
+            "short_name": ["US"],
+            "types": [
+              ["country"],
+              ["political"]
+            ]
+          }
+        ],
+        "formatted_address": ["Washington, DC, USA"],
+        "geometry": {
+          "bounds": {
+            "northeast": {
+              "lat": [38.9959],
+              "lng": [-76.9094]
+            },
+            "southwest": {
+              "lat": [38.7916],
+              "lng": [-77.1198]
+            }
+          },
+          "location": {
+            "lat": [38.9072],
+            "lng": [-77.0369]
+          },
+          "location_type": ["APPROXIMATE"],
+          "viewport": {
+            "northeast": {
+              "lat": [38.9959],
+              "lng": [-76.9094]
+            },
+            "southwest": {
+              "lat": [38.7916],
+              "lng": [-77.1198]
+            }
+          }
+        },
+        "place_id": ["ChIJW-T2Wt7Gt4kRKl2I1CJFUsI"],
+        "types": [
+          ["locality"],
+          ["political"]
+        ]
+      }
+    ],
+    "status": ["OK"]
+  },
+  {
+    "results": [
+      {
+        "address_components": [
+          {
+            "long_name": ["New York"],
+            "short_name": ["New York"],
+            "types": [
+              ["locality"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["New York"],
+            "short_name": ["NY"],
+            "types": [
+              ["administrative_area_level_1"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["United States"],
+            "short_name": ["US"],
+            "types": [
+              ["country"],
+              ["political"]
+            ]
+          }
+        ],
+        "formatted_address": ["New York, NY, USA"],
+        "geometry": {
+          "bounds": {
+            "northeast": {
+              "lat": [40.9176],
+              "lng": [-73.7003]
+            },
+            "southwest": {
+              "lat": [40.4774],
+              "lng": [-74.2591]
+            }
+          },
+          "location": {
+            "lat": [40.7128],
+            "lng": [-74.006]
+          },
+          "location_type": ["APPROXIMATE"],
+          "viewport": {
+            "northeast": {
+              "lat": [40.9176],
+              "lng": [-73.7003]
+            },
+            "southwest": {
+              "lat": [40.4774],
+              "lng": [-74.2591]
+            }
+          }
+        },
+        "place_id": ["ChIJOwg_06VPwokRYv534QaPC8g"],
+        "types": [
+          ["locality"],
+          ["political"]
+        ]
+      }
+    ],
+    "status": ["OK"]
+  },
+  {
+    "results": [
+      {
+        "address_components": [
+          {
+            "long_name": ["Chicago"],
+            "short_name": ["Chicago"],
+            "types": [
+              ["locality"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["Cook County"],
+            "short_name": ["Cook County"],
+            "types": [
+              ["administrative_area_level_2"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["Illinois"],
+            "short_name": ["IL"],
+            "types": [
+              ["administrative_area_level_1"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["United States"],
+            "short_name": ["US"],
+            "types": [
+              ["country"],
+              ["political"]
+            ]
+          }
+        ],
+        "formatted_address": ["Chicago, IL, USA"],
+        "geometry": {
+          "bounds": {
+            "northeast": {
+              "lat": [42.0231],
+              "lng": [-87.5237]
+            },
+            "southwest": {
+              "lat": [41.6443],
+              "lng": [-87.9403]
+            }
+          },
+          "location": {
+            "lat": [41.8781],
+            "lng": [-87.6298]
+          },
+          "location_type": ["APPROXIMATE"],
+          "viewport": {
+            "northeast": {
+              "lat": [42.0231],
+              "lng": [-87.5237]
+            },
+            "southwest": {
+              "lat": [41.6443],
+              "lng": [-87.9403]
+            }
+          }
+        },
+        "place_id": ["ChIJ7cv00DwsDogRAMDACa2m4K8"],
+        "types": [
+          ["locality"],
+          ["political"]
+        ]
+      }
+    ],
+    "status": ["OK"]
+  },
+  {
+    "results": [
+      {
+        "address_components": [
+          {
+            "long_name": ["Arlington"],
+            "short_name": ["Arlington"],
+            "types": [
+              ["locality"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["Tarrant County"],
+            "short_name": ["Tarrant County"],
+            "types": [
+              ["administrative_area_level_2"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["Texas"],
+            "short_name": ["TX"],
+            "types": [
+              ["administrative_area_level_1"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["United States"],
+            "short_name": ["US"],
+            "types": [
+              ["country"],
+              ["political"]
+            ]
+          }
+        ],
+        "formatted_address": ["Arlington, TX, USA"],
+        "geometry": {
+          "bounds": {
+            "northeast": {
+              "lat": [32.8171],
+              "lng": [-97.037]
+            },
+            "southwest": {
+              "lat": [32.5866],
+              "lng": [-97.2338]
+            }
+          },
+          "location": {
+            "lat": [32.7357],
+            "lng": [-97.1081]
+          },
+          "location_type": ["APPROXIMATE"],
+          "viewport": {
+            "northeast": {
+              "lat": [32.8171],
+              "lng": [-97.037]
+            },
+            "southwest": {
+              "lat": [32.5866],
+              "lng": [-97.2338]
+            }
+          }
+        },
+        "place_id": ["ChIJ05gI5NJiToYRUVOgH6z2Xgs"],
+        "types": [
+          ["locality"],
+          ["political"]
+        ]
+      },
+      {
+        "address_components": [
+          {
+            "long_name": ["Arlington"],
+            "short_name": ["Arlington"],
+            "types": [
+              ["locality"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["Arlington County"],
+            "short_name": ["Arlington County"],
+            "types": [
+              ["administrative_area_level_2"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["Virginia"],
+            "short_name": ["VA"],
+            "types": [
+              ["administrative_area_level_1"],
+              ["political"]
+            ]
+          },
+          {
+            "long_name": ["United States"],
+            "short_name": ["US"],
+            "types": [
+              ["country"],
+              ["political"]
+            ]
+          }
+        ],
+        "formatted_address": ["Arlington, VA, USA"],
+        "geometry": {
+          "bounds": {
+            "northeast": {
+              "lat": [38.9343],
+              "lng": [-77.0321]
+            },
+            "southwest": {
+              "lat": [38.8273],
+              "lng": [-77.1722]
+            }
+          },
+          "location": {
+            "lat": [38.88],
+            "lng": [-77.1068]
+          },
+          "location_type": ["APPROXIMATE"],
+          "viewport": {
+            "northeast": {
+              "lat": [38.9343],
+              "lng": [-77.0321]
+            },
+            "southwest": {
+              "lat": [38.8273],
+              "lng": [-77.1722]
+            }
+          }
+        },
+        "place_id": ["ChIJD6ene522t4kRk7D2Rchvz_g"],
+        "types": [
+          ["locality"],
+          ["political"]
+        ]
+      }
+    ],
+    "status": ["OK"]
+  }
+]

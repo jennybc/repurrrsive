@@ -1,5 +1,8 @@
 # repurrrsive (development version)
 
+* `gmaps_cities` is a new dataset, containing the results of geocoding five
+  US cities.
+
 # repurrrsive 1.0.0
 
 * `discog` is a new dataset, containing Sharla Gelfand's discography, inspired
