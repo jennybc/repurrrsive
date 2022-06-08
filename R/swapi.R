@@ -26,17 +26,22 @@
 #' sapply(sw_films, `[[`, "title")
 "sw_people"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_films"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_planets"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_species"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_vehicles"
 
+#' @format NULL
 #' @rdname sw_people
 "sw_starships"

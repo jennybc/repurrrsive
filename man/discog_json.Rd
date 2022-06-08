@@ -20,6 +20,7 @@ if (require("jsonlite")) {
 }
 }
 \seealso{
-Other Discogs data and functions: \code{\link{discog}}
+Other Discogs data and functions: 
+\code{\link{discog}}
 }
 \concept{Discogs data and functions}

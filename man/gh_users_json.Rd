@@ -44,7 +44,8 @@ if (require("xml2")) {
 }
 }
 \seealso{
-Other GitHub data and functions: \code{\link{gh_repos}},
-  \code{\link{gh_users}}
+Other GitHub data and functions: 
+\code{\link{gh_repos}},
+\code{\link{gh_users}}
 }
 \concept{GitHub data and functions}
