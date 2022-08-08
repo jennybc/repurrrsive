@@ -11,7 +11,8 @@
 #' @family Game of Thrones data and functions
 #' @source <https://anapioficeandfire.com>
 #' @examples
-#' got_chars
+#' str(got_chars, max.level = 1, list.len = 10)
+#' str(got_chars[[1]])
 #' str(lapply(got_chars, `[`, c("name", "culture")))
 "got_chars"
 

@@ -21,8 +21,7 @@ A list of color palettes inspired by Wes Anderson movies, taken from the from
 \link[wesanderson:wesanderson]{wesanderson} package.
 }
 \examples{
-wesanderson[4:5]
-wesanderson[["Rushmore"]]
+str(wesanderson)
 }
 \seealso{
 Other wesanderson data and functions: 

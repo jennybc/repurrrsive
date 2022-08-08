@@ -19,7 +19,9 @@ gh_users
 Info on GitHub users, retrieved from the GitHub API.
 }
 \examples{
-gh_users
+str(gh_users, max.level = 1)
+str(gh_users[[1]])
+
 str(lapply(gh_users, `[`, c("login", "name")))
 }
 \seealso{
