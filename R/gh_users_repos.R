@@ -9,7 +9,9 @@
 #' @family GitHub data and functions
 #' @source <https://developer.github.com/v3/users/#get-a-single-user>
 #' @examples
-#' gh_users
+#' str(gh_users, max.level = 1)
+#' str(gh_users[[1]])
+#'
 #' str(lapply(gh_users, `[`, c("login", "name")))
 "gh_users"
 
@@ -26,7 +28,10 @@
 #'
 #' @source <https://developer.github.com/v3/repos/#list-user-repositories>
 #' @examples
-#' gh_repos
+#' str(gh_repos, max.level = 1)
+#' str(gh_repos[[1]], max.level = 1)
+#' str(gh_repos[[1]][[1]])
+#'
 #' str(lapply(gh_repos[[1]][1:3], `[`, c("full_name", "created_at")))
 "gh_repos"
 

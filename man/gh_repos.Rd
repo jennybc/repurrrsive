@@ -20,7 +20,10 @@ gh_repos
 Info on GitHub repos, retrieved from the GitHub API.
 }
 \examples{
-gh_repos
+str(gh_repos, max.level = 1)
+str(gh_repos[[1]], max.level = 1)
+str(gh_repos[[1]][[1]])
+
 str(lapply(gh_repos[[1]][1:3], `[`, c("full_name", "created_at")))
 }
 \seealso{

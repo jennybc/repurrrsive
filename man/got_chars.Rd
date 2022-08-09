@@ -21,7 +21,8 @@ Song of Ice and Fire series by George R. R. Martin. Retrieved from An API Of
 Ice And Fire.
 }
 \examples{
-got_chars
+str(got_chars, max.level = 1, list.len = 10)
+str(got_chars[[1]])
 str(lapply(got_chars, `[`, c("name", "culture")))
 }
 \seealso{

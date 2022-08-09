@@ -10,8 +10,7 @@
 #' @source <http://wesandersonpalettes.tumblr.com>
 #' @family wesanderson data and functions
 #' @examples
-#' wesanderson[4:5]
-#' wesanderson[["Rushmore"]]
+#' str(wesanderson)
 "wesanderson"
 
 #' Path to wesanderson JSON and XML

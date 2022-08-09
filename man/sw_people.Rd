@@ -45,13 +45,13 @@ Data retrieved from the swapi API on the Star Wars Universe.
 }
 \examples{
 # sw_people
-length(sw_people)
-names(sw_people[[1]])
+str(sw_people, max.level = 1)
+str(sw_people[[1]])
 sapply(sw_people, `[[`, "name")
 
 # sw_films
-length(sw_films)
-names(sw_films[[1]])
+str(sw_films, max.level = 1)
+str(sw_films[[1]])
 sapply(sw_films, `[[`, "title")
 }
 \keyword{datasets}
