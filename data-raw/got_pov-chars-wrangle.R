@@ -2,8 +2,10 @@ library(here)
 library(jsonlite)
 library(assertthat)
 library(tidyverse)
-## devtools::install_github("jennybc/xml2@as-xml-first-try")
-## experimental as_xml() in this branch of my fork, used below
+# devtools::install_github("jennybc/xml2@as-xml-first-try")
+# experimental as_xml() in this branch of my fork, used below
+# 2022-11-11 update: branch no longer, but jenny still has locally
+# https://github.com/r-lib/xml2/issues/254
 library(xml2)
 
 ## get resource id from URL
