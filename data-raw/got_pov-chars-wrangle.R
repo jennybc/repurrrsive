@@ -103,11 +103,11 @@ View(pov_df)
 ## this is the basically the list that will go in the package
 got_chars <- pov_df$from_api
 
-## Delete Cersei's alias
-cersei <- which(map_chr(got_chars, "name") == "Cersei Lannister")
-got_chars[[cersei]][["aliases"]] <- list()
-
-
+got_chars <- map(got_chars, \(x) {
+  x$aliases <- str_subset(x$aliases, "[Bb]itch", negate = TRUE)
+  x$titles <- str_subset(x$titles, "[Bb]itch", negate = TRUE)
+  x
+})
 use_data(got_chars, overwrite = TRUE)
 
 ## null = "null" is necessary for roundtrips to work:
