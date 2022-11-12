@@ -1,5 +1,5 @@
 test_that("got_chars list hasn't changed", {
-  expect_known_value(got_chars, reference_file("got_chars.rds"))
+  expect_snapshot_value(got_chars, style = "json2")
 })
 
 test_that("got_chars JSON gives rise to same list as the built-in", {

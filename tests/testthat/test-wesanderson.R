@@ -1,5 +1,5 @@
 test_that("wesanderson list hasn't changed", {
-  expect_known_value(wesanderson, reference_file("wesanderson.rds"))
+  expect_snapshot_value(wesanderson, style = "json2")
 })
 
 test_that("wesanderson JSON gives rise to same list as the built-in", {

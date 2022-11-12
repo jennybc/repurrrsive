@@ -1,6 +1,6 @@
 test_that("gh_users and gh_repos lists haven't changed", {
-  expect_known_value(gh_users, reference_file("gh_users.rds"))
-  expect_known_value(gh_repos, reference_file("gh_repos.rds"))
+  expect_snapshot_value(gh_users, style = "json2")
+  expect_snapshot_value(gh_repos, style = "json2")
 })
 
 test_that("gh_users and gh_repos JSON gives rise to same list as the built-in", {

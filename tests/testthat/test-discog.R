@@ -1,5 +1,5 @@
 test_that("discog hasn't changed", {
-  expect_known_value(discog, reference_file("discog.rds"))
+  expect_snapshot_value(discog, style = "json2")
 })
 
 test_that("discog JSON gives rise to same list as the built-in", {
