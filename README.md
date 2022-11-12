@@ -22,9 +22,9 @@ country, and split into a named list of data frames.
 
 Resources that use repurrrsive, where you can much more list wrangling:
 
--   A purrr tutorial: <https://jennybc.github.io/purrr-tutorial/>
--   A tidyr [vignette on
-    rectangling](https://tidyr.tidyverse.org/articles/)
+- A purrr tutorial: <https://jennybc.github.io/purrr-tutorial/>
+- A tidyr [vignette on
+  rectangling](https://tidyr.tidyverse.org/articles/)
 
 ## Installation
 
@@ -86,9 +86,9 @@ Accessor functions provide the local file path.
 
 ``` r
 got_chars_json()
-#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/got_chars.json"
+#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/got_chars.json"
 got_chars_xml()
-#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/got_chars.xml"
+#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/got_chars.xml"
 ```
 
 Practice bringing data from JSON into an R list.
@@ -102,8 +102,7 @@ json[[1]][c("name", "titles", "playedBy")]
 #> 
 #> $titles
 #> [1] "Prince of Winterfell"                                
-#> [2] "Captain of Sea Bitch"                                
-#> [3] "Lord of the Iron Islands (by law of the green lands)"
+#> [2] "Lord of the Iron Islands (by law of the green lands)"
 #> 
 #> $playedBy
 #> [1] "Alfie Allen"
@@ -129,7 +128,7 @@ xml_child(xml)
 #>  [6] <born>In 278 AC or 279 AC, at Pyke</born>
 #>  [7] <died/>
 #>  [8] <alive>TRUE</alive>
-#>  [9] <titles>\n  <elem>Prince of Winterfell</elem>\n  <elem>Captain of Sea Bi ...
+#>  [9] <titles>\n  <elem>Prince of Winterfell</elem>\n  <elem>Lord of the Iron  ...
 #> [10] <aliases>\n  <elem>Prince of Fools</elem>\n  <elem>Theon Turncloak</elem ...
 #> [11] <father/>
 #> [12] <mother/>
@@ -243,10 +242,10 @@ Want to parse it yourself? Paths to local JSON and XML files.
 
 ``` r
 c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
-#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/gh_users.json"
-#> [2] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/gh_repos.json"
-#> [3] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/gh_users.xml" 
-#> [4] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/gh_repos.xml"
+#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_users.json"
+#> [2] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_repos.json"
+#> [3] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_users.xml" 
+#> [4] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_repos.xml"
 ```
 
 Redo this: Get full name of each user’s 11th repo. But using only the
@@ -385,9 +384,9 @@ Accessor functions provide the local file path.
 
 ``` r
 wesanderson_json()
-#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/wesanderson.json"
+#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/wesanderson.json"
 wesanderson_xml()
-#> [1] "/private/tmp/RtmpEkaelv/temp_libpath936225017b2b/repurrrsive/extdata/wesanderson.xml"
+#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/wesanderson.xml"
 ```
 
 Practice bringing data from JSON into an R list.
