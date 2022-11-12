@@ -10,7 +10,6 @@
         "alive": true,
         "titles": [
             "Prince of Winterfell",
-            "Captain of Sea Bitch",
             "Lord of the Iron Islands (by law of the green lands)"
         ],
         "aliases": [
@@ -658,9 +657,7 @@
             "Lady of Casterly Rock",
             "Queen Regent"
         ],
-        "aliases": [
-
-        ],
+        "aliases": "",
         "father": "",
         "mother": "",
         "spouse": "https://www.anapioficeandfire.com/api/characters/901",

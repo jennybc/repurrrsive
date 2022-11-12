@@ -1,5 +1,7 @@
 # repurrrsive (development version)
 
+* Some NSFW content has been removed from `got_chars` (#26).
+
 * `gmaps_cities` is a new dataset, containing the results of geocoding five
   US cities.
 
