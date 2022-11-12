@@ -105,11 +105,19 @@ View(pov_df)
 ## this is the basically the list that will go in the package
 got_chars <- pov_df$from_api
 
-got_chars <- map(got_chars, \(x) {
-  x$aliases <- str_subset(x$aliases, "[Bb]itch", negate = TRUE)
-  x$titles <- str_subset(x$titles, "[Bb]itch", negate = TRUE)
+# fixup for some NSFW language
+# if the fixup removes all vals, return empty string, to match un-fixed up data
+fixup <- function(x, key = "aliases") {
+  fixed <- str_subset(x[[key]], "[Bb]itch", negate = TRUE)
+  if (length(fixed) != length(x[[key]])) {
+    x[[key]] <- if (length(fixed) == 0) "" else fixed
+  }
   x
-})
+}
+got_chars <- got_chars |>
+  map(\(x) fixup(x, key = "titles")) |>
+  map(\(x) fixup(x, key = "aliases"))
+
 use_data(got_chars, overwrite = TRUE)
 
 ## null = "null" is necessary for roundtrips to work:
