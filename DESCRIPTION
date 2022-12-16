@@ -1,23 +1,17 @@
 Package: repurrrsive
-Title: Examples of Recursive Lists and Nested or Split Data
-    Frames
+Title: Examples of Recursive Lists and Nested or Split Data Frames
 Version: 1.0.0.9000
-Authors@R: 
-    c(person(given = "Jennifer",
-             family = "Bryan",
-             role = c("aut", "cre"),
-             email = "jenny@rstudio.com",
-             comment = c(ORCID = "0000-0002-6983-2759")),
-      person(given = "Charlotte",
-             family = "Wickham",
-             role = "ctb",
-             email = "cwickham@gmail.com"))
-Description: Recursive lists in the form of R objects, 'JSON',
-    and 'XML', for use in teaching and examples. Examples include color
-    palettes, Game of Thrones characters, 'GitHub' users and repositories,
-    music collections, and entities from the Star Wars universe. Data from
-    the 'gapminder' package is also included, as a simple data frame and
-    in nested and split forms.
+Authors@R: c(
+    person("Jennifer", "Bryan", , "jenny@rstudio.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6983-2759")),
+    person("Charlotte", "Wickham", , "cwickham@gmail.com", role = "ctb")
+  )
+Description: Recursive lists in the form of R objects, 'JSON', and 'XML',
+    for use in teaching and examples. Examples include color palettes,
+    Game of Thrones characters, 'GitHub' users and repositories, music
+    collections, and entities from the Star Wars universe. Data from the
+    'gapminder' package is also included, as a simple data frame and in
+    nested and split forms.
 License: CC0
 URL: https://jennybc.github.io/repurrrsive/,
     https://github.com/jennybc/repurrrsive
@@ -35,8 +29,8 @@ Suggests:
     testthat (>= 3.0.0),
     wesanderson,
     xml2
+Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
-Config/testthat/edition: 3
