@@ -1,0 +1,44 @@
+---
+title: "Star Wars data"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(repurrrsive)
+```
+
+`sw_people`, `sw_films`, `sw_species`, `sw_planets`, `sw_starships` and `sw_vehicles` are interrelated lists about entities in the Star Wars Universe.
+The data was originally retrieved from the Star Wars API previously available at `http://swapi.co` using the R package [rwars](https://github.com/Ironholds/rwars).
+The Star Wars API appears to have moved to `https://pipedream.com/apps/swapi` since that time.
+
+```{r}
+library(purrr)
+map_chr(sw_films, "title") 
+```
+
+Elements that contain URLs provide a way to link the lists together.
+For example, the `films` element of each person contains URLs for the films they have appeared in.
+For example, Luke Skywalker has been in five films.
+
+```{r}
+luke <- sw_people[[1]]
+names(luke)
+luke[["films"]]
+```
+
+These URLs can be looked up in the the `sw_films` list to find the titles of the films.
+
+```{r}
+# Create a mapping between titles and urls
+film_lookup <- map_chr(sw_films, "title") %>% 
+  set_names(map_chr(sw_films, "url"))
+
+# The films Luke is in
+film_lookup[luke[["films"]]] %>% unname()
+```

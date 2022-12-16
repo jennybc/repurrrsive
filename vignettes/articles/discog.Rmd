@@ -1,0 +1,46 @@
+---
+title: "Sharla's music collection"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(repurrrsive)
+```
+
+`discog` holds a list of 155 items, representing a music collection stored in the Discogs database and retrieved via their API.
+It's useful for demonstrating capabilities of purrr and tidyr.
+
+```{r}
+library(purrr)
+library(tidyr)
+library(tibble)
+library(dplyr)
+```
+
+Here we get just the album names:
+
+```{r}
+discog %>% 
+  map_chr(c("basic_information", "title")) %>% 
+  head()
+```
+
+Put the `discog` list into a list-column and use `tidyr::hoist()` to dig some info out of it.
+
+```{r}
+tibble(disc = discog) %>% 
+  hoist(disc, info = "basic_information") %>% 
+  hoist(info,
+       title = "title",
+       year = "year",
+       label = list("labels", 1, "name"),
+       artist = list("artists", 1, "name")
+  ) %>% 
+  select(-disc, -info)
+```

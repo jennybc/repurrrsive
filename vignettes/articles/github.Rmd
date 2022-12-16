@@ -1,0 +1,55 @@
+---
+title: "GitHub user and repo data"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(repurrrsive)
+```
+
+`gh_users` and `gh_repos` are lists with information for 6 GitHub users and up to 30 of each user's repositories.
+
+```{r}
+library(purrr)
+
+map_chr(gh_users, "login")
+map_chr(gh_users, 18)
+map_dfr(gh_users, `[`, c("login", "name", "id", "location"))
+```
+
+Peek at some info from first repo for the first user.
+
+```{r}
+str(gh_repos[[1]][[1]][c("full_name", "html_url", "description")])
+```
+
+Get full name of each user's 11th repo.
+
+```{r}
+map_chr(gh_repos, list(11, "full_name"))
+```
+
+Do you want to parse it yourself?
+There are functions that return the paths to local JSON and XML files.
+
+```{r}
+c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
+```
+
+Let's get the full name of each user's 11th repo, but this time using the XML representation.
+
+```{r}
+library(xml2)
+
+repo_xml <- read_xml(gh_repos_xml())
+repo_names <- map_chr(xml_find_all(repo_xml, "//full_name"), xml_text)
+elevenses <- 
+  11 + cumsum(c(0, head(table(gsub("(.*)/.*", "\\1", repo_names)), -1)))
+repo_names[elevenses]
+```

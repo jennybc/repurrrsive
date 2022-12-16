@@ -1,0 +1,50 @@
+---
+title: "Game of Thrones data"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(repurrrsive)
+```
+
+`got_chars` is a list with information on the `r length(got_chars)` point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin.
+The data was retrieved from [An API Of Ice And Fire](https://anapioficeandfire.com).
+
+```{r}
+library(purrr)
+(nms <- map_chr(got_chars, "name"))
+map_dfr(got_chars, `[`, c("name", "gender", "culture", "born"))
+```
+
+The same `got_chars` data is also present as JSON and XML files.
+Accessor functions provide the local file path.
+
+```{r}
+got_chars_json()
+got_chars_xml()
+```
+
+You can practice bringing data from JSON into an R list.
+
+```{r}
+library(jsonlite)
+json <- fromJSON(got_chars_json(), simplifyDataFrame = FALSE)
+json[[1]][c("name", "titles", "playedBy")]
+identical(got_chars, json)
+```
+
+You can practice bringing data into R from XML.
+You can get it into an R list with `xml2::as_list()`, but to get a list as nice as those above? That requires a bit more work.
+Such is XML life.
+
+```{r}
+library(xml2)
+xml <- read_xml(got_chars_xml())
+xml_child(xml)
+```

@@ -1,0 +1,46 @@
+---
+title: "Nested and split Gapminder data"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(repurrrsive)
+```
+
+Use the Gapminder data in various forms to practice different styles of grouped computation.
+
+```{r}
+library(dplyr)
+library(purrr)
+library(tibble)
+
+## group_by() + summarize()
+gap_simple %>% 
+  group_by(country) %>%
+  summarize(cor = cor(lifeExp, year))
+
+## nest() + map_*() inside mutate()
+gap_nested %>%
+  mutate(cor = data %>% map_dbl(~ cor(.x$lifeExp, .x$year)))
+
+## nest() + rowwise() + mutate()
+gap_nested |> 
+  rowwise() |> 
+  mutate(cor = cor(data$lifeExp, data$year))
+
+## split + map_*()
+gap_split %>% 
+  map_dbl(~ cor(.x$lifeExp, .x$year)) %>% 
+  head()
+
+## split + map_*() + tibble::enframe()
+gap_split %>% 
+  map_dbl(~ cor(.x$lifeExp, .x$year)) %>% 
+  enframe()
+```
