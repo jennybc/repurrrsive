@@ -13,4 +13,3 @@
 #' @examples
 #' gmaps_cities
 "gmaps_cities"
-

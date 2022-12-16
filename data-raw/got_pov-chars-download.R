@@ -97,9 +97,11 @@ pov_df <- tibble(
 )
 walk2(
   pov_df$url, pov_df$fname,
-  function(url, file) GET(url) %>%
+  function(url, file) {
+    GET(url) %>%
       prettify() %>%
       write_lines(file)
+  }
 )
 
 ## give POV character JSON files better names
@@ -131,9 +133,11 @@ houses_df <- houses_df %>%
   filter(!duplicated(houses_df$house_id))
 walk2(
   houses_df$url, houses_df$fname,
-  function(url, file) GET(url) %>%
+  function(url, file) {
+    GET(url) %>%
       prettify() %>%
       write_lines(file)
+  }
 )
 
 ## give house JSON files better names

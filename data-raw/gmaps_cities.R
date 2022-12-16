@@ -30,4 +30,3 @@ gmaps_cities |>
 
 # If re-generating, remember to update date in documentation too
 usethis::use_data(gmaps_cities, overwrite = TRUE)
-
