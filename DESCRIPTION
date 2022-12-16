@@ -23,13 +23,10 @@ Imports:
     tibble,
     utils
 Suggests:
-    covr,
-    gapminder,
     jsonlite,
-    purrr,
     testthat (>= 3.0.0),
-    wesanderson,
     xml2
+Config/Needs/website: purrr
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
