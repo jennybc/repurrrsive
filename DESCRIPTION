@@ -19,8 +19,8 @@ Description: Recursive lists in the form of R objects, 'JSON',
     the 'gapminder' package is also included, as a simple data frame and
     in nested and split forms.
 License: CC0
-URL: https://github.com/jennybc/repurrrsive,
-    https://jennybc.github.io/repurrrsive/
+URL: https://jennybc.github.io/repurrrsive/,
+    https://github.com/jennybc/repurrrsive
 BugReports: https://github.com/jennybc/repurrrsive/issues
 Depends:
     R (>= 2.10)
