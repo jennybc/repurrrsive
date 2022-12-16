@@ -17,7 +17,7 @@
 <link href="deps/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.1.3/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Examples of Recursive Lists and Nested or Split Data
+<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Examples of Recursive Lists and Nested or Split Data
     Frames">
 <meta property="og:description" content="Recursive lists in the form of R objects, JSON,
     and XML, for use in teaching and examples. Examples include color
@@ -135,9 +135,9 @@
 <p>The same <code>got_chars</code> data is also present as JSON and XML files. Accessor functions provide the local file path.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/got_chars_json.html">got_chars_json</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/got_chars.json"</span></span>
+<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/got_chars.json"</span></span>
 <span><span class="fu"><a href="reference/got_chars_json.html">got_chars_xml</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/got_chars.xml"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/got_chars.xml"</span></span></code></pre></div>
 <p>Practice bringing data from JSON into an R list.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://arxiv.org/abs/1403.2805" class="external-link">jsonlite</a></span><span class="op">)</span></span>
@@ -257,10 +257,10 @@
 <p>Want to parse it yourself? Paths to local JSON and XML files.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="reference/gh_users_json.html">gh_users_json</a></span><span class="op">(</span><span class="op">)</span>, <span class="fu"><a href="reference/gh_users_json.html">gh_repos_json</a></span><span class="op">(</span><span class="op">)</span>, <span class="fu"><a href="reference/gh_users_json.html">gh_users_xml</a></span><span class="op">(</span><span class="op">)</span>, <span class="fu"><a href="reference/gh_users_json.html">gh_repos_xml</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_users.json"</span></span>
-<span><span class="co">#&gt; [2] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_repos.json"</span></span>
-<span><span class="co">#&gt; [3] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_users.xml" </span></span>
-<span><span class="co">#&gt; [4] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_repos.xml"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_users.json"</span></span>
+<span><span class="co">#&gt; [2] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_repos.json"</span></span>
+<span><span class="co">#&gt; [3] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_users.xml" </span></span>
+<span><span class="co">#&gt; [4] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_repos.xml"</span></span></code></pre></div>
 <p>Redo this: Get full name of each user’s 11th repo. But using only the XML.</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://xml2.r-lib.org/" class="external-link">xml2</a></span><span class="op">)</span></span>
@@ -371,9 +371,9 @@
 <p>The same <code>wesanderson</code> data is also present as JSON and XML files. Accessor functions provide the local file path.</p>
 <div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/wesanderson_json.html">wesanderson_json</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/wesanderson.json"</span></span>
+<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/wesanderson.json"</span></span>
 <span><span class="fu"><a href="reference/wesanderson_json.html">wesanderson_xml</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/wesanderson.xml"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/wesanderson.xml"</span></span></code></pre></div>
 <p>Practice bringing data from JSON into an R list.</p>
 <div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://arxiv.org/abs/1403.2805" class="external-link">jsonlite</a></span><span class="op">)</span></span>
@@ -534,6 +534,7 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
+<li><a href="https://CRAN.R-project.org/package=repurrrsive" class="external-link"><img src="https://www.r-pkg.org/badges/version/repurrrsive" alt="CRAN status"></a></li>
 <li><a href="https://github.com/jennybc/repurrrsive/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/jennybc/repurrrsive/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://app.codecov.io/gh/jennybc/repurrrsive?branch=main" class="external-link"><img src="https://codecov.io/gh/jennybc/repurrrsive/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
@@ -550,7 +551,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
     </footer>
