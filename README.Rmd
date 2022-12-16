@@ -5,6 +5,7 @@ output: github_document
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/repurrrsive)](https://CRAN.R-project.org/package=repurrrsive)
 [![R-CMD-check](https://github.com/jennybc/repurrrsive/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jennybc/repurrrsive/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/jennybc/repurrrsive/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jennybc/repurrrsive?branch=main)
 <!-- badges: end -->

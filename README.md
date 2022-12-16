@@ -2,6 +2,8 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
 
+[![CRAN
+status](https://www.r-pkg.org/badges/version/repurrrsive)](https://CRAN.R-project.org/package=repurrrsive)
 [![R-CMD-check](https://github.com/jennybc/repurrrsive/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jennybc/repurrrsive/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/jennybc/repurrrsive/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jennybc/repurrrsive?branch=main)
@@ -86,9 +88,9 @@ Accessor functions provide the local file path.
 
 ``` r
 got_chars_json()
-#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/got_chars.json"
+#> [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/got_chars.json"
 got_chars_xml()
-#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/got_chars.xml"
+#> [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/got_chars.xml"
 ```
 
 Practice bringing data from JSON into an R list.
@@ -242,10 +244,10 @@ Want to parse it yourself? Paths to local JSON and XML files.
 
 ``` r
 c(gh_users_json(), gh_repos_json(), gh_users_xml(), gh_repos_xml())
-#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_users.json"
-#> [2] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_repos.json"
-#> [3] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_users.xml" 
-#> [4] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/gh_repos.xml"
+#> [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_users.json"
+#> [2] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_repos.json"
+#> [3] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_users.xml" 
+#> [4] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_repos.xml"
 ```
 
 Redo this: Get full name of each user’s 11th repo. But using only the
@@ -384,9 +386,9 @@ Accessor functions provide the local file path.
 
 ``` r
 wesanderson_json()
-#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/wesanderson.json"
+#> [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/wesanderson.json"
 wesanderson_xml()
-#> [1] "/private/tmp/Rtmp7nJL8u/temp_libpath5f66292dc127/repurrrsive/extdata/wesanderson.xml"
+#> [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/wesanderson.xml"
 ```
 
 Practice bringing data from JSON into an R list.
