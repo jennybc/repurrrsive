@@ -4,7 +4,8 @@ Version: 1.0.0.9000
 Authors@R: c(
     person("Jennifer", "Bryan", , "jenny@rstudio.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6983-2759")),
-    person("Charlotte", "Wickham", , "cwickham@gmail.com", role = "ctb")
+    person("Charlotte", "Wickham", , "cwickham@gmail.com", role = "ctb"),
+    person("Posit PBC", role = c("cph", "fnd"))
   )
 Description: Recursive lists in the form of R objects, 'JSON', and 'XML',
     for use in teaching and examples. Examples include color palettes,

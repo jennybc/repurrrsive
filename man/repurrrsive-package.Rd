@@ -23,6 +23,7 @@ Useful links:
 Other contributors:
 \itemize{
   \item Charlotte Wickham \email{cwickham@gmail.com} [contributor]
+  \item Posit PBC [copyright holder, funder]
 }
 
 }
