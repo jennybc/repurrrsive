@@ -2,7 +2,7 @@ pandoc: 2.19.2
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-12-16T20:30Z
+last_built: 2022-12-16T20:33Z
 urls:
   reference: https://jennybc.github.io/repurrrsive/reference
   article: https://jennybc.github.io/repurrrsive/articles
