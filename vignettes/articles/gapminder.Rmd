@@ -30,8 +30,8 @@ gap_nested %>%
   mutate(cor = data %>% map_dbl(~ cor(.x$lifeExp, .x$year)))
 
 ## nest() + rowwise() + mutate()
-gap_nested |> 
-  rowwise() |> 
+gap_nested %>% 
+  rowwise() %>% 
   mutate(cor = cor(data$lifeExp, data$year))
 
 ## split + map_*()
