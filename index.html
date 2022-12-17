@@ -48,6 +48,17 @@
 <li class="nav-item">
   <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="articles/discog.html">Sharla's music collection</a>
+    <a class="dropdown-item" href="articles/game-of-thrones.html">Game of Thrones data</a>
+    <a class="dropdown-item" href="articles/gapminder.html">Nested and split Gapminder data</a>
+    <a class="dropdown-item" href="articles/github.html">GitHub user and repo data</a>
+    <a class="dropdown-item" href="articles/starwars.html">Star Wars data</a>
+    <a class="dropdown-item" href="articles/wesanderson.html">Wes Anderson color palettes</a>
+  </div>
+</li>
 <li class="nav-item">
   <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
@@ -74,15 +85,8 @@
 <div class="section level1">
 <div class="page-header"><h1 id="repurrrsive">repurrrsive<a class="anchor" aria-label="anchor" href="#repurrrsive"></a>
 </h1></div>
-<p>The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as <code><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">purrr::map()</a></code> and the <code>unnest_*()</code> functions in the tidyr package. Datasets are stored as R list, JSON, and XML to provide the full non-rectangular data experience. Enjoy!</p>
-<p>Package also includes the main data frame from the <a href="https://CRAN.R-project.org/package=gapminder" class="external-link">gapminder package</a> in 3 different forms: simple data frame (no list-columns), data frame nested by country, and split into a named list of data frames.</p>
-<p>Resources that use repurrrsive, where you can much more list wrangling:</p>
-<ul>
-<li>A purrr tutorial: <a href="https://jennybc.github.io/purrr-tutorial/" class="external-link uri">https://jennybc.github.io/purrr-tutorial/</a>
-</li>
-<li>A tidyr <a href="https://tidyr.tidyverse.org/articles/" class="external-link">vignette on rectangling</a>
-</li>
-</ul>
+<p>The repurrrsive package provides recursive lists that are handy when teaching or exampling functions such as <code><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">purrr::map()</a></code> and the <a href="https://tidyr.tidyverse.org/articles/rectangle.html" class="external-link">rectangling functions</a> in the tidyr package. The datasets are stored as R list, JSON, and XML to provide the full non-rectangular data experience. Enjoy!</p>
+<p>This package also includes the main data frame from the <a href="https://CRAN.R-project.org/package=gapminder" class="external-link">gapminder package</a> in 3 different forms: simple data frame (no list-columns), data frame nested by country, and split into a named list of data frames.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -97,14 +101,13 @@
 <div class="section level2">
 <h2 id="recursive-list-examples">Recursive list examples<a class="anchor" aria-label="anchor" href="#recursive-list-examples"></a>
 </h2>
-<div class="section level4">
-<h4 id="game-of-thrones-pov-characters">Game of Thrones POV characters<a class="anchor" aria-label="anchor" href="#game-of-thrones-pov-characters"></a>
-</h4>
-<p><code>got_chars</code> is a list with information on the 30 point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin. Retrieved from <a href="https://anapioficeandfire.com" class="external-link">An API Of Ice And Fire</a>.</p>
+<p>repurrrsive contains several datasets that are recursive lists, both in the form of R objects and as JSON and/or XML files.</p>
+<p>For example, <code>got_chars</code> is a list with information on the 30 point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin. Here’s how to use <code><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">purrr::map_chr()</a></code> to extract the character’s names:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://jennybc.github.io/repurrrsive/">repurrrsive</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://purrr.tidyverse.org/" class="external-link">purrr</a></span><span class="op">)</span></span>
-<span><span class="op">(</span><span class="va">nms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">got_chars</span>, <span class="st">"name"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">got_chars</span>, <span class="st">"name"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;  [1] "Theon Greyjoy"      "Tyrion Lannister"   "Victarion Greyjoy" </span></span>
 <span><span class="co">#&gt;  [4] "Will"               "Areo Hotah"         "Chett"             </span></span>
 <span><span class="co">#&gt;  [7] "Cressen"            "Arianne Martell"    "Daenerys Targaryen"</span></span>
@@ -114,385 +117,37 @@
 <span><span class="co">#&gt; [19] "Cersei Lannister"   "Eddard Stark"       "Jaime Lannister"   </span></span>
 <span><span class="co">#&gt; [22] "Jon Connington"     "Jon Snow"           "Aeron Greyjoy"     </span></span>
 <span><span class="co">#&gt; [25] "Kevan Lannister"    "Melisandre"         "Merrett Frey"      </span></span>
-<span><span class="co">#&gt; [28] "Quentyn Martell"    "Samwell Tarly"      "Sansa Stark"</span></span>
-<span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_dfr</a></span><span class="op">(</span><span class="va">got_chars</span>, <span class="va">`[`</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"name"</span>, <span class="st">"gender"</span>, <span class="st">"culture"</span>, <span class="st">"born"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 30 × 4</span></span>
-<span><span class="co">#&gt;    name               gender culture    born                                    </span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;              &lt;chr&gt;  &lt;chr&gt;      &lt;chr&gt;                                   </span></span>
-<span><span class="co">#&gt;  1 Theon Greyjoy      Male   "Ironborn" "In 278 AC or 279 AC, at Pyke"          </span></span>
-<span><span class="co">#&gt;  2 Tyrion Lannister   Male   ""         "In 273 AC, at Casterly Rock"           </span></span>
-<span><span class="co">#&gt;  3 Victarion Greyjoy  Male   "Ironborn" "In 268 AC or before, at Pyke"          </span></span>
-<span><span class="co">#&gt;  4 Will               Male   ""         ""                                      </span></span>
-<span><span class="co">#&gt;  5 Areo Hotah         Male   "Norvoshi" "In 257 AC or before, at Norvos"        </span></span>
-<span><span class="co">#&gt;  6 Chett              Male   ""         "At Hag's Mire"                         </span></span>
-<span><span class="co">#&gt;  7 Cressen            Male   ""         "In 219 AC or 220 AC"                   </span></span>
-<span><span class="co">#&gt;  8 Arianne Martell    Female "Dornish"  "In 276 AC, at Sunspear"                </span></span>
-<span><span class="co">#&gt;  9 Daenerys Targaryen Female "Valyrian" "In 284 AC, at Dragonstone"             </span></span>
-<span><span class="co">#&gt; 10 Davos Seaworth     Male   "Westeros" "In 260 AC or before, at King's Landing"</span></span>
-<span><span class="co">#&gt; # … with 20 more rows</span></span></code></pre></div>
-<p>The same <code>got_chars</code> data is also present as JSON and XML files. Accessor functions provide the local file path.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/got_chars_json.html">got_chars_json</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/got_chars.json"</span></span>
-<span><span class="fu"><a href="reference/got_chars_json.html">got_chars_xml</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/got_chars.xml"</span></span></code></pre></div>
-<p>Practice bringing data from JSON into an R list.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://arxiv.org/abs/1403.2805" class="external-link">jsonlite</a></span><span class="op">)</span></span>
-<span><span class="va">json</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/jsonlite/man/fromJSON.html" class="external-link">fromJSON</a></span><span class="op">(</span><span class="fu"><a href="reference/got_chars_json.html">got_chars_json</a></span><span class="op">(</span><span class="op">)</span>, simplifyDataFrame <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
-<span><span class="va">json</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"name"</span>, <span class="st">"titles"</span>, <span class="st">"playedBy"</span><span class="op">)</span><span class="op">]</span></span>
-<span><span class="co">#&gt; $name</span></span>
-<span><span class="co">#&gt; [1] "Theon Greyjoy"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $titles</span></span>
-<span><span class="co">#&gt; [1] "Prince of Winterfell"                                </span></span>
-<span><span class="co">#&gt; [2] "Lord of the Iron Islands (by law of the green lands)"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $playedBy</span></span>
-<span><span class="co">#&gt; [1] "Alfie Allen"</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/identical.html" class="external-link">identical</a></span><span class="op">(</span><span class="va">got_chars</span>, <span class="va">json</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
-<p>Practice bringing data into R from XML. You can get it into an R list with <code><a href="http://xml2.r-lib.org/reference/as_list.html" class="external-link">xml2::as_list()</a></code>, but to get a list as nice as those above? That requires a bit more work. Such is XML life.</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://xml2.r-lib.org/" class="external-link">xml2</a></span><span class="op">)</span></span>
-<span><span class="va">xml</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://xml2.r-lib.org/reference/read_xml.html" class="external-link">read_xml</a></span><span class="op">(</span><span class="fu"><a href="reference/got_chars_json.html">got_chars_xml</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="http://xml2.r-lib.org/reference/xml_children.html" class="external-link">xml_child</a></span><span class="op">(</span><span class="va">xml</span><span class="op">)</span></span>
-<span><span class="co">#&gt; {xml_node}</span></span>
-<span><span class="co">#&gt; &lt;elem&gt;</span></span>
-<span><span class="co">#&gt;  [1] &lt;url&gt;https://www.anapioficeandfire.com/api/characters/1022&lt;/url&gt;</span></span>
-<span><span class="co">#&gt;  [2] &lt;id&gt;1022&lt;/id&gt;</span></span>
-<span><span class="co">#&gt;  [3] &lt;name&gt;Theon Greyjoy&lt;/name&gt;</span></span>
-<span><span class="co">#&gt;  [4] &lt;gender&gt;Male&lt;/gender&gt;</span></span>
-<span><span class="co">#&gt;  [5] &lt;culture&gt;Ironborn&lt;/culture&gt;</span></span>
-<span><span class="co">#&gt;  [6] &lt;born&gt;In 278 AC or 279 AC, at Pyke&lt;/born&gt;</span></span>
-<span><span class="co">#&gt;  [7] &lt;died/&gt;</span></span>
-<span><span class="co">#&gt;  [8] &lt;alive&gt;TRUE&lt;/alive&gt;</span></span>
-<span><span class="co">#&gt;  [9] &lt;titles&gt;\n  &lt;elem&gt;Prince of Winterfell&lt;/elem&gt;\n  &lt;elem&gt;Lord of the Iron  ...</span></span>
-<span><span class="co">#&gt; [10] &lt;aliases&gt;\n  &lt;elem&gt;Prince of Fools&lt;/elem&gt;\n  &lt;elem&gt;Theon Turncloak&lt;/elem ...</span></span>
-<span><span class="co">#&gt; [11] &lt;father/&gt;</span></span>
-<span><span class="co">#&gt; [12] &lt;mother/&gt;</span></span>
-<span><span class="co">#&gt; [13] &lt;spouse/&gt;</span></span>
-<span><span class="co">#&gt; [14] &lt;allegiances&gt;House Greyjoy of Pyke&lt;/allegiances&gt;</span></span>
-<span><span class="co">#&gt; [15] &lt;books&gt;\n  &lt;elem&gt;A Game of Thrones&lt;/elem&gt;\n  &lt;elem&gt;A Storm of Swords&lt;/el ...</span></span>
-<span><span class="co">#&gt; [16] &lt;povBooks&gt;\n  &lt;elem&gt;A Clash of Kings&lt;/elem&gt;\n  &lt;elem&gt;A Dance with Dragon ...</span></span>
-<span><span class="co">#&gt; [17] &lt;tvSeries&gt;\n  &lt;elem&gt;Season 1&lt;/elem&gt;\n  &lt;elem&gt;Season 2&lt;/elem&gt;\n  &lt;elem&gt;Se ...</span></span>
-<span><span class="co">#&gt; [18] &lt;playedBy&gt;Alfie Allen&lt;/playedBy&gt;</span></span></code></pre></div>
-</div>
-<div class="section level4">
-<h4 id="star-wars-universe-entities">Star Wars Universe entities<a class="anchor" aria-label="anchor" href="#star-wars-universe-entities"></a>
-</h4>
-<p><code>sw_people</code>, <code>sw_films</code>, <code>sw_species</code>, <code>sw_planets</code>, <code>sw_starships</code> and <code>sw_vehicles</code> are interrelated lists about entities in the Star Wars Universe. The data was originally retrieved from the Star Wars API previously available at <code>http://swapi.co</code> using the R package <a href="https://github.com/Ironholds/rwars" class="external-link">rwars</a>. The Star Wars API appears to have moved to <code>https://pipedream.com/apps/swapi</code> since that time.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://jennybc.github.io/repurrrsive/">repurrrsive</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://purrr.tidyverse.org/" class="external-link">purrr</a></span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">sw_films</span>, <span class="st">"title"</span><span class="op">)</span> </span>
-<span><span class="co">#&gt; [1] "A New Hope"              "Attack of the Clones"   </span></span>
-<span><span class="co">#&gt; [3] "The Phantom Menace"      "Revenge of the Sith"    </span></span>
-<span><span class="co">#&gt; [5] "Return of the Jedi"      "The Empire Strikes Back"</span></span>
-<span><span class="co">#&gt; [7] "The Force Awakens"</span></span></code></pre></div>
-<p>Elements that contain URLs provide a way to link the lists together. For example, the <code>films</code> element of each person contains URLs for the films they have appeared in. For example, Luke Skywalker has been in five films.</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">luke</span> <span class="op">&lt;-</span> <span class="va">sw_people</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">luke</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "name"       "height"     "mass"       "hair_color" "skin_color"</span></span>
-<span><span class="co">#&gt;  [6] "eye_color"  "birth_year" "gender"     "homeworld"  "films"     </span></span>
-<span><span class="co">#&gt; [11] "species"    "vehicles"   "starships"  "created"    "edited"    </span></span>
-<span><span class="co">#&gt; [16] "url"</span></span>
-<span><span class="va">luke</span><span class="op">[[</span><span class="st">"films"</span><span class="op">]</span><span class="op">]</span></span>
-<span><span class="co">#&gt; [1] "http://swapi.co/api/films/6/" "http://swapi.co/api/films/3/"</span></span>
-<span><span class="co">#&gt; [3] "http://swapi.co/api/films/2/" "http://swapi.co/api/films/1/"</span></span>
-<span><span class="co">#&gt; [5] "http://swapi.co/api/films/7/"</span></span></code></pre></div>
-<p>These URLs can be looked up in the the <code>sw_films</code> list to find the titles of the films.</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># Create a mapping between titles and urls</span></span>
-<span><span class="va">film_lookup</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">sw_films</span>, <span class="st">"title"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu"><a href="https://rlang.r-lib.org/reference/set_names.html" class="external-link">set_names</a></span><span class="op">(</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">sw_films</span>, <span class="st">"url"</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># The films Luke is in</span></span>
-<span><span class="va">film_lookup</span><span class="op">[</span><span class="va">luke</span><span class="op">[[</span><span class="st">"films"</span><span class="op">]</span><span class="op">]</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "Revenge of the Sith"     "Return of the Jedi"     </span></span>
-<span><span class="co">#&gt; [3] "The Empire Strikes Back" "A New Hope"             </span></span>
-<span><span class="co">#&gt; [5] "The Force Awakens"</span></span></code></pre></div>
-</div>
-<div class="section level4">
-<h4 id="github-user-and-repo-data">GitHub user and repo data<a class="anchor" aria-label="anchor" href="#github-user-and-repo-data"></a>
-</h4>
-<p><code>gh_users</code> and <code>gh_repos</code> are lists with information for 6 GitHub users and up to 30 of each user’s repositories.</p>
-<p>GitHub users.</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://jennybc.github.io/repurrrsive/">repurrrsive</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://purrr.tidyverse.org/" class="external-link">purrr</a></span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">gh_users</span>, <span class="st">"login"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "gaborcsardi" "jennybc"     "jtleek"      "juliasilge"  "leeper"     </span></span>
-<span><span class="co">#&gt; [6] "masalmon"</span></span>
-<span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">gh_users</span>, <span class="fl">18</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "Gábor Csárdi"           "Jennifer (Jenny) Bryan" "Jeff L."               </span></span>
-<span><span class="co">#&gt; [4] "Julia Silge"            "Thomas J. Leeper"       "Maëlle Salmon"</span></span>
-<span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_dfr</a></span><span class="op">(</span><span class="va">gh_users</span>, <span class="va">`[`</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"login"</span>, <span class="st">"name"</span>, <span class="st">"id"</span>, <span class="st">"location"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 6 × 4</span></span>
-<span><span class="co">#&gt;   login       name                         id location              </span></span>
-<span><span class="co">#&gt;   &lt;chr&gt;       &lt;chr&gt;                     &lt;int&gt; &lt;chr&gt;                 </span></span>
-<span><span class="co">#&gt; 1 gaborcsardi Gábor Csárdi             660288 Chippenham, UK        </span></span>
-<span><span class="co">#&gt; 2 jennybc     Jennifer (Jenny) Bryan   599454 Vancouver, BC, Canada </span></span>
-<span><span class="co">#&gt; 3 jtleek      Jeff L.                 1571674 Baltimore,MD          </span></span>
-<span><span class="co">#&gt; 4 juliasilge  Julia Silge            12505835 Salt Lake City, UT    </span></span>
-<span><span class="co">#&gt; 5 leeper      Thomas J. Leeper        3505428 London, United Kingdom</span></span>
-<span><span class="co">#&gt; 6 masalmon    Maëlle Salmon           8360597 Barcelona, Spain</span></span></code></pre></div>
-<p>First ~30 repos of these users. Peek at some info from first repo for the first user. Get full name of each user’s 11th repo.</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">gh_repos</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"full_name"</span>, <span class="st">"html_url"</span>, <span class="st">"description"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
-<span><span class="co">#&gt; List of 3</span></span>
-<span><span class="co">#&gt;  $ full_name  : chr "gaborcsardi/after"</span></span>
-<span><span class="co">#&gt;  $ html_url   : chr "https://github.com/gaborcsardi/after"</span></span>
-<span><span class="co">#&gt;  $ description: chr "Run Code in the Background"</span></span>
-<span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">gh_repos</span>, <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="fl">11</span>, <span class="st">"full_name"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "gaborcsardi/debugme"                     </span></span>
-<span><span class="co">#&gt; [2] "jennybc/access-r-source"                 </span></span>
-<span><span class="co">#&gt; [3] "jtleek/datawomenontwitter"               </span></span>
-<span><span class="co">#&gt; [4] "juliasilge/juliasilge.github.io"         </span></span>
-<span><span class="co">#&gt; [5] "leeper/congressional-district-boundaries"</span></span>
-<span><span class="co">#&gt; [6] "masalmon/geoparsing_tweets"</span></span></code></pre></div>
-<p>Want to parse it yourself? Paths to local JSON and XML files.</p>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="reference/gh_users_json.html">gh_users_json</a></span><span class="op">(</span><span class="op">)</span>, <span class="fu"><a href="reference/gh_users_json.html">gh_repos_json</a></span><span class="op">(</span><span class="op">)</span>, <span class="fu"><a href="reference/gh_users_json.html">gh_users_xml</a></span><span class="op">(</span><span class="op">)</span>, <span class="fu"><a href="reference/gh_users_json.html">gh_repos_xml</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_users.json"</span></span>
-<span><span class="co">#&gt; [2] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_repos.json"</span></span>
-<span><span class="co">#&gt; [3] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_users.xml" </span></span>
-<span><span class="co">#&gt; [4] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/gh_repos.xml"</span></span></code></pre></div>
-<p>Redo this: Get full name of each user’s 11th repo. But using only the XML.</p>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://xml2.r-lib.org/" class="external-link">xml2</a></span><span class="op">)</span></span>
-<span><span class="va">repo_xml</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://xml2.r-lib.org/reference/read_xml.html" class="external-link">read_xml</a></span><span class="op">(</span><span class="fu"><a href="reference/gh_users_json.html">gh_repos_xml</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">repo_names</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="fu"><a href="http://xml2.r-lib.org/reference/xml_find_all.html" class="external-link">xml_find_all</a></span><span class="op">(</span><span class="va">repo_xml</span>, <span class="st">"//full_name"</span><span class="op">)</span>, <span class="va">xml_text</span><span class="op">)</span></span>
-<span><span class="va">elevenses</span> <span class="op">&lt;-</span> </span>
-<span>  <span class="fl">11</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/cumsum.html" class="external-link">cumsum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">gsub</a></span><span class="op">(</span><span class="st">"(.*)/.*"</span>, <span class="st">"\\1"</span>, <span class="va">repo_names</span><span class="op">)</span><span class="op">)</span>, <span class="op">-</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">repo_names</span><span class="op">[</span><span class="va">elevenses</span><span class="op">]</span></span>
-<span><span class="co">#&gt; [1] "gaborcsardi/debugme"                     </span></span>
-<span><span class="co">#&gt; [2] "jennybc/access-r-source"                 </span></span>
-<span><span class="co">#&gt; [3] "jtleek/datawomenontwitter"               </span></span>
-<span><span class="co">#&gt; [4] "juliasilge/juliasilge.github.io"         </span></span>
-<span><span class="co">#&gt; [5] "leeper/congressional-district-boundaries"</span></span>
-<span><span class="co">#&gt; [6] "masalmon/geoparsing_tweets"</span></span></code></pre></div>
-</div>
-<div class="section level4">
-<h4 id="sharla-gelfands-music-collection">Sharla Gelfand’s music collection<a class="anchor" aria-label="anchor" href="#sharla-gelfands-music-collection"></a>
-</h4>
-<p><code>discog</code> holds a list of 155 items, representing a music collection stored in the Discogs database and retrieved via their API. It’s useful for demonstrating capabilities of purrr and tidyr.</p>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://jennybc.github.io/repurrrsive/">repurrrsive</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://purrr.tidyverse.org/" class="external-link">purrr</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyr.tidyverse.org" class="external-link">tidyr</a></span><span class="op">)</span> <span class="co"># version &gt;= 0.8.3.9000</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/" class="external-link">tibble</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; Attaching package: 'dplyr'</span></span>
-<span><span class="co">#&gt; The following objects are masked from 'package:stats':</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;     filter, lag</span></span>
-<span><span class="co">#&gt; The following objects are masked from 'package:base':</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span></code></pre></div>
-<p>Here we get just the album names:</p>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">discog</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"basic_information"</span>, <span class="st">"title"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "Demo"                              "Observant Com El Mon Es Destrueix"</span></span>
-<span><span class="co">#&gt; [3] "I"                                 "Oído Absoluto"                    </span></span>
-<span><span class="co">#&gt; [5] "A Cat's Cause, No Dogs Problem"    "Tashme"</span></span></code></pre></div>
-<p>Put the <code>discog</code> list into a list-column and use <code>tidyr::hoist()</code> to dig some info out of it.</p>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>disc <span class="op">=</span> <span class="va">discog</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu">hoist</span><span class="op">(</span><span class="va">disc</span>, info <span class="op">=</span> <span class="st">"basic_information"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu">hoist</span><span class="op">(</span><span class="va">info</span>,</span>
-<span>       title <span class="op">=</span> <span class="st">"title"</span>,</span>
-<span>       year <span class="op">=</span> <span class="st">"year"</span>,</span>
-<span>       label <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">"labels"</span>, <span class="fl">1</span>, <span class="st">"name"</span><span class="op">)</span>,</span>
-<span>       artist <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">"artists"</span>, <span class="fl">1</span>, <span class="st">"name"</span><span class="op">)</span></span>
-<span>  <span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu">select</span><span class="op">(</span><span class="op">-</span><span class="va">disc</span>, <span class="op">-</span><span class="va">info</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 155 × 4</span></span>
-<span><span class="co">#&gt;    title                              year label                          artist</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;                             &lt;int&gt; &lt;chr&gt;                          &lt;chr&gt; </span></span>
-<span><span class="co">#&gt;  1 Demo                               2015 Tobi Records (2)               Mollot</span></span>
-<span><span class="co">#&gt;  2 Observant Com El Mon Es Destrueix  2013 La Vida Es Un Mus              Una B…</span></span>
-<span><span class="co">#&gt;  3 I                                  2017 La Vida Es Un Mus              S.H.I…</span></span>
-<span><span class="co">#&gt;  4 Oído Absoluto                      2017 La Vida Es Un Mus              Rata …</span></span>
-<span><span class="co">#&gt;  5 A Cat's Cause, No Dogs Problem     2015 Katorga Works                  Ivy (…</span></span>
-<span><span class="co">#&gt;  6 Tashme                             2019 High Fashion Industries        Tashme</span></span>
-<span><span class="co">#&gt;  7 Demo                               2014 Mind Control Records (6)       Desgr…</span></span>
-<span><span class="co">#&gt;  8 Let The Miracles Begin             2015 Not On Label (Phantom Head Se… Phant…</span></span>
-<span><span class="co">#&gt;  9 Sub Space                          2017 Not On Label (Sub Space (2) S… Sub S…</span></span>
-<span><span class="co">#&gt; 10 Demo                               2017 Prescience Tapes               Small…</span></span>
-<span><span class="co">#&gt; # … with 145 more rows</span></span></code></pre></div>
-</div>
-<div class="section level4">
-<h4 id="wesanderson-color-palettes">wesanderson color palettes<a class="anchor" aria-label="anchor" href="#wesanderson-color-palettes"></a>
-</h4>
-<p><code>wesanderson</code> is the simplest list, containing color palettes, from the <a href="https://cran.r-project.org/package=wesanderson" class="external-link">wesanderson package</a>. Here’s a glimpse: one component per palette, each containing a character vector of hex colors. <em>Screenshot is of RStudio’s <a href="https://www.rstudio.com/blog/rstudio-v1-1-preview-object-explorer/" class="external-link">Object Explorer</a>, i.e. from calling <code>View(wesanderson)</code>.</em></p>
-<p><img src="reference/figures/wesanderson-rstudio-view.png"></p>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://jennybc.github.io/repurrrsive/">repurrrsive</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://purrr.tidyverse.org/" class="external-link">purrr</a></span><span class="op">)</span></span>
-<span><span class="va">wesanderson</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">]</span></span>
-<span><span class="co">#&gt; $GrandBudapest</span></span>
-<span><span class="co">#&gt; [1] "#F1BB7B" "#FD6467" "#5B1A18" "#D67236"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $Moonrise1</span></span>
-<span><span class="co">#&gt; [1] "#F3DF6C" "#CEAB07" "#D5D5D3" "#24281A"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $Royal1</span></span>
-<span><span class="co">#&gt; [1] "#899DA4" "#C93312" "#FAEFD1" "#DC863B"</span></span></code></pre></div>
-<p>Use <code>wesanderson</code> to demonstrate mapping functions over a list.</p>
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">wesanderson</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  GrandBudapest      Moonrise1         Royal1      Moonrise2     Cavalcanti </span></span>
-<span><span class="co">#&gt;      "#F1BB7B"      "#F3DF6C"      "#899DA4"      "#798E87"      "#D8B70A" </span></span>
-<span><span class="co">#&gt;         Royal2 GrandBudapest2      Moonrise3      Chevalier         Zissou </span></span>
-<span><span class="co">#&gt;      "#9A8822"      "#E6A0C4"      "#85D4E3"      "#446455"      "#3B9AB2" </span></span>
-<span><span class="co">#&gt;   FantasticFox     Darjeeling       Rushmore   BottleRocket    Darjeeling2 </span></span>
-<span><span class="co">#&gt;      "#DD8D29"      "#FF0000"      "#E1BD6D"      "#A42820"      "#ECCBAE"</span></span>
-<span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_int</a></span><span class="op">(</span><span class="va">wesanderson</span>, <span class="va">length</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  GrandBudapest      Moonrise1         Royal1      Moonrise2     Cavalcanti </span></span>
-<span><span class="co">#&gt;              4              4              4              4              5 </span></span>
-<span><span class="co">#&gt;         Royal2 GrandBudapest2      Moonrise3      Chevalier         Zissou </span></span>
-<span><span class="co">#&gt;              5              4              5              4              5 </span></span>
-<span><span class="co">#&gt;   FantasticFox     Darjeeling       Rushmore   BottleRocket    Darjeeling2 </span></span>
-<span><span class="co">#&gt;              5              5              5              7              5</span></span>
-<span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_chr</a></span><span class="op">(</span><span class="va">wesanderson</span><span class="op">[</span><span class="fl">7</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span>, <span class="va">paste</span>, collapse <span class="op">=</span> <span class="st">", "</span><span class="op">)</span></span>
-<span><span class="co">#&gt;                                GrandBudapest2 </span></span>
-<span><span class="co">#&gt;          "#E6A0C4, #C6CDF7, #D8A499, #7294D4" </span></span>
-<span><span class="co">#&gt;                                     Moonrise3 </span></span>
-<span><span class="co">#&gt; "#85D4E3, #F4B5BD, #9C964A, #CDC08C, #FAD77B" </span></span>
-<span><span class="co">#&gt;                                     Chevalier </span></span>
-<span><span class="co">#&gt;          "#446455, #FDD262, #D3DDDC, #C7B19C"</span></span></code></pre></div>
-<p>The same <code>wesanderson</code> data is also present as JSON and XML files. Accessor functions provide the local file path.</p>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/wesanderson_json.html">wesanderson_json</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/wesanderson.json"</span></span>
-<span><span class="fu"><a href="reference/wesanderson_json.html">wesanderson_xml</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/private/tmp/Rtmp0w1VJd/temp_libpath170944c487229/repurrrsive/extdata/wesanderson.xml"</span></span></code></pre></div>
-<p>Practice bringing data from JSON into an R list.</p>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://arxiv.org/abs/1403.2805" class="external-link">jsonlite</a></span><span class="op">)</span></span>
-<span><span class="va">json</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/jsonlite/man/fromJSON.html" class="external-link">fromJSON</a></span><span class="op">(</span><span class="fu"><a href="reference/wesanderson_json.html">wesanderson_json</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="va">json</span><span class="op">$</span><span class="va">wesanderson</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">]</span></span>
-<span><span class="co">#&gt; $GrandBudapest</span></span>
-<span><span class="co">#&gt; [1] "#F1BB7B" "#FD6467" "#5B1A18" "#D67236"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $Moonrise1</span></span>
-<span><span class="co">#&gt; [1] "#F3DF6C" "#CEAB07" "#D5D5D3" "#24281A"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $Royal1</span></span>
-<span><span class="co">#&gt; [1] "#899DA4" "#C93312" "#FAEFD1" "#DC863B"</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/identical.html" class="external-link">identical</a></span><span class="op">(</span><span class="va">wesanderson</span>, <span class="va">json</span><span class="op">$</span><span class="va">wesanderson</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
-<p>Practice bringing data into R from XML. You can get it into an R list with <code><a href="http://xml2.r-lib.org/reference/as_list.html" class="external-link">xml2::as_list()</a></code>, but to get a list as nice as those above? That requires a bit more work. Such is XML life.</p>
-<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://xml2.r-lib.org/" class="external-link">xml2</a></span><span class="op">)</span></span>
-<span><span class="va">xml</span> <span class="op">&lt;-</span> <span class="fu"><a href="http://xml2.r-lib.org/reference/read_xml.html" class="external-link">read_xml</a></span><span class="op">(</span><span class="fu"><a href="reference/wesanderson_json.html">wesanderson_xml</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="http://xml2.r-lib.org/reference/xml_children.html" class="external-link">xml_child</a></span><span class="op">(</span><span class="va">xml</span><span class="op">)</span></span>
-<span><span class="co">#&gt; {xml_node}</span></span>
-<span><span class="co">#&gt; &lt;palette name="GrandBudapest"&gt;</span></span>
-<span><span class="co">#&gt; [1] &lt;hex&gt;#F1BB7B&lt;/hex&gt;</span></span>
-<span><span class="co">#&gt; [2] &lt;hex&gt;#FD6467&lt;/hex&gt;</span></span>
-<span><span class="co">#&gt; [3] &lt;hex&gt;#5B1A18&lt;/hex&gt;</span></span>
-<span><span class="co">#&gt; [4] &lt;hex&gt;#D67236&lt;/hex&gt;</span></span>
-<span><span class="fu"><a href="http://xml2.r-lib.org/reference/as_list.html" class="external-link">as_list</a></span><span class="op">(</span><span class="fu"><a href="http://xml2.r-lib.org/reference/xml_children.html" class="external-link">xml_child</a></span><span class="op">(</span><span class="va">xml</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; $hex</span></span>
-<span><span class="co">#&gt; $hex[[1]]</span></span>
-<span><span class="co">#&gt; [1] "#F1BB7B"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $hex</span></span>
-<span><span class="co">#&gt; $hex[[1]]</span></span>
-<span><span class="co">#&gt; [1] "#FD6467"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $hex</span></span>
-<span><span class="co">#&gt; $hex[[1]]</span></span>
-<span><span class="co">#&gt; [1] "#5B1A18"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $hex</span></span>
-<span><span class="co">#&gt; $hex[[1]]</span></span>
-<span><span class="co">#&gt; [1] "#D67236"</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; attr(,"name")</span></span>
-<span><span class="co">#&gt; [1] "GrandBudapest"</span></span></code></pre></div>
-</div>
+<span><span class="co">#&gt; [28] "Quentyn Martell"    "Samwell Tarly"      "Sansa Stark"</span></span></code></pre></div>
+<p>Each set of recursive lists has its own article that gives a sense of what sort of manipulations can be demonstrated with the dataset(s):</p>
+<ul>
+<li>Game of Thrones characters</li>
+<li>Data on entities in the Star Wars universe</li>
+<li>GitHub user and repo data</li>
+<li>Sharla Gelfand’s music collection</li>
+<li>Color palettes from Wes Anderson movies</li>
+</ul>
+<p>Learn more at <a href="https://jennybc.github.io/repurrrsive/articles/" class="uri">https://jennybc.github.io/repurrrsive/articles/</a>.</p>
 </div>
 <div class="section level2">
-<h2 id="nested-and-split-data-frame-examples">Nested and split data frame examples<a class="anchor" aria-label="anchor" href="#nested-and-split-data-frame-examples"></a>
+<h2 id="nested-and-split-data-frames">Nested and split data frames<a class="anchor" aria-label="anchor" href="#nested-and-split-data-frames"></a>
 </h2>
-<p>Use the Gapminder data in various forms to practice different styles of grouped computation.</p>
-<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://purrr.tidyverse.org/" class="external-link">purrr</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/" class="external-link">tibble</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">## group_by() + summarize()</span></span>
-<span><span class="va">gap_simple</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">country</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
-<span>  <span class="fu">summarize</span><span class="op">(</span>cor <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cor</a></span><span class="op">(</span><span class="va">lifeExp</span>, <span class="va">year</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 142 × 2</span></span>
-<span><span class="co">#&gt;    country       cor</span></span>
-<span><span class="co">#&gt;    &lt;fct&gt;       &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 Afghanistan 0.974</span></span>
-<span><span class="co">#&gt;  2 Albania     0.954</span></span>
-<span><span class="co">#&gt;  3 Algeria     0.993</span></span>
-<span><span class="co">#&gt;  4 Angola      0.942</span></span>
-<span><span class="co">#&gt;  5 Argentina   0.998</span></span>
-<span><span class="co">#&gt;  6 Australia   0.990</span></span>
-<span><span class="co">#&gt;  7 Austria     0.996</span></span>
-<span><span class="co">#&gt;  8 Bahrain     0.983</span></span>
-<span><span class="co">#&gt;  9 Bangladesh  0.995</span></span>
-<span><span class="co">#&gt; 10 Belgium     0.997</span></span>
-<span><span class="co">#&gt; # … with 132 more rows</span></span>
-<span></span>
-<span><span class="co">## nest() + map_*() inside mutate()</span></span>
-<span><span class="va">gap_nested</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
-<span>  <span class="fu">mutate</span><span class="op">(</span>cor <span class="op">=</span> <span class="va">data</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_dbl</a></span><span class="op">(</span><span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cor</a></span><span class="op">(</span><span class="va">.x</span><span class="op">$</span><span class="va">lifeExp</span>, <span class="va">.x</span><span class="op">$</span><span class="va">year</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 142 × 4</span></span>
-<span><span class="co">#&gt;    country     continent data                cor</span></span>
-<span><span class="co">#&gt;    &lt;fct&gt;       &lt;fct&gt;     &lt;list&gt;            &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 Afghanistan Asia      &lt;tibble [12 × 4]&gt; 0.974</span></span>
-<span><span class="co">#&gt;  2 Albania     Europe    &lt;tibble [12 × 4]&gt; 0.954</span></span>
-<span><span class="co">#&gt;  3 Algeria     Africa    &lt;tibble [12 × 4]&gt; 0.993</span></span>
-<span><span class="co">#&gt;  4 Angola      Africa    &lt;tibble [12 × 4]&gt; 0.942</span></span>
-<span><span class="co">#&gt;  5 Argentina   Americas  &lt;tibble [12 × 4]&gt; 0.998</span></span>
-<span><span class="co">#&gt;  6 Australia   Oceania   &lt;tibble [12 × 4]&gt; 0.990</span></span>
-<span><span class="co">#&gt;  7 Austria     Europe    &lt;tibble [12 × 4]&gt; 0.996</span></span>
-<span><span class="co">#&gt;  8 Bahrain     Asia      &lt;tibble [12 × 4]&gt; 0.983</span></span>
-<span><span class="co">#&gt;  9 Bangladesh  Asia      &lt;tibble [12 × 4]&gt; 0.995</span></span>
-<span><span class="co">#&gt; 10 Belgium     Europe    &lt;tibble [12 × 4]&gt; 0.997</span></span>
-<span><span class="co">#&gt; # … with 132 more rows</span></span>
-<span></span>
-<span><span class="co">## split + map_*()</span></span>
-<span><span class="va">gap_split</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_dbl</a></span><span class="op">(</span><span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cor</a></span><span class="op">(</span><span class="va">.x</span><span class="op">$</span><span class="va">lifeExp</span>, <span class="va">.x</span><span class="op">$</span><span class="va">year</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Afghanistan     Albania     Algeria      Angola   Argentina   Australia </span></span>
-<span><span class="co">#&gt;   0.9735051   0.9542420   0.9925307   0.9422392   0.9977816   0.9897716</span></span>
-<span></span>
-<span><span class="co">## split + map_*() + tibble::enframe()</span></span>
-<span><span class="va">gap_split</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_dbl</a></span><span class="op">(</span><span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cor</a></span><span class="op">(</span><span class="va">.x</span><span class="op">$</span><span class="va">lifeExp</span>, <span class="va">.x</span><span class="op">$</span><span class="va">year</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
-<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/enframe.html" class="external-link">enframe</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 142 × 2</span></span>
-<span><span class="co">#&gt;    name        value</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;       &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 Afghanistan 0.974</span></span>
-<span><span class="co">#&gt;  2 Albania     0.954</span></span>
-<span><span class="co">#&gt;  3 Algeria     0.993</span></span>
-<span><span class="co">#&gt;  4 Angola      0.942</span></span>
-<span><span class="co">#&gt;  5 Argentina   0.998</span></span>
-<span><span class="co">#&gt;  6 Australia   0.990</span></span>
-<span><span class="co">#&gt;  7 Austria     0.996</span></span>
-<span><span class="co">#&gt;  8 Bahrain     0.983</span></span>
-<span><span class="co">#&gt;  9 Bangladesh  0.995</span></span>
-<span><span class="co">#&gt; 10 Belgium     0.997</span></span>
+<p>The Gapminder data, from the <a href="https://github.com/jennybc/gapminder" class="external-link">gapminder package</a>, is also here in various forms to allow practice of different styles of grouped computation.</p>
+<p>For example, the <code>gap_nested</code> dataset has one row per country, with a nested <code>data</code> column containing longitudinal data for life expectancy, population, and GDP per capita.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">gap_nested</span></span>
+<span><span class="co">#&gt; # A tibble: 142 × 3</span></span>
+<span><span class="co">#&gt;    country     continent data             </span></span>
+<span><span class="co">#&gt;    &lt;fct&gt;       &lt;fct&gt;     &lt;list&gt;           </span></span>
+<span><span class="co">#&gt;  1 Afghanistan Asia      &lt;tibble [12 × 4]&gt;</span></span>
+<span><span class="co">#&gt;  2 Albania     Europe    &lt;tibble [12 × 4]&gt;</span></span>
+<span><span class="co">#&gt;  3 Algeria     Africa    &lt;tibble [12 × 4]&gt;</span></span>
+<span><span class="co">#&gt;  4 Angola      Africa    &lt;tibble [12 × 4]&gt;</span></span>
+<span><span class="co">#&gt;  5 Argentina   Americas  &lt;tibble [12 × 4]&gt;</span></span>
+<span><span class="co">#&gt;  6 Australia   Oceania   &lt;tibble [12 × 4]&gt;</span></span>
+<span><span class="co">#&gt;  7 Austria     Europe    &lt;tibble [12 × 4]&gt;</span></span>
+<span><span class="co">#&gt;  8 Bahrain     Asia      &lt;tibble [12 × 4]&gt;</span></span>
+<span><span class="co">#&gt;  9 Bangladesh  Asia      &lt;tibble [12 × 4]&gt;</span></span>
+<span><span class="co">#&gt; 10 Belgium     Europe    &lt;tibble [12 × 4]&gt;</span></span>
 <span><span class="co">#&gt; # … with 132 more rows</span></span></code></pre></div>
 </div>
 </div>
