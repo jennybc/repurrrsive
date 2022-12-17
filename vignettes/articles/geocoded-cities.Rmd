@@ -1,0 +1,39 @@
+---
+title: "Geocoded cities"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(repurrrsive)
+```
+
+The `gmaps_cities` data frame contains the results of geocoding five cities
+("Houston", "Washington", "New York", "Chicago", "Arlington") using
+the Google Maps API on 2022-06-08.
+The geocoding data appears in the `json` list-column.
+
+```{r}
+gmaps_cities
+```
+
+Two cities, Washington and Arlington, were deliberately picked for their ambiguity: Washington could refer to the city or the state, and Arlington could mean the one in Virginia or
+the one in Texas.
+This dataset is useful for exploring the [rectangling capabilities](https://tidyr.tidyverse.org/articles/rectangle.html) of the tidyr package.
+
+```{r, message = FALSE}
+library(tidyr)
+library(dplyr)
+
+gmaps_cities %>% 
+  hoist(json, "results") %>% 
+  select(-json) %>% 
+  unnest_longer(results) %>% 
+  hoist(results, "formatted_address")
+```
+
