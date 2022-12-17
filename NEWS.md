@@ -1,4 +1,4 @@
-# repurrrsive (development version)
+# repurrrsive 1.1.0
 
 * Some NSFW content has been removed from `got_chars` (#26).
 
