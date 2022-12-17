@@ -44,6 +44,7 @@
     <a class="dropdown-item" href="../articles/discog.html">Sharla's music collection</a>
     <a class="dropdown-item" href="../articles/game-of-thrones.html">Game of Thrones data</a>
     <a class="dropdown-item" href="../articles/gapminder.html">Nested and split Gapminder data</a>
+    <a class="dropdown-item" href="../articles/geocoded-cities.html">Geocoded cities</a>
     <a class="dropdown-item" href="../articles/github.html">GitHub user and repo data</a>
     <a class="dropdown-item" href="../articles/starwars.html">Star Wars data</a>
     <a class="dropdown-item" href="../articles/wesanderson.html">Wes Anderson color palettes</a>
@@ -140,8 +141,8 @@ of grouped computation.</p>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 132 more rows</span></span></span>
 <span></span>
 <span><span class="co">## nest() + rowwise() + mutate()</span></span>
-<span><span class="va">gap_nested</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/rowwise.html" class="external-link">rowwise</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span><span class="va">gap_nested</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/rowwise.html" class="external-link">rowwise</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>cor <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cor</a></span><span class="op">(</span><span class="va">data</span><span class="op">$</span><span class="va">lifeExp</span>, <span class="va">data</span><span class="op">$</span><span class="va">year</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 142 × 4</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># Rowwise: </span></span></span>
