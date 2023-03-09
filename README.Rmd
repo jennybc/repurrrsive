@@ -11,9 +11,12 @@ output: github_document
 <!-- badges: end -->
 
 ```{r, echo = FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>", error = TRUE,
-                      fig.path = "README-")
-library(repurrrsive)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>", 
+  error = TRUE,
+  fig.path = "README-"
+)
 ```
 
 # repurrrsive
@@ -35,15 +38,15 @@ install.packages("repurrrsive")
 or from GitHub with:
 
 ```{r gh-installation, eval = FALSE}
-# install.packages("devtools")
-devtools::install_github("jennybc/repurrrsive")
+# install.packages("pak")
+pak::pak("jennybc/repurrrsive")
 ```
 
 ## Recursive list examples
 
 repurrrsive contains several datasets that are recursive lists, both in the form of R objects and as JSON and/or XML files.
 
-For example, `got_chars` is a list with information on the `r length(got_chars)` point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin.
+For example, `got_chars` is a list with information on the `r length(repurrrsive::got_chars)` point-of-view characters from the first five books in the Song of Ice and Fire series by George R. R. Martin.
 Here's how to use `purrr::map_chr()` to extract the character's names:
 
 ```{r}
