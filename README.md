@@ -34,8 +34,8 @@ install.packages("repurrrsive")
 or from GitHub with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("jennybc/repurrrsive")
+# install.packages("pak")
+pak::pak("jennybc/repurrrsive")
 ```
 
 ## Recursive list examples
